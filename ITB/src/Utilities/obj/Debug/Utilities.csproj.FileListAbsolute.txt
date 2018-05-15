@@ -1,0 +1,5 @@
+C:\work\ITB\src\Utilities\bin\Debug\Asi.Itb.Utilities.dll
+C:\work\ITB\src\Utilities\bin\Debug\Asi.Itb.Utilities.pdb
+C:\work\ITB\src\Utilities\obj\Debug\ResolveAssemblyReference.cache
+C:\work\ITB\src\Utilities\obj\Debug\Asi.Itb.Utilities.dll
+C:\work\ITB\src\Utilities\obj\Debug\Asi.Itb.Utilities.pdb

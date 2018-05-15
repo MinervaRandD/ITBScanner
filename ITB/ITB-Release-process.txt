@@ -1,0 +1,5 @@
+1. make whatever code change under ./src. (Non-code changes, such as image/config files, should be made directly in ./bin/ITBCab/Input). Make a release build in Visual Studio, assign the new assembly version.
+1a. Make sure that there are completed builds of AsiUpdater and NetTest available under their respective directories in ./src2 for inclusion in the distribution.
+2. open ./src2/xenocode/ITB_RELEASE.postbuild with Xenocode Postbuild program, and generate output into default location, i.e. ./src2/xenocode/Itb/RELEASE
+2a. open ./src2/xenocode/AsiUpdater.postbuild and generate output to the default location. Repeat for ./src2/xenocode/NetTester.postbuild.
+3. run ./bin/ITBCab/ITBCab.exe, which will copy obfuscated files from ./src2/xenocode/Itb/RELEASE to ./bin/ITBCab/Input/, then generate final CAB files under ./bin/ITBCab/CABs/. (ITBCab.exe will read the assembly version using reflection).

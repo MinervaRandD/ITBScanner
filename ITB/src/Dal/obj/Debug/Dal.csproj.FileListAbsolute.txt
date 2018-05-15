@@ -1,0 +1,6 @@
+C:\work\ITB\src\Dal\bin\Debug\Asi.Itb.Dal.dll
+C:\work\ITB\src\Dal\bin\Debug\Asi.Itb.Dal.pdb
+C:\work\ITB\src\Dal\obj\Debug\ResolveAssemblyReference.cache
+C:\work\ITB\src\Dal\obj\Debug\Asi.Itb.Dal.dll
+C:\work\ITB\src\Dal\obj\Debug\Asi.Itb.Dal.pdb
+C:\work\ITB\src\Dal\bin\Debug\System.Data.SqlServerCe.dll

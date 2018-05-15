@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E90289A2-D7EE-4A07-B171-8ABCBE3A1ABC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ASINetTest.FormMain</StartupObject>
+    <RootNamespace>ASINetTest</RootNamespace>
+    <AssemblyName>ASINetTest</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>ASINetTest</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>Off</OptionInfer>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenNETCF, Version=1.4.50804.0, Culture=neutral, PublicKeyToken=30c767b29d52d6e6">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\OpenNETCF.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Drawing, Version=1.4.50804.0, Culture=neutral, PublicKeyToken=30c767b29d52d6e6">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\OpenNETCF.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Net, Version=1.4.50804.0, Culture=neutral, PublicKeyToken=30c767b29d52d6e6">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\OpenNETCF.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.VisualBasic, Version=1.4.50804.0, Culture=neutral, PublicKeyToken=30c767b29d52d6e6">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\OpenNETCF.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Windows.Forms, Version=1.4.50804.0, Culture=neutral, PublicKeyToken=30c767b29d52d6e6">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\OpenNETCF.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Net.Ftp, Version=2.0.2306.0, Culture=neutral, PublicKeyToken=1c4638788972655d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Rebex.Net.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Net.ProxySocket, Version=1.5.2306.0, Culture=neutral, PublicKeyToken=1c4638788972655d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Rebex.Net.ProxySocket.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Net.SecureSocket, Version=1.0.2306.0, Culture=neutral, PublicKeyToken=1c4638788972655d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Rebex.Net.SecureSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Net.Time, Version=2.0.2522.0, Culture=neutral, PublicKeyToken=1c4638788972655d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Rebex.Net.Time.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Security, Version=1.0.2306.0, Culture=neutral, PublicKeyToken=1c4638788972655d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\Rebex.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="OpenNETCF" />
+    <Import Include="OpenNETCF.Configuration" />
+    <Import Include="OpenNETCF.Diagnostics" />
+    <Import Include="OpenNETCF.Drawing" />
+    <Import Include="OpenNETCF.Windows.Forms" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PanelHelpers\Finish.vb" />
+    <Compile Include="PanelHelpers\General.vb" />
+    <Compile Include="PanelHelpers\Submit.vb" />
+    <Compile Include="PanelHelpers\Testing.vb" />
+    <Compile Include="PanelHelpers\Upload.vb" />
+    <Compile Include="PanelHelpers\Welcome.vb" />
+    <Compile Include="Test\DNS.vb" />
+    <Compile Include="Test\FTP.vb" />
+    <Compile Include="Test\Generic.vb" />
+    <Compile Include="Test\NetworkSettings.vb" />
+    <Compile Include="Test\NTP.vb" />
+    <Compile Include="Test\Ping.vb" />
+    <Compile Include="Test\Tester.vb" />
+    <Compile Include="Test\Timing.vb" />
+    <Compile Include="Test\ToolBox\Ping.vb" />
+    <Compile Include="Test\ToolBox\RAS.vb" />
+    <Compile Include="Test\ToolBox\Registry.vb" />
+    <Compile Include="Test\ToolBox\TraceRoute.vb" />
+    <Compile Include="Test\TraceRoute.vb" />
+    <Compile Include="Test\Writer.vb" />
+    <Compile Include="UIMan.vb" />
+    <Compile Include="Uploader\Results.vb" />
+    <Compile Include="Util\SerialNumber.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Changes.txt" />
+    <Content Include="DLLs\icmpwrap.dll" />
+    <Content Include="DLLs\iphlpapi.dll" />
+    <Content Include="DLLs\psuuid0c.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

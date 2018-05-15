@@ -1,0 +1,42 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Aviation Software Inc."
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="TagTrak Library"
+InstallDir=%CE1%\TagTrak
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=4.99
+
+[DefaultInstall]
+CopyFiles=Files.Common
+
+[SourceDisksNames]
+1=,"Common1",,"C:\TagTrakBaggage\BatchBuilder\Dotfuscated\"
+2=,"Common2",,"C:\TagTrakBaggage\TagTrakCs\TagTrakLib\Support DLLs\"
+
+[SourceDisksFiles]
+TagTrakLib.dll=1
+AirlineSoftware.dll=2
+Hardware.dll=2
+Info.dll=2
+Intermec.DataCollection.dll=2
+OpenNETCF.dll=2
+OpenNETCF.Net.dll=2
+SharpZipLib.dll=2
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+
+[Files.Common]
+TagTrakLib.dll,,,0x40000000
+AirlineSoftware.dll,,,0x40000000
+Hardware.dll,,,0x40000000
+Info.dll,,,0x40000000
+Intermec.DataCollection.dll,,,0x40000000
+OpenNETCF.dll,,,0x40000000
+OpenNETCF.Net.dll,,,0x40000000
+SharpZipLib.dll,,,0x40000000

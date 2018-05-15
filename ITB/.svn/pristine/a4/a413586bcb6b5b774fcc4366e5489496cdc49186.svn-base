@@ -1,0 +1,2 @@
+EXEC "SDMMC Disk\2577\AutoCab.exe" -NOSHOW=1
+CALL "SDMMC Disk\2577\AutoUser.dat"

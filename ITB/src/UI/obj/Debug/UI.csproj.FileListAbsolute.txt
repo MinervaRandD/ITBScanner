@@ -1,0 +1,16 @@
+C:\work\ITB\src\UI\obj\Debug\ResolveAssemblyReference.cache
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.BagCountForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.BagDetailForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.BaseForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.ExceptionDisplayForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.ExitForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.HandoverForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.LoginForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.MessageDetailForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.MessageListForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.OverrideForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.Properties.Resources.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.ScanForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.SplashForm.resources
+C:\work\ITB\src\UI\obj\Debug\Asi.Itb.UI.SyncProgressForm.resources
+C:\work\ITB\src\UI\obj\Debug\UI.csproj.GenerateResource.Cache

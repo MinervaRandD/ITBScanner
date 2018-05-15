@@ -1,0 +1,5 @@
+C:\work\ITB\src\GPS\GPS\bin\Debug\Gps.Location.dll
+C:\work\ITB\src\GPS\GPS\bin\Debug\Gps.Location.pdb
+C:\work\ITB\src\GPS\GPS\obj\Debug\ResolveAssemblyReference.cache
+C:\work\ITB\src\GPS\GPS\obj\Debug\Gps.Location.dll
+C:\work\ITB\src\GPS\GPS\obj\Debug\Gps.Location.pdb

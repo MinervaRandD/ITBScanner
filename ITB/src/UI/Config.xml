@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Version>JFL-MC56-1.0</Version>
+  <WebServiceUri>http://jfk.itb.asiscan.com/scanner_interactions</WebServiceUri>
+  <UpdatedWebServiceUri>http://asiscansvc.com/ITB/SyncProcessor</UpdatedWebServiceUri>
+  <OperatingMode>Live</OperatingMode>
+  <DbFilePath>\Program Files\InterBag\Itb.sdf</DbFilePath>
+  <MisdropWarning>false</MisdropWarning>
+  <GetLocationByGpsData>false</GetLocationByGpsData>
+  <FogBugzSettings>
+    <Uri>https://help.asiscan.com:4443/scoutSubmit.php</Uri>
+    <Project>InterBag</Project>
+    <Area>Scanner Software</Area>
+    <User>Bug Reports Bird</User>
+    <Email>noreply@asiscan.com</Email>
+  </FogBugzSettings>
+  <SyncErrorLogging>true</SyncErrorLogging>
+  <DebugLogging>false</DebugLogging>
+  <SyncTimerEnabled>true</SyncTimerEnabled>
+  <PerformLegacySync>false</PerformLegacySync>
+  <PerformUpdatedSync>true</PerformUpdatedSync>
+  <Entity>jfk</Entity>
+</Configuration>

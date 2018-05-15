@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ITBCab.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InputPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\Input</Value>
+    </Setting>
+    <Setting Name="CabWizPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\CabWiz</Value>
+    </Setting>
+    <Setting Name="CABPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\CABs</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,5 @@
+C:\work\ITB\src\VersionUpdater\bin\Release\VersionUpdater.exe
+C:\work\ITB\src\VersionUpdater\bin\Release\VersionUpdater.pdb
+C:\work\ITB\src\VersionUpdater\obj\Release\ResolveAssemblyReference.cache
+C:\work\ITB\src\VersionUpdater\obj\Release\VersionUpdater.exe
+C:\work\ITB\src\VersionUpdater\obj\Release\VersionUpdater.pdb
