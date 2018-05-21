@@ -4,7 +4,7 @@
   <WebServiceUri>http://jfk.itb.asiscan.com/scanner_interactions</WebServiceUri>
   <UpdatedWebServiceUri>http://asiscansvc.com/ITB/SyncProcessor</UpdatedWebServiceUri>
   <OperatingMode>Live</OperatingMode>
-  <DbFilePath>\Program Files\InterBag\Itb.sdf</DbFilePath>
+  <DbFilePath>\Program Files\InterBag\Itb2.sdf</DbFilePath>
   <MisdropWarning>false</MisdropWarning>
   <GetLocationByGpsData>false</GetLocationByGpsData>
   <FogBugzSettings>

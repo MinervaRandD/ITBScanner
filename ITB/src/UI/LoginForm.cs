@@ -56,6 +56,19 @@ namespace Asi.Itb.UI
 
             UserManager umgr = new UserManager();
 
+            int nmbrOfActs = umgr.GetActivities().Count();
+
+            if (nmbrOfActs >= 100)
+            {
+                MessageBox.Show("The database file on this device is too large and will not correctly sync. Please contact your systems administrator.");
+
+                DatabaseManager.CloseConnection();
+                Program.formStack.Stop();
+
+                System.Diagnostics.Process.GetCurrentProcess().Kill();
+                
+            }
+
             Bll.Entities.User user = umgr.Authenticate(this.usernameTextBox.Text, this.passwordTextBox.Text);
 
             if (user != null)

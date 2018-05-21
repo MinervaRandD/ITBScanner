@@ -2,4 +2,4 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyVersion("2.2.1.1")]
+[assembly: AssemblyVersion("2.2.1.3")]
