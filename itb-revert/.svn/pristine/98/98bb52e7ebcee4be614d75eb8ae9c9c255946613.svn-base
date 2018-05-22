@@ -1,0 +1,64 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagTrakLib", "TagTrakLib\TagTrakLib.csproj", "{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baggage", "Baggage\Baggage.csproj", "{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagTrak", "TagTrak\TagTrak.csproj", "{2FE704B8-D54B-4978-AA8C-01B377809161}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AF875F20-6180-430A-8DA1-809C556DE682}"
+	ProjectSection(SolutionItems) = preProject
+		AssemblyVersionInfo.cs = AssemblyVersionInfo.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Intermec Debug|Any CPU = Intermec Debug|Any CPU
+		Intermec Release|Any CPU = Intermec Release|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Intermec Debug|Any CPU.ActiveCfg = Intermec Debug|Any CPU
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Intermec Debug|Any CPU.Build.0 = Intermec Debug|Any CPU
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Intermec Release|Any CPU.ActiveCfg = Intermec Release|Any CPU
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Intermec Release|Any CPU.Build.0 = Intermec Release|Any CPU
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346A1A84-AF6F-4C0D-841C-863FB4CAF6BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Intermec Debug|Any CPU.ActiveCfg = Intermec Debug|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Intermec Debug|Any CPU.Build.0 = Intermec Debug|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Intermec Release|Any CPU.ActiveCfg = Intermec Release|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Intermec Release|Any CPU.Build.0 = Intermec Release|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FB40C9-0014-4BF1-97F9-D36226B42DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Intermec Debug|Any CPU.ActiveCfg = Intermec Debug|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Intermec Debug|Any CPU.Build.0 = Intermec Debug|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Intermec Release|Any CPU.ActiveCfg = Intermec Release|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Intermec Release|Any CPU.Build.0 = Intermec Release|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C277C08-6CAC-4E5C-BEE6-41F97C653DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Intermec Debug|Any CPU.ActiveCfg = Intermec Debug|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Intermec Debug|Any CPU.Build.0 = Intermec Debug|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Intermec Debug|Any CPU.Deploy.0 = Intermec Debug|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Intermec Release|Any CPU.ActiveCfg = Intermec Release|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Intermec Release|Any CPU.Build.0 = Intermec Release|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Intermec Release|Any CPU.Deploy.0 = Intermec Release|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE704B8-D54B-4978-AA8C-01B377809161}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

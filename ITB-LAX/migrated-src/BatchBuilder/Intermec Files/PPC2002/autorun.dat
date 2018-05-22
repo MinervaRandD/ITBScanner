@@ -1,0 +1,2 @@
+EXEC "AutoCab.exe" -SHOW=0
+CALL "AutoUser.dat"

@@ -1,7 +1,3 @@
-C:\work\ITB\src\Hardware\HardwareTester\obj\Release\ResolveAssemblyReference.cache
-C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.FormMain.resources
-C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.Resources.resources
-C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.vbproj.GenerateResource.Cache
 C:\work\ITB\src\Hardware\HardwareTester\bin\Release\Resources\psuuid0c.dll
 C:\work\ITB\src\Hardware\HardwareTester\bin\Release\Resources\icmpwrap.dll
 C:\work\ITB\src\Hardware\HardwareTester\bin\Release\HardwareTester.exe
@@ -22,5 +18,9 @@ C:\work\ITB\src\Hardware\HardwareTester\bin\Release\Microsoft.WindowsMobile.Pock
 C:\work\ITB\src\Hardware\HardwareTester\bin\Release\Microsoft.WindowsMobile.xml
 C:\work\ITB\src\Hardware\HardwareTester\bin\Release\Microsoft.WindowsMobile.Status.xml
 C:\work\ITB\src\Hardware\HardwareTester\bin\Release\Hardware.pdb
+C:\work\ITB\src\Hardware\HardwareTester\obj\Release\ResolveAssemblyReference.cache
+C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.FormMain.resources
+C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.Resources.resources
+C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.vbproj.GenerateResource.Cache
 C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.exe
 C:\work\ITB\src\Hardware\HardwareTester\obj\Release\HardwareTester.pdb

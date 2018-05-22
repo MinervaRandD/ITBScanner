@@ -1,0 +1,20 @@
+TagTrak - Debug Passwords
+=========================
+
+Admin:
+A, ADMIN, 121232343
+
+Complete Config:
+H, Hidden, 1234567
+
+Date/Time:
+D, DATE, DATETIME, DATEANDTIME, 999666333
+
+Exit:
+E, EXIT, 112233445566778899
+
+Location:
+L, LOCATION, LOCATIONCHANGE
+
+Login:
+I, LOGIN, 1234567

@@ -1,0 +1,33 @@
+[AVALANCHE]
+
+[STRINGS]
+RootDir = "."
+RAMInstallDir = "$RootDir$"
+RAMAppsDir = "$RootDir$\Apps"
+"InstBackupDir"="\Flash File Store"
+"AvaBackupDir"="\Flash File Store\Avalanche"
+"Programs"="\Windows\Programs"
+"Startup"="\Windows\Startup"
+"Temp"="\temp"
+
+[COPY]
+$RAMInstallDir$\*.*=$AvaBackupDir$\*.*
+$RAMInstallDir$\Windows\*.*=$AvaBackupDir$\Windows\*.*
+
+[REGFILE] // make a backup of the registry settings settings
+"Name"="$AvaBackupDir$\AvaInit.reg"
+
+[INIFILE]
+"$InstBackupDir$\2577\AutoUser.dat"=,,EXEC "Flash File Store\Avalanche\AvaInit.exe"
+
+[HKEY_LOCAL_MACHINE\Software\Wavelink\Avalanche]
+"InstallDir"="$RAMInstallDir$"
+"AVA"="$RAMInstallDir$"
+"APPS"="$RAMInstallDir$\Apps"
+"WORK"="$AvaBackupDir$\Work"
+"TEMP"="$Temp$"
+"FLASH"="$AvaBackupDir$"
+
+[SHORTCUT]
+"$Startup$\AvaMon.lnk"="$RAMInstallDir$\AvaInit.exe"
+"$Programs$\Avalanche.lnk"="$RAMInstallDir$\Enabler.exe"

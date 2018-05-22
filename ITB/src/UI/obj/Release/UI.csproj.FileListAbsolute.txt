@@ -63,3 +63,4 @@ C:\work\ITB\src\UI\bin\Release\Hardware.pdb
 C:\work\ITB\src\UI\obj\Release\Itb.exe
 C:\work\ITB\src\UI\obj\Release\Itb.pdb
 C:\work\ITB\src\UI\bin\Release\Itb.sdf
+C:\work\ITB\src\UI\bin\Release\Itb2.sdf

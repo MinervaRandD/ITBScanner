@@ -1,0 +1,40 @@
+; Keywords recognized by autoexec.exe are:
+; ------------------------------------------------------------------------------------------
+; QUIET, LOGGING, SIGNAL, CALL, LOAD, RUN, EXEC, EXECWAIT, WAIT
+;
+; QUIET enables user notification when an error occurs
+; LOGGING enables logging to a trace file
+; SIGNAL enables the specified named event and is immediately signaled. Useful for notifying other components of the current status.
+; CALL opens another .dat file to be processed.  After the called file is completed, this file is resumed.
+; LOAD runs a program with a SW_HIDE attribute.  autoexec does not wait for child process to exit.
+; RUN runs a program with a SW_SHOWNORMAL attribute.  autoexec does not wait for child process to exit.
+; EXEC runs the specified program.  autoexec waits for 60 seconds for child process to exit or EXECSECS if set.
+; EXECWAIT changes the default EXEC wait time from 60 seconds to the number of seconds specified.  There is a maximum 10 minute limit imposed.
+; WAIT forces a sleep for the specified number of seconds.
+; ------------------------------------------------------------------------------------------
+SIGNAL "autoexec_started"
+
+; Hook for new AutoCard functionality.  Need to add both 'card names' to support 730 and 740's
+EXEC "\SDMMC DISK\2577\AutoCard.exe"
+EXEC "\Storage Card\2577\AutoCard.exe"
+
+; CleanHouse
+EXEC "\Flash File Store\2577\CleanHouse.exe"
+
+; FolderCopy. Decompress any system files for use.
+EXEC "\Flash File Store\2577\FolderCopy.exe"
+
+; Install any cabinet files that have been placed temporarily in objectstore by FolderCopy
+RUN "\Flash File Store\2577\autocab.exe" -SHOW=2 -CHKRST=1 -FILE="\CabFiles" -SIGNAL="autoexec_stopped" 
+
+; Audio
+LOAD "\Flash File Store\2577\autocopy.exe" -S"\Flash File Store\System\CPLAudio.cpl" -D"\Windows\CPLAudio.cpl"
+
+; Utilities Control Panel
+LOAD "\Flash File Store\2577\autocopy.exe" -S"\Flash File Store\System\UtilitiesCPL.cpl" -D"\Windows\UtilitiesCPL.cpl"
+
+; Battery
+RUN "\Flash File Store\Apps\Power\BatteryUpdate.exe"
+
+SIGNAL "autoexec_stopped"
+

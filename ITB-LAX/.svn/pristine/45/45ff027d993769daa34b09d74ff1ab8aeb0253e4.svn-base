@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="urn:TagTrakSyncwsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" name="TagTrakSync" targetNamespace="urn:TagTrakSyncwsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:TagTrakSyncwsdl">
+      <xsd:complexType name="AssemblyVersionArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soap-enc:Array">
+            <xsd:attribute wsdl:arrayType="tns:AssemblyVersion[]" ref="soap-enc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="AssemblyVersion">
+        <xsd:all>
+          <xsd:element name="assemblyName" type="xsd:string" />
+          <xsd:element name="version" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="UpgradeFileInfoArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soap-enc:Array">
+            <xsd:attribute wsdl:arrayType="tns:UpgradeFileInfo[]" ref="soap-enc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="UpgradeFileInfo">
+        <xsd:all>
+          <xsd:element name="fileName" type="xsd:string" />
+          <xsd:element name="version" type="xsd:string" />
+          <xsd:element name="size" type="xsd:int" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GmtTimeRequest" />
+  <wsdl:message name="GmtTimeResponse">
+    <wsdl:part name="return" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="UploadBagScansRequest">
+    <wsdl:part name="data" type="xsd:string" />
+    <wsdl:part name="compress" type="xsd:boolean" />
+    <wsdl:part name="format" type="xsd:string" />
+    <wsdl:part name="serial" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadBagScansResponse">
+    <wsdl:part name="return" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="UploadLogsRequest">
+    <wsdl:part name="data" type="xsd:string" />
+    <wsdl:part name="compress" type="xsd:boolean" />
+    <wsdl:part name="format" type="xsd:string" />
+    <wsdl:part name="serial" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadLogsResponse">
+    <wsdl:part name="return" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="GetCarriersRequest">
+    <wsdl:part name="serial" type="xsd:string" />
+    <wsdl:part name="lastUpdate" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetCarriersResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCitiesRequest">
+    <wsdl:part name="serial" type="xsd:string" />
+    <wsdl:part name="lastUpdate" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetCitiesResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCarrierCityRequest">
+    <wsdl:part name="serial" type="xsd:string" />
+    <wsdl:part name="lastUpdate" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetCarrierCityResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeesRequest">
+    <wsdl:part name="serial" type="xsd:string" />
+    <wsdl:part name="lastUpdate" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeesResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyUpgradeRequest">
+    <wsdl:part name="serial" type="xsd:string" />
+    <wsdl:part name="curAssemblyVersions" type="tns:AssemblyVersionArray" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyUpgradeResponse">
+    <wsdl:part name="return" type="tns:UpgradeFileInfoArray" />
+  </wsdl:message>
+  <wsdl:message name="GetFileRequest">
+    <wsdl:part name="serial" type="xsd:string" />
+    <wsdl:part name="fileName" type="xsd:string" />
+    <wsdl:part name="version" type="xsd:string" />
+    <wsdl:part name="offset" type="xsd:int" />
+    <wsdl:part name="maxLength" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="GetFileResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlightsRequest">
+    <wsdl:part name="carrier" type="xsd:string" />
+    <wsdl:part name="location" type="xsd:string" />
+    <wsdl:part name="startDate" type="xsd:date" />
+    <wsdl:part name="endDate" type="xsd:date" />
+    <wsdl:part name="lastUpdate" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetFlightsResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetHotBagsRequest">
+    <wsdl:part name="carrier" type="xsd:string" />
+    <wsdl:part name="location" type="xsd:string" />
+    <wsdl:part name="date" type="xsd:date" />
+    <wsdl:part name="flightNumber" type="xsd:int" />
+    <wsdl:part name="lastUpdate" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetHotBagsResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMissingBagsRequest">
+    <wsdl:part name="carrier" type="xsd:string" />
+    <wsdl:part name="location" type="xsd:string" />
+    <wsdl:part name="date" type="xsd:date" />
+    <wsdl:part name="flightNumber" type="xsd:int" />
+    <wsdl:part name="lastUpdate" type="xsd:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetMissingBagsResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="TagTrakSyncPortType">
+    <wsdl:operation name="GmtTime">
+      <wsdl:documentation>get server current GMT time</wsdl:documentation>
+      <wsdl:input message="tns:GmtTimeRequest" />
+      <wsdl:output message="tns:GmtTimeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadBagScans">
+      <wsdl:documentation>upload baggage scan records</wsdl:documentation>
+      <wsdl:input message="tns:UploadBagScansRequest" />
+      <wsdl:output message="tns:UploadBagScansResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadLogs">
+      <wsdl:documentation>upload log in/out activities</wsdl:documentation>
+      <wsdl:input message="tns:UploadLogsRequest" />
+      <wsdl:output message="tns:UploadLogsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarriers">
+      <wsdl:documentation>get list of carriers for given scanner</wsdl:documentation>
+      <wsdl:input message="tns:GetCarriersRequest" />
+      <wsdl:output message="tns:GetCarriersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCities">
+      <wsdl:documentation>get list of cities for given scanner</wsdl:documentation>
+      <wsdl:input message="tns:GetCitiesRequest" />
+      <wsdl:output message="tns:GetCitiesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierCity">
+      <wsdl:documentation>get list of cities for each carrier</wsdl:documentation>
+      <wsdl:input message="tns:GetCarrierCityRequest" />
+      <wsdl:output message="tns:GetCarrierCityResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <wsdl:documentation>get list of employees for each carrier</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeesRequest" />
+      <wsdl:output message="tns:GetEmployeesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyUpgrade">
+      <wsdl:documentation>get possible upgrade cab file information list for given current assembly versions</wsdl:documentation>
+      <wsdl:input message="tns:GetAssemblyUpgradeRequest" />
+      <wsdl:output message="tns:GetAssemblyUpgradeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <wsdl:documentation>download base64-encoded file content</wsdl:documentation>
+      <wsdl:input message="tns:GetFileRequest" />
+      <wsdl:output message="tns:GetFileResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlights">
+      <wsdl:documentation>get list of flights for given carrier departing from or arriving at given location during given dates</wsdl:documentation>
+      <wsdl:input message="tns:GetFlightsRequest" />
+      <wsdl:output message="tns:GetFlightsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHotBags">
+      <wsdl:documentation>get list of hot bags, i.e. bags to be transferred to another flight in limited time, to be unloaded from given flight</wsdl:documentation>
+      <wsdl:input message="tns:GetHotBagsRequest" />
+      <wsdl:output message="tns:GetHotBagsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMissingBags">
+      <wsdl:documentation>get list of missing bags, i.e. bags unloaded locally and yet to be loaded to to given flight</wsdl:documentation>
+      <wsdl:input message="tns:GetMissingBagsRequest" />
+      <wsdl:output message="tns:GetMissingBagsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TagTrakSyncBinding" type="tns:TagTrakSyncPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="GmtTime">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GmtTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadBagScans">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#UploadBagScans" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadLogs">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#UploadLogs" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarriers">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetCarriers" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCities">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetCities" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarrierCity">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetCarrierCity" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetEmployees" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyUpgrade">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetAssemblyUpgrade" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetFile" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlights">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetFlights" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHotBags">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetHotBags" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMissingBags">
+      <soap:operation soapAction="urn:TagTrakSyncwsdl#GetMissingBags" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:TagTrakSyncwsdl" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TagTrakSyncService">
+    <wsdl:port name="TagTrakSyncPort" binding="tns:TagTrakSyncBinding">
+      <soap:address location="http://henry.dev.asiscan.com/bagstats/docs/index.php?soap=tagtraksync" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

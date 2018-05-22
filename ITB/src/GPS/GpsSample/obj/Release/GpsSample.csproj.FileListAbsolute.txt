@@ -1,10 +1,10 @@
-C:\work\ITB\src\GPS\GpsSample\bin\Release\GpsSample.exe
-C:\work\ITB\src\GPS\GpsSample\bin\Release\GpsSample.pdb
-C:\work\ITB\src\GPS\GpsSample\bin\Release\Gps.Location.dll
-C:\work\ITB\src\GPS\GpsSample\bin\Release\Gps.Location.pdb
 C:\work\ITB\src\GPS\GpsSample\obj\Release\ResolveAssemblyReference.cache
 C:\work\ITB\src\GPS\GpsSample\obj\Release\GpsTest.Form1.resources
 C:\work\ITB\src\GPS\GpsSample\obj\Release\GpsSample.Properties.Resources.resources
 C:\work\ITB\src\GPS\GpsSample\obj\Release\GpsSample.csproj.GenerateResource.Cache
-C:\work\ITB\src\GPS\GpsSample\obj\Release\GpsSample.exe
 C:\work\ITB\src\GPS\GpsSample\obj\Release\GpsSample.pdb
+C:\work\ITB\src\GPS\GpsSample\bin\Release\GpsSample.exe
+C:\work\ITB\src\GPS\GpsSample\bin\Release\GpsSample.pdb
+C:\work\ITB\src\GPS\GpsSample\bin\Release\Gps.Location.dll
+C:\work\ITB\src\GPS\GpsSample\bin\Release\Gps.Location.pdb
+C:\work\ITB\src\GPS\GpsSample\obj\Release\GpsSample.exe

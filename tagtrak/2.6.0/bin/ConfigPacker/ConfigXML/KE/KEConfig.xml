@@ -1,0 +1,61 @@
+<User>
+		<myConfigVersion>2.5.1.0.0</myConfigVersion>
+		
+        <UserName>KAL</UserName>
+        <UserFullName>Korean Air</UserFullName>
+        <CarrierCode>KE</CarrierCode>
+        <FtpHostName>ftp.asiscan.com</FtpHostName>
+        <FtpPortNumber>21</FtpPortNumber>
+        <FtpLoginID>korean</FtpLoginID>
+        <FtpPassword>AbcaRe</FtpPassword>
+        <TransferPointOnScanForm>False</TransferPointOnScanForm>
+        <TailNumberOnScanForm>False</TailNumberOnScanForm>
+        <RejectReasonOnScanForm>False</RejectReasonOnScanForm>
+        <CanChangeLocationOnScanForm>False</CanChangeLocationOnScanForm>
+        <PasswordRequiredForLocationChangeOnScanForm>true</PasswordRequiredForLocationChangeOnScanForm>
+        <TreatTransferScansAsLoadScans>True</TreatTransferScansAsLoadScans>
+        <LoadScansRequireSelectionFromPreset>False</LoadScansRequireSelectionFromPreset>
+        <PresetsRequireDestinationSpecifications>True</PresetsRequireDestinationSpecifications>
+        <LockDownReleasedInAdminForm>False</LockDownReleasedInAdminForm>
+        <WarnOnDuplicateScan>False</WarnOnDuplicateScan>
+        <DisplayFlightValidationMessages>True</DisplayFlightValidationMessages>
+	    <MailScanEnabled>True</MailScanEnabled>
+	    <MailSimpleScanEnabled>True</MailSimpleScanEnabled>
+	<InternationalSimpleMailEnabled>True</InternationalSimpleMailEnabled>
+	<MessagesEnabled>True</MessagesEnabled>
+	<CargoScanEnabled>True</CargoScanEnabled>
+	<BaggageScanEnabled>True</BaggageScanEnabled>
+	<InternationalMailEnabled>True</InternationalMailEnabled>	
+    <DisplayInternationalPostOffices>True</DisplayInternationalPostOffices>
+    <IntlPromptCardit>True</IntlPromptCardit>
+    <IntlCartIdPattern>^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$</IntlCartIdPattern>
+    <MailCartIdPattern>^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$</MailCartIdPattern>
+ 
+    <CityList>
+    ABE, ACK, ACV, AGS, AHN, ALB, AMS, ANC, ANU, AOO, ART, ATL, AUA, AUG, AVL, AVP, AXA, AZO, BDA, BDL, BED, BFD, BGI, BGM, BGR, BHB, BHM, BIL, BKW, BLF, BNA, BOS, BRU, BTR, BTV, BUF, BWI, BZE, CAE, CAK, CBE, CDG, CHA, CHO, CHS, CID, CJJ, CKB, CLE, CLT, CMH, CRW, CUN, CVG, CZM, DAY, DCA, DDC, DEN, DFW, DSM, DTW, DUJ, DXB, EGE, EIS, ELH, ELM, ERI, EUG, EUX, EVV, EWN, EWR, EYW, EZE, FAT, FAY, FCO, FKL, FLL, FLO, FOE, FPO, FRA, FSD, FWA, GBD, GCK, GCM, GHB, GNV, GOT, GRR, GSO, GSP, GUC, GVA, HAJ, HDN, HGR, HHH, HKG, HKY, HPN, HSV, HTS, HVN, HYA, HYS, IAD, IAH, ICN, ICT, ILM, IND, IPT, ISP, ITH, JAN, JAX, JHW, JST, KIX, LAS, LAX, LBE, LEB, LEX, LGA, LGW, LIH, LIT, LNK, LNS, LRM, LWB, LYH, MAD, MAN, MBJ, MBS, MCI, MCO, MDT, MDW, MEL, MEM, MEX, MFR, MGM, MGW, MHH, MHK, MHT, MIA, MKE, MOB, MRY, MSN, MSP, MSS, MSY, MTJ, MUC, MVY, MYR, NAS, NEV, NRT, NUE, OAJ, OGG, OGS, OKC, OMA, ORD, ORF, PBI, PFN, PGV, PHF, PHL, PHX, PIT, PKB, PLS, PNS, PQI, PSP, PUJ, PUS, PVD, PWM, RDG, RDU, RIC, RKD, ROA, ROC, RSU, RSW, SAB, SAN, SAT, SAV, SBA, SBH, SBN, SBY, SCE, SDF, SDQ, SEA, SEL, SFO, SGF, SHD, SHV, SJO, SJU, SKB, SLN, SNA, SRQ, STL, STT, STX, SWF, SXM, SYD, SYR, TCB, TLH, TOL, TPA, TRI, TTN, TUL, TXL, TYS, UVF, VPS, XNA, YNY, YOW, YUL, YYZ, ZRH
+    </CityList>
+ 
+    <EthernetCityList>
+    ABE, ACK, ACV, AGS, AHN, ALB, AMS, ANC, ANU, AOO, ART, ATL, AUA, AUG, AVL, AVP, AXA, AZO, BDA, BDL, BED, BFD, BGI, BGM, BGR, BHB, BHM, BIL, BKW, BLF, BNA, BOS, BRU, BTR, BTV, BUF, BWI, BZE, CAE, CAK, CBE, CDG, CHA, CHO, CHS, CID, CJJ, CKB, CLE, CLT, CMH, CRW, CUN, CVG, CZM, DAY, DCA, DDC, DEN, DFW, DSM, DTW, DUJ, DXB, EGE, EIS, ELH, ELM, ERI, EUG, EUX, EVV, EWN, EWR, EYW, EZE, FAT, FAY, FCO, FKL, FLL, FLO, FOE, FPO, FRA, FSD, FWA, GBD, GCK, GCM, GHB, GNV, GOT, GRR, GSO, GSP, GUC, GVA, HAJ, HDN, HGR, HHH, HKG, HKY, HPN, HSV, HTS, HVN, HYA, HYS, IAD, IAH, ICN, ICT, ILM, IND, IPT, ISP, ITH, JAN, JAX, JHW, JST, KIX, LAS, LAX, LBE, LEB, LEX, LGA, LGW, LIH, LIT, LNK, LNS, LRM, LWB, LYH, MAD, MAN, MBJ, MBS, MCI, MCO, MDT, MDW, MEL, MEM, MEX, MFR, MGM, MGW, MHH, MHK, MHT, MIA, MKE, MOB, MRY, MSN, MSP, MSS, MSY, MTJ, MUC, MVY, MYR, NAS, NEV, NRT, NUE, OAJ, OGG, OGS, OKC, OMA, ORD, ORF, PBI, PFN, PGV, PHF, PHL, PHX, PIT, PKB, PLS, PNS, PQI, PSP, PUJ, PUS, PVD, PWM, RDG, RDU, RIC, RKD, ROA, ROC, RSU, RSW, SAB, SAN, SAT, SAV, SBA, SBH, SBN, SBY, SCE, SDF, SDQ, SEA, SEL, SFO, SGF, SHD, SHV, SJO, SJU, SKB, SLN, SNA, SRQ, STL, STT, STX, SWF, SXM, SYD, SYR, TCB, TLH, TOL, TPA, TRI, TTN, TUL, TXL, TYS, UVF, VPS, XNA, YNY, YOW, YUL, YYZ, ZRH
+    </EthernetCityList>
+ 
+       <OperationsList>
+           Possession,  Load, Delivery, Transfer, PartialOffload, CompleteOffload, Return 
+       </OperationsList>
+
+       <AdjunctCarrierList>LH, SK, SR, UA</AdjunctCarrierList>
+<IntlPostOfficeList>JP, IE, CA, DE, DK, GB, CH, NZ, AT, SG, IT, US</IntlPostOfficeList>
+<DefaultIntlPostOffice>US</DefaultIntlPostOffice>
+
+       <InternationalOperationsList>
+           Possession,  Load, Delivery, Partial Offload, Complete Offload, Offline Trns. Conveyed, Offline Trns. Received, Online Transfer, Return 
+       </InternationalOperationsList>
+ 
+       <IntlSimpleOperationsList>
+           Possession,  Delivery, Offline Trns. Received, Return 
+       </IntlSimpleOperationsList>
+       <CargoOperationsList>
+           Tender, Load, Remove, Delivery
+       </CargoOperationsList>
+      
+</User>

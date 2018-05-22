@@ -1,0 +1,19 @@
+[AVALANCHE]
+
+[STRINGS]
+"StartMenu"= "\Windows\Start Menu"
+"Programs"="\Windows\Start Menu\Programs"
+"Startup"="\Windows\Startup"
+
+[COPY]
+$FLASH$\*.*=$AVA$\*.*
+$FLASH$\Windows\*.*=$AVA$\Windows\*.*
+
+[SHORTCUT]
+"$Startup$\AvaMon.lnk"="$FLASH$\AvaInit.exe"
+"$StartMenu$\Avalanche.lnk"="$AVA$\Enabler.exe"
+"$Programs$\Avalanche.lnk"="$AVA$\Enabler.exe"
+
+[EXECUTE]
+"Executable"="$AVA$\Enabler.exe"
+CommandLine="/restore /silent"

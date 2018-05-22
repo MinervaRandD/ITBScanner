@@ -1,0 +1,5 @@
+C:\work\ITB-LAX\src\GPS\GPS\bin\Release\Gps.Location.dll
+C:\work\ITB-LAX\src\GPS\GPS\bin\Release\Gps.Location.pdb
+C:\work\ITB-LAX\src\GPS\GPS\obj\Release\ResolveAssemblyReference.cache
+C:\work\ITB-LAX\src\GPS\GPS\obj\Release\Gps.Location.dll
+C:\work\ITB-LAX\src\GPS\GPS\obj\Release\Gps.Location.pdb

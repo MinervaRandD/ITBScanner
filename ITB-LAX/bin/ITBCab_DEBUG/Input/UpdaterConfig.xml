@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <WebServiceUri>http://lax.itb.asiscan.com/scanner_interactions</WebServiceUri>
+  <InstallDir>\Application</InstallDir>
+  <AutoUpdateApplications>ITB,AsiUpdater,ASINetTest</AutoUpdateApplications> <!-- List of apps to be updated (delimited by comma) -->
+  <CheckForUpgrade>300</CheckForUpgrade>  <!-- Check for upgrade every X seconds, default 300 seconds -->
+  <DownloadRetries>3</DownloadRetries>
+  <NotifyUser>300</NotifyUser>  <!-- Notify user every X seconds if upgrade is available, default 300 seconds -->
+  <ChunkSize>51200</ChunkSize> <!-- Bytes -->
+  <ChunkDownloadInterval>1</ChunkDownloadInterval> <!-- Seconds -->
+  <EnableScheduledUpgrade>true</EnableScheduledUpgrade> <!-- default value = true, all other values = false -->
+  <ScannerUpgradeTime>14:00</ScannerUpgradeTime> <!-- Start time in UTC, this value is overwritten from web service -->
+  <ScannerUpgradeTimeWindowMinutes>0</ScannerUpgradeTimeWindowMinutes> <!-- Initial default value = 0, this value is overwritten from web service -->
+</Configuration>

@@ -1,0 +1,32 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Aviation Software Inc."
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="TagTrak"
+InstallDir=%CE1%\TagTrak
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=4.99
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+CopyFiles=Files.Common
+
+[SourceDisksNames]
+1=,"Common1",,"C:\TagTrakBaggage\BatchBuilder\Dotfuscated\"
+
+[SourceDisksFiles]
+TagTrak.exe=1
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+Shortcuts=0,%CE2%\Start Menu
+
+[Files.Common]
+TagTrak.exe,,,0x40000000
+
+[Shortcuts]
+TagTrak,0,TagTrak.exe,%CE11%

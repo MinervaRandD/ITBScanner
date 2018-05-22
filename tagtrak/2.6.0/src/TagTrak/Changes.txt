@@ -1,0 +1,111 @@
+
+Change Log
+==========
+
+2.6.0
+-----
+
+* Unload entire flight functionality. If a bar code is scanned in the Unload operation from a flight for 
+  which we know the loaded barcodes, the user gets a prompt asking if they want to unload the entire flight.
+  Answering "Yes" will unload all barcodes Loaded onto that flight, "No" will unload only that bar code.
+
+* Updated Symbol and Dolphin support including scanner beam control.
+
+* TagTrak now relies exclusively on the server for time zone information and the city list. This ensures 
+  that TagTrak always has the most accurate and up to date time zone and city information.
+
+2.5.8
+-----
+
+* Fixed invalid preset record on upgrade from old version.
+
+2.5.7
+-----
+
+* Fixed FTPTime offset.
+* Fixed Unload International scan.
+
+2.5.6
+-----
+
+* Fixed domestic delivery scans.
+
+2.5.5
+-----
+
+* New more consistent versioning scheme [Major].[Minor].[Revision].[Internal Build].
+	+ [Major].[Minor]  - Denote major and minor program updates.
+	+ [Revision]  - Denotes a small feature addition or bug fix.
+	+ [Internal Build]  - Denotes the build number. It's used for internal testing and is not always shown.
+	
+* Fixed the	"Unload Entire Cart" feature. It will now transmit the necessary information in the correct format.
+
+* Implemented NTP time synchronization. This is done before sending scan data and requires UDP connectivity, 
+  because of this it does not work with ActiveSync. In that case, it will fall back to the FTPtime method 
+  of synchronizing the clock. Accuracy of NTP time synchronization is in the millisecond range.
+
+* Improved the accuracy of the FTPtime synchronization method. It's accuracy is now in the seconds range.
+
+* Re-mapping of operation names is now possible via. the XML configuration files. Each carrier can now have 
+  different operation names displayed in the operations combo box. This is effective for Domestic and 
+  International mail.
+
+* Support for more time zones and cities added.
+
+* Flight schedule support. When flight schedule data is available and when using applicable operation the 
+  flight/destination/origin will be checked for validity and a warning will pop up on a mismatch allowing 
+  the user to ignore the current scan.
+  
+* Changed how unload entire cart works, answering "No" to "Do you want to unload the entire cart/flight?"
+  will only unload that one item.
+  
+* Daylight savings time 2007 fix.
+
+Internal
+========
+
+2.6.0
+-----
+
+- Reorganized branch to better comply with the new versioning scheme.
+- Implemented project level Obfuscation for all supported devices.
+- Fixed scanner beam control for Symbol.
+- Fixed FTP disconnection problem on password file download.
+- Implemented IDisposable support for scanReaderClass.
+- Removed space from "NTP Server" and "Last Time Query" header.
+- Fixed unload entire cart.
+- Added not for distribution messages throughout the program for Debug versions.
+- Removed pointless "U" from version number.
+- Removed old hard coded list of cities/timezones/DST rules (this is BIG).
+- Fixed Timezone information download from server.
+- Implemented new Date/Time/Timezone infrasrtructure.
+- Changed logic to allow (and force) manual time setting when no time zone data is available. This is only done once.
+- New "city list" infrastructure implemented.
+- Added airport codes downloading from FTP server. This is now used for routing entry if no routing cities specified in config.
+- Implemented XML config FTP information override on a per city basis.
+- Implemented time zone confidence levels, in order of reliability: UTC0, AskedUser, LoadedFromFile, ServerObtained.
+- UTC offset information is now saved with scan records, if offset changes while scanning, we consider the results mixed and mark it so with a header record.
+- UTC scanner/server offsets are sent up to server in scan headers.
+- Time zone file is now names "tz2.gz" and is gunzipped to "tz2.txt"
+- Do not save user entered time to file.
+- Fixed time bomb in password validation routines, could potentially cause a crash on password entry if program was running >120mins.
+- Fixed crash on city removal from config file.
+- Fixed Manifest Summary screen.
+- Added comments to the all important scan processing function for international, including bar code definition.
+- Fixed entire city list for Admin area.
+- Added comments to the all important scan processing function for domestic, including bar code definition.
+- Phased out the use of the old Schedule.txt file.
+- Added support for gzipped Routings.gz.
+- Fixed ObjectDisposedException if finish button was tapped instantly after the Send process finished.
+- Added notice to Manifest Summary screen explaining that the information displayed may not be current.
+- Fixed unknown time zone error if exit clicked on init form before downloading time zone file.
+- Save time zone used when doing cart upload.
+- Save time zone used when doing manifest creation.
+- Save time zone used when doing bin change.
+- Fixed flight status.
+- Save time zone used when doing flight status save.
+- Added date to manifest summary screen.
+- Added message when manifest record is saved successfully.
+- Renamed scan header "Mixed Scanner UTC" to "Mixed Scanner UTC Offset" for clarity.
+- Fixed domestic routings parsing.
+- Fixed scanner time zone reporting issue. Time zone would be reported as "NaN" if scanner had cold booted, scanned, warm booted, and during the whole time never synced to FTP.

@@ -1,0 +1,8 @@
+<distributions formatversion="1">
+  <distribution name="LI">
+    <carrier>LI</carrier>
+  </distribution>
+  <distribution name="99">
+    <carrier>99</carrier>
+  </distribution>
+</distributions>

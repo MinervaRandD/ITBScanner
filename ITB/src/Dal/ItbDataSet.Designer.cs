@@ -7417,7 +7417,7 @@ and not exists (
             this._commandCollection[6].Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@barcode", global::System.Data.SqlDbType.NChar, 10, global::System.Data.ParameterDirection.Input, true, 0, 0, "Barcode", global::System.Data.DataRowVersion.Current, null));
             this._commandCollection[7] = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = "SELECT TOP(100) Barcode, Cleared, Damaged, Id, LocationCode, OperationCode, ScanTime, Uplo" +
+            this._commandCollection[7].CommandText = "SELECT TOP(10) Barcode, Cleared, Damaged, Id, LocationCode, OperationCode, ScanTime, Uplo" +
                 "aded, UserName FROM Scan AS s WHERE (Uploaded = 0) ORDER BY ScanTime";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[8] = new global::System.Data.SqlServerCe.SqlCeCommand();

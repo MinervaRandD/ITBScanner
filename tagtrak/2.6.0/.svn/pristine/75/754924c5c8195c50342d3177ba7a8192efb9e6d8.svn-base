@@ -1,0 +1,57 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: Rijndael, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Rijndael\Debug\RSP000011.rsp" with contents
+[
+/Od /AI "C:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Debug" /D "WIN32" /D "_DEBUG" /D "_WINDLL" /D "_MBCS" /FD /EHsc /MTd /GS /Yu"stdafx.h" /Fp"Debug/Rijndael.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Zi /clr /TP /FU "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\mscorlib.dll"
+/FU "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+/FU "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"  /Zl
+".\Rijndael.cpp"
+".\AssemblyInfo.cpp"
+]
+Creating command line "cl.exe @"c:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Rijndael\Debug\RSP000011.rsp" /nologo"
+Creating temporary file "c:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Rijndael\Debug\RSP000012.rsp" with contents
+[
+/Od /AI "C:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Debug" /D "WIN32" /D "_DEBUG" /D "_WINDLL" /D "_MBCS" /FD /EHsc /MTd /GS /Yc"stdafx.h" /Fp"Debug/Rijndael.pch" /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Zi /clr /TP /FU "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\mscorlib.dll"
+/FU "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+/FU "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"  /Zl
+".\Stdafx.cpp"
+]
+Creating command line "cl.exe @"c:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Rijndael\Debug\RSP000012.rsp" /nologo"
+Creating command line "rc.exe /fo"Debug/app.res" ".\app.rc""
+Creating temporary file "c:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Rijndael\Debug\RSP000013.rsp" with contents
+[
+/OUT:"C:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Debug\Rijndael.dll" /INCREMENTAL /NOLOGO /DLL /DEBUG /ASSEMBLYDEBUG /PDB:"C:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Debug/Rijndael.pdb" /FIXED:No /noentry nochkclr.obj mscoree.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "\Program Files\Microsoft Visual Studio .NET 2003\Sdk\v1.1\Lib\mscoree.lib"
+".\Debug\AssemblyInfo.obj"
+".\Debug\Rijndael.obj"
+".\Debug\Stdafx.obj"
+".\Debug\app.res"
+]
+Creating command line "link.exe @"c:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Rijndael\Debug\RSP000013.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+Stdafx.cpp
+Compiling...
+Rijndael.cpp
+AssemblyInfo.cpp
+Generating Code...
+Compiling resources...
+Linking...
+nochkclr.obj : warning LNK4099: PDB 'libc.pdb' was not found with 'C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\lib\nochkclr.obj' or at 'C:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Debug\libc.pdb'; linking object as if no debug info
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Airline Software\Projects\TagTrak\TagTrak Support Libraries\Rijndael\Rijndael\Debug\BuildLog.htm"
+Rijndael - 0 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

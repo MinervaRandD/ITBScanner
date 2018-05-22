@@ -1,0 +1,14 @@
+ASI Net Tester Change Log
+=========================
+
+1.0
+---
+
+- Added RAS connection details to Network Settings test. RAS info is P/Invoked from OS.
+- Added RAS output for default connection.
+
+Base
+----
+
+ASI Net tester is a network testing and reporting platform. It is fully multi-threaded and easily extensible. 
+It also has some nifty UI management.

@@ -1,0 +1,76 @@
+
+-- NEW SECTION --
+
+4/9/2007 11:28:33 AM: Adapter Info
+4/9/2007 11:28:33 AM: ------------
+4/9/2007 11:28:33 AM: Adapter(589826): SWLD26C1
+4/9/2007 11:28:33 AM: Type: Ethernet
+4/9/2007 11:28:33 AM: IP: 192.168.1.107
+4/9/2007 11:28:33 AM: Subnet: 255.255.255.0
+4/9/2007 11:28:33 AM: Gateway: 192.168.1.1
+4/9/2007 11:28:33 AM: DHCP Enabled: True
+4/9/2007 11:28:33 AM: DHCP Server: 192.168.1.1
+4/9/2007 11:28:33 AM: *Description: 
+4/9/2007 11:28:33 AM: *HasWins: True
+4/9/2007 11:28:33 AM: *LeaseExpires: 4/10/2007 3:28:03 PM
+4/9/2007 11:28:33 AM: *LeaseObtained: 4/9/2007 3:28:03 PM
+4/9/2007 11:28:33 AM: *MacAddress: 00-02-78-49-ED-AD-00-00
+4/9/2007 11:28:33 AM: *PrimaryWinsServer: 
+4/9/2007 11:28:33 AM: *SecondaryWinsServer: 
+4/9/2007 11:28:33 AM: Wireless: False
+4/9/2007 11:28:33 AM: 
+4/9/2007 11:28:33 AM: 
+4/9/2007 11:28:33 AM: Connection Info
+4/9/2007 11:28:34 AM: ---------------
+4/9/2007 11:28:34 AM: Connection Status: Unknown
+4/9/2007 11:28:34 AM: Timeout: 5000
+4/9/2007 11:28:34 AM: Connections
+4/9/2007 11:28:34 AM: -----------
+4/9/2007 11:28:34 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+4/9/2007 11:28:34 AM: Description: My Work Network
+4/9/2007 11:28:34 AM: 
+4/9/2007 11:28:34 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+4/9/2007 11:28:34 AM: Description: My ISP
+4/9/2007 11:28:34 AM: 
+4/9/2007 11:28:34 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+4/9/2007 11:28:34 AM: Description: Work
+4/9/2007 11:28:34 AM: 
+4/9/2007 11:28:34 AM: GUID: f28d1f74-72be-4394-a4a7-4e296219390c
+4/9/2007 11:28:34 AM: Description: Secure WAP Network
+4/9/2007 11:28:34 AM: 
+4/9/2007 11:28:34 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+4/9/2007 11:28:34 AM: Description: The WAP Network
+4/9/2007 11:28:34 AM: 
+4/9/2007 11:28:34 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+4/9/2007 11:28:35 AM: Description: The Internet
+4/9/2007 11:28:35 AM: 
+4/9/2007 11:28:35 AM: 
+4/9/2007 11:28:35 AM: Ping ftp.asiscan.com
+4/9/2007 11:28:35 AM: --------------------
+4/9/2007 11:28:35 AM: Status: Success
+4/9/2007 11:28:35 AM: Ping Delay: 0ms
+4/9/2007 11:28:36 AM: Address: 67.29.176.35
+4/9/2007 11:28:36 AM: RTT: 80ms
+4/9/2007 11:28:36 AM: TTL: 53
+4/9/2007 11:28:36 AM: 
+4/9/2007 11:28:36 AM: 
+4/9/2007 11:28:36 AM: FTP
+4/9/2007 11:28:36 AM: ---
+4/9/2007 11:28:38 AM: Connect Result: Success
+4/9/2007 11:28:38 AM: Connect Delay: 1000ms
+4/9/2007 11:28:38 AM: Login Result: Success
+4/9/2007 11:28:38 AM: Login Delay: 0ms
+4/9/2007 11:28:39 AM: Download Result: Success
+4/9/2007 11:28:39 AM: Disconnect Result: Success
+4/9/2007 11:28:39 AM: 
+4/9/2007 11:28:39 AM: 
+4/9/2007 11:28:39 AM: NTP
+4/9/2007 11:28:39 AM: ---
+4/9/2007 11:28:39 AM: Server: pool.ntp.org
+4/9/2007 11:28:39 AM: Resolution: Success
+4/9/2007 11:28:39 AM: Resolution Delay: 0ms
+4/9/2007 11:28:40 AM: Time Retrieval: Success
+4/9/2007 11:28:40 AM: Time Retrieval Delay: 1000ms
+4/9/2007 11:28:40 AM: Time Offset: 00:00:02.4009029
+4/9/2007 11:28:40 AM: 
+4/9/2007 11:28:40 AM: 

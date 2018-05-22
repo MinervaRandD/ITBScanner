@@ -1,0 +1,162 @@
+2003 Scanner, no 802, no cell.
+
+-- Ethernet --
+
+4/6/2007 12:24:21 PM: Adapter Info
+4/6/2007 12:24:21 PM: ------------
+4/6/2007 12:24:21 PM: Adapter(2): LAN90001
+4/6/2007 12:24:21 PM: Type: Ethernet
+4/6/2007 12:24:21 PM: Wireless: False
+4/6/2007 12:24:21 PM: IP: 192.168.10.237
+4/6/2007 12:24:21 PM: Subnet: 255.255.255.0
+4/6/2007 12:24:21 PM: Gateway: 192.168.10.1
+4/6/2007 12:24:21 PM: DHCP Enabled: True
+4/6/2007 12:24:21 PM: DHCP Server: 192.168.10.88
+4/6/2007 12:24:21 PM: *Description: 
+4/6/2007 12:24:21 PM: *HasWins: True
+4/6/2007 12:24:21 PM: *LeaseExpires: 4/6/2007 6:24:12 PM
+4/6/2007 12:24:21 PM: *LeaseObtained: 4/6/2007 4:24:12 PM
+4/6/2007 12:24:21 PM: *MacAddress: 00-10-40-09-5F-75-00-00
+4/6/2007 12:24:21 PM: *PrimaryWinsServer: 192.168.10.101
+4/6/2007 12:24:21 PM: *SecondaryWinsServer: 
+4/6/2007 12:24:21 PM: 
+4/6/2007 12:24:22 PM: 
+4/6/2007 12:24:22 PM: Connection Info
+4/6/2007 12:24:22 PM: ---------------
+4/6/2007 12:24:22 PM: Connection Status: Unknown
+4/6/2007 12:24:22 PM: Timeout: 5000
+4/6/2007 12:24:22 PM: Connections
+4/6/2007 12:24:22 PM: -----------
+4/6/2007 12:24:22 PM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+4/6/2007 12:24:22 PM: Description: My Work Network
+4/6/2007 12:24:22 PM: 
+4/6/2007 12:24:22 PM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+4/6/2007 12:24:22 PM: Description: My ISP
+4/6/2007 12:24:22 PM: 
+4/6/2007 12:24:22 PM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+4/6/2007 12:24:22 PM: Description: Work
+4/6/2007 12:24:22 PM: 
+4/6/2007 12:24:22 PM: GUID: f28d1f74-72be-4394-a4a7-4e296219390c
+4/6/2007 12:24:22 PM: Description: Secure WAP Network
+4/6/2007 12:24:22 PM: 
+4/6/2007 12:24:22 PM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+4/6/2007 12:24:23 PM: Description: The WAP Network
+4/6/2007 12:24:23 PM: 
+4/6/2007 12:24:23 PM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+4/6/2007 12:24:23 PM: Description: The Internet
+4/6/2007 12:24:23 PM: 
+4/6/2007 12:24:23 PM: 
+4/6/2007 12:24:23 PM: Ping
+4/6/2007 12:24:23 PM: ----
+4/6/2007 12:24:23 PM: Status: Success
+4/6/2007 12:24:23 PM: Address: 67.29.176.35
+4/6/2007 12:24:23 PM: RTT: 90ms
+4/6/2007 12:24:24 PM: TTL: 55
+4/6/2007 12:24:24 PM: 
+4/6/2007 12:24:24 PM: 
+4/6/2007 12:24:24 PM: FTP
+4/6/2007 12:24:24 PM: ---
+4/6/2007 12:24:28 PM: Connect Result: Success
+4/6/2007 12:24:29 PM: Login Result: Success
+4/6/2007 12:24:31 PM: Download Result: Success
+4/6/2007 12:24:31 PM: Disconnect Result: Success
+4/6/2007 12:24:31 PM: 
+4/6/2007 12:24:31 PM: 
+4/6/2007 12:24:31 PM: NTP
+4/6/2007 12:24:31 PM: ---
+4/6/2007 12:24:31 PM: Server: pool.ntp.org
+4/6/2007 12:24:32 PM: Resolution: Success
+4/6/2007 12:24:32 PM: Resolution Delay: 0ms
+4/6/2007 12:24:32 PM: Time Retrieval: Success
+4/6/2007 12:24:32 PM: Time Retrieval Delay: 0ms
+4/6/2007 12:24:32 PM: Time Offset: -00:00:02.3909945
+4/6/2007 12:24:32 PM: 
+4/6/2007 12:24:32 PM: 
+
+-- USB --
+
+4/6/2007 12:25:09 PM: Adapter Info
+4/6/2007 12:25:09 PM: ------------
+4/6/2007 12:25:09 PM: Adapter(2): LAN90001
+4/6/2007 12:25:09 PM: Type: Ethernet
+4/6/2007 12:25:09 PM: Wireless: False
+4/6/2007 12:25:10 PM: IP: 0.0.0.0
+4/6/2007 12:25:10 PM: Subnet: 0.0.0.0
+4/6/2007 12:25:10 PM: Gateway: 
+4/6/2007 12:25:10 PM: DHCP Enabled: True
+4/6/2007 12:25:10 PM: DHCP Server: 192.168.10.88
+4/6/2007 12:25:10 PM: *Description: 
+4/6/2007 12:25:10 PM: *HasWins: True
+4/6/2007 12:25:10 PM: *LeaseExpires: 4/6/2007 6:24:12 PM
+4/6/2007 12:25:10 PM: *LeaseObtained: 4/6/2007 4:24:12 PM
+4/6/2007 12:25:10 PM: *MacAddress: 00-10-40-09-5F-75-00-00
+4/6/2007 12:25:10 PM: *PrimaryWinsServer: 192.168.10.101
+4/6/2007 12:25:10 PM: *SecondaryWinsServer: 
+4/6/2007 12:25:10 PM: 
+4/6/2007 12:25:10 PM: Adapter(720899): USB Cable:
+4/6/2007 12:25:10 PM: Type: PPP
+4/6/2007 12:25:10 PM: Wireless: False
+4/6/2007 12:25:10 PM: IP: 192.168.55.101
+4/6/2007 12:25:10 PM: Subnet: 255.255.255.0
+4/6/2007 12:25:10 PM: Gateway: 192.168.55.100
+4/6/2007 12:25:10 PM: DHCP Enabled: False
+4/6/2007 12:25:10 PM: DHCP Server: 
+4/6/2007 12:25:10 PM: *Description: 
+4/6/2007 12:25:10 PM: *HasWins: False
+4/6/2007 12:25:10 PM: *LeaseExpires: 1/1/1970 12:00:00 AM
+4/6/2007 12:25:10 PM: *LeaseObtained: 1/1/1970 12:00:00 AM
+4/6/2007 12:25:10 PM: *MacAddress: 00-00-00-00-00-00-00-00
+4/6/2007 12:25:11 PM: *PrimaryWinsServer: 
+4/6/2007 12:25:11 PM: *SecondaryWinsServer: 
+4/6/2007 12:25:11 PM: 
+4/6/2007 12:25:11 PM: 
+4/6/2007 12:25:11 PM: Connection Info
+4/6/2007 12:25:11 PM: ---------------
+4/6/2007 12:25:11 PM: Connection Status: Unknown
+4/6/2007 12:25:11 PM: Timeout: 5000
+4/6/2007 12:25:11 PM: Connections
+4/6/2007 12:25:11 PM: -----------
+4/6/2007 12:25:11 PM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+4/6/2007 12:25:11 PM: Description: My Work Network
+4/6/2007 12:25:11 PM: 
+4/6/2007 12:25:11 PM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+4/6/2007 12:25:11 PM: Description: My ISP
+4/6/2007 12:25:11 PM: 
+4/6/2007 12:25:11 PM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+4/6/2007 12:25:11 PM: Description: Work
+4/6/2007 12:25:11 PM: 
+4/6/2007 12:25:11 PM: GUID: f28d1f74-72be-4394-a4a7-4e296219390c
+4/6/2007 12:25:11 PM: Description: Secure WAP Network
+4/6/2007 12:25:11 PM: 
+4/6/2007 12:25:12 PM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+4/6/2007 12:25:12 PM: Description: The WAP Network
+4/6/2007 12:25:12 PM: 
+4/6/2007 12:25:12 PM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+4/6/2007 12:25:12 PM: Description: The Internet
+4/6/2007 12:25:12 PM: 
+4/6/2007 12:25:12 PM: 
+4/6/2007 12:25:12 PM: Ping
+4/6/2007 12:25:12 PM: ----
+4/6/2007 12:25:17 PM: Status: TimedOut
+4/6/2007 12:25:18 PM: Address: 0.0.0.0
+4/6/2007 12:25:18 PM: RTT: 0ms
+4/6/2007 12:25:18 PM: TTL: 0
+4/6/2007 12:25:18 PM: 
+4/6/2007 12:25:18 PM: 
+4/6/2007 12:25:18 PM: FTP
+4/6/2007 12:25:18 PM: ---
+4/6/2007 12:25:19 PM: Connect Result: Success
+4/6/2007 12:25:19 PM: Login Result: Success
+4/6/2007 12:25:21 PM: Download Result: Success
+4/6/2007 12:25:21 PM: Disconnect Result: Success
+4/6/2007 12:25:21 PM: 
+4/6/2007 12:25:21 PM: 
+4/6/2007 12:25:21 PM: NTP
+4/6/2007 12:25:21 PM: ---
+4/6/2007 12:25:21 PM: Server: pool.ntp.org
+4/6/2007 12:25:21 PM: Resolution: Success
+4/6/2007 12:25:21 PM: Resolution Delay: 0ms
+4/6/2007 12:25:23 PM: Time Retrieval: Failed
+4/6/2007 12:25:23 PM: Time Retrieval Delay: 2000ms
+4/6/2007 12:25:23 PM: 
+4/6/2007 12:25:23 PM: 

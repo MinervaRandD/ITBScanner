@@ -1,0 +1,134 @@
+<User>
+	<myConfigVersion>2.5.1.7.1</myConfigVersion>
+
+        <UserName>AirTran</UserName>
+        <UserFullName>AirTran, Inc.</UserFullName>
+        <CarrierCode>FL</CarrierCode>
+        <FtpHostName>ftp.asiscan.com</FtpHostName>
+        <FtpPortNumber>21</FtpPortNumber>
+        <FtpLoginID>airtran</FtpLoginID>
+        <FtpPassword>c@rg0k105k</FtpPassword>
+        <TransferPointOnScanForm>true</TransferPointOnScanForm>
+        <TailNumberOnScanForm>true</TailNumberOnScanForm>
+        <RejectReasonOnScanForm>true</RejectReasonOnScanForm>
+        <CanChangeLocationOnScanForm>true</CanChangeLocationOnScanForm>
+        <PasswordRequiredForLocationChangeOnScanForm>true</PasswordRequiredForLocationChangeOnScanForm>
+        <TreatTransferScansAsLoadScans>true</TreatTransferScansAsLoadScans>
+        <LoadScansRequireSelectionFromPreset>false</LoadScansRequireSelectionFromPreset>
+        <PresetsRequireDestinationSpecifications>false</PresetsRequireDestinationSpecifications>
+        <WarnOnDuplicateScan>False</WarnOnDuplicateScan>
+        <DisplayFlightValidationMessages>True</DisplayFlightValidationMessages>
+	<LockDownReleasedInAdminForm>False</LockDownReleasedInAdminForm>
+	<CargoScanEnabled>True</CargoScanEnabled>
+	<BaggageScanEnabled>True</BaggageScanEnabled>
+
+       <CityList>
+<ATL><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></ATL>
+
+<BMI><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></BMI>
+
+<BOS><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></BOS>
+
+<BUF><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></BUF>
+
+<BWI><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></BWI>
+
+<CAK><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></CAK>
+
+<CLT><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></CLT>
+
+<DAY><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DAY>
+
+<DCA><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DCA>
+
+<DEN><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DEN>
+
+<DFW><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DFW>
+
+<DTW><Wireless802.11>True</Wireless802.11><Wireless>True</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DTW>
+
+<EWR><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></EWR>
+
+<FLL><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></FLL>
+
+<FNT><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></FNT>
+
+<FPO><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></FPO>
+
+<GPT><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></GPT>
+
+<GSO><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></GSO>
+
+<HOU><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></HOU>
+
+<IAD><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></IAD>
+
+<ICT><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></ICT>
+
+<IND><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></IND>
+
+<JAX><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></JAX>
+
+<LAS><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></LAS>
+
+<LAX><Wireless802.11>True</Wireless802.11><Wireless>True</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></LAX>
+
+<LGA><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></LGA>
+
+<MCI><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MCI>
+
+<MCO><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MCO>
+
+<MDW><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MDW>
+
+<MEM><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MEM>
+
+<MIA><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MIA>
+
+<MKE><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MKE>
+
+<MLI><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MLI>
+
+<MSP><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MSP>
+
+<MSY><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MSY>
+
+<MYR><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MYR>
+
+<PBI><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></PBI>
+
+<PHF><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></PHF>
+
+<PHL><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></PHL>
+
+<PIT><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></PIT>
+
+<PNS><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></PNS>
+
+<RIC><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></RIC>
+
+<RDU><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></RDU>
+
+<ROC><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></ROC>
+
+<RSW><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></RSW>
+
+<SAV><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></SAV>
+
+<SFO><Wireless802.11>True</Wireless802.11><Wireless>True</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></SFO>
+
+<TLH><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></TLH>
+
+<TPA><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>False</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></TPA>
+
+       </CityList>
+ 
+       <OperationsList>
+           Possession,  Load, Delivery, Transfer, PartialOffload, CompleteOffload, Return 
+       </OperationsList>
+
+       <CargoOperationsList>
+           Acceptance, Load, Unload, Delivery, Offload, Online Transfer, Offline Transfer, Warehouse Move
+       </CargoOperationsList>
+
+</User>

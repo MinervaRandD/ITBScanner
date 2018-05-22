@@ -1,0 +1,8 @@
+Warning: Section [DefaultInstall] key "AddReg" - there are no section entries to process
+Warning: Section [DestinationDirs] key "Cabs" is not using the string "%InstallDir%"
+Warning: Section [DestinationDirs] key "Start1" is not using the string "%InstallDir%"
+Warning: Section [DestinationDirs] key "Start2" is not using the string "%InstallDir%"
+Warning: Section [DestinationDirs] key "CORE" is not using the string "%InstallDir%"
+Warning: Section [DestinationDirs] key "CORE_Modules_Installed" is not using the string "%InstallDir%"
+Warning: Section [Start1] has no data
+Warning: Section [DefaultInstall] key "AddReg" - there are no section entries to process

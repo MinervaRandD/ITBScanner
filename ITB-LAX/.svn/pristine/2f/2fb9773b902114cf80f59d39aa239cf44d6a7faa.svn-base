@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Version>LAX-MC75-1.0</Version>
+  <WebServiceUri>http://lax.itb.asiscan.com/scanner_interactions</WebServiceUri>
+  <DbFilePath>\Program Files\InterBag\Itb.sdf</DbFilePath>
+  <MisdropWarning>false</MisdropWarning>
+  <GetLocationByGpsData>false</GetLocationByGpsData>
+  <FogBugzSettings>
+    <Uri>https://help.asiscan.com/scoutSubmit.php</Uri>
+    <Project>InterBag</Project>
+    <Area>Scanner Software</Area>
+    <User>Bug Reports Bird</User>
+    <Email>noreply@asiscan.com</Email>
+  </FogBugzSettings>
+</Configuration>

@@ -1,0 +1,66 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Aviation Software, Inc."
+CESignature="$Windows CE$"
+
+[CEDevice]
+VersionMin=3.0
+VersionMax=100
+
+[CEStrings]
+InstallDir="\SDMMC Disk\"
+AppName="TagTrak Installer"
+
+[Strings]
+SDMMC="\SDMMC Disk\"
+Flash="\Flash File Store\"
+CABS="cabfiles\"
+OTH="2577\"
+PWD="C:\TagTrakBaggage\BatchBuilder\"
+
+[DefaultInstall]
+CopyFiles=Cabs,Start1,Start2
+
+[SourceDisksNames]
+1=,"BuildSource",,"%PWD%cabs"
+2=,"Common2",,"%PWD%Intermec Files"
+3=,"Common3",,"%PWD%Intermec Files\PPC2003"
+4=,"Common4",,"%PWD%ARM Files"
+
+[SourceDisksFiles]
+TagTrak.cab=1
+TagTrakLib.cab=1
+Resources.cab=1
+Baggage.cab=1
+autouser.dat=3
+autorun.dat=3
+autorun.exe=3
+autocab.exe=3
+"RegEnableAndFlush Mobile 2003.exe"=3
+NETCFv2.ppc.armv4.cab=4
+sqlce30.ppc.wce4.armv4.CAB=4
+sqlce30.repl.ppc.wce4.armv4.CAB=4
+
+
+[DestinationDirs]
+Cabs=0,%SDMMC%%CABS%
+Start1=0,%Flash%%OTH%
+Start2=0,%SDMMC%%OTH%
+
+[Cabs]
+TagTrak.cab,,,0x40000000
+TagTrakLib.cab,,,0x40000000
+Baggage.cab,,,0x40000000
+Resources.cab,,,0x40000000
+FCDotNet.cab,NETCFv2.ppc.armv4.cab,,0x40000000
+SqlCe.cab,sqlce30.ppc.wce4.armv4.CAB,,0x40000000
+SqlCe.repl.cab,sqlce30.repl.ppc.wce4.armv4.CAB,,0x40000000
+
+[Start1]
+
+[Start2]
+autorun.exe,,,0x40000000
+autorun.dat,,,0x40000000
+autocab.exe,,,0x40000000
+autouser.dat,,,0x4000000
+"RegEnableAndFlush Mobile 2003.exe",,,0x4000000

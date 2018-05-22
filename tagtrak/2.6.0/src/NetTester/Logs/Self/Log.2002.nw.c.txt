@@ -1,0 +1,211 @@
+2002, no 802, cell (CORE not running)
+
+-- Disconnected --
+
+9/4/2001 4:35:03 AM: Adapter Info
+9/4/2001 4:35:03 AM: ------------
+9/4/2001 4:35:03 AM: Adapter(2): lan90001
+9/4/2001 4:35:03 AM: Type: Ethernet
+9/4/2001 4:35:03 AM: IP: 192.168.10.239
+9/4/2001 4:35:03 AM: Subnet: 255.255.255.0
+9/4/2001 4:35:03 AM: Gateway: 192.168.10.1
+9/4/2001 4:35:03 AM: DHCP Enabled: True
+9/4/2001 4:35:03 AM: DHCP Server: 192.168.10.88
+9/4/2001 4:35:03 AM: *Description: INTERMEC LAN9000 Ethernet Adapter
+9/4/2001 4:35:03 AM: *HasWins: True
+9/4/2001 4:35:03 AM: *LeaseExpires: 9/4/2001 10:32:56 AM
+9/4/2001 4:35:03 AM: *LeaseObtained: 9/4/2001 8:32:56 AM
+9/4/2001 4:35:04 AM: *MacAddress: 00-10-40-03-4A-10-00-00
+9/4/2001 4:35:04 AM: *PrimaryWinsServer: 192.168.10.101
+9/4/2001 4:35:04 AM: *SecondaryWinsServer: 
+9/4/2001 4:35:04 AM: Wireless Error: True
+9/4/2001 4:35:04 AM: 
+9/4/2001 4:35:04 AM: 
+9/4/2001 4:35:04 AM: Connection Info
+9/4/2001 4:35:05 AM: ---------------
+9/4/2001 4:35:05 AM: Connection Status: Unknown
+9/4/2001 4:35:05 AM: Timeout: 5000
+9/4/2001 4:35:05 AM: Connections
+9/4/2001 4:35:05 AM: -----------
+9/4/2001 4:35:05 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+9/4/2001 4:35:05 AM: Description: Default Internet Settings
+9/4/2001 4:35:05 AM: 
+9/4/2001 4:35:05 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+9/4/2001 4:35:05 AM: Description: The WAP Network
+9/4/2001 4:35:05 AM: 
+9/4/2001 4:35:05 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+9/4/2001 4:35:06 AM: Description: Default Work Settings
+9/4/2001 4:35:06 AM: 
+9/4/2001 4:35:06 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+9/4/2001 4:35:06 AM: Description: Internet Settings
+9/4/2001 4:35:06 AM: 
+9/4/2001 4:35:06 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+9/4/2001 4:35:06 AM: Description: Work Settings
+9/4/2001 4:35:06 AM: 
+9/4/2001 4:35:06 AM: 
+9/4/2001 4:35:06 AM: Ping ftp.asiscan.com
+9/4/2001 4:35:07 AM: --------------------
+9/4/2001 4:36:03 AM: Exception: OpenNETCF.Net.NetworkInformation.PingException:Impossible to resolve host or address. ---> System.Net.Sockets.SocketException:No such host is known
+9/4/2001 4:36:03 AM: 
+9/4/2001 4:36:04 AM: 
+9/4/2001 4:36:04 AM: FTP
+9/4/2001 4:36:04 AM: ---
+9/4/2001 4:37:04 AM: Connect Result: Failed
+9/4/2001 4:37:04 AM: 
+9/4/2001 4:37:04 AM: 
+9/4/2001 4:37:04 AM: NTP
+9/4/2001 4:37:05 AM: ---
+9/4/2001 4:37:05 AM: Server: pool.ntp.org
+9/4/2001 4:37:59 AM: Resolution: Failed
+9/4/2001 4:37:59 AM: Resolution Delay: 54000ms
+9/4/2001 4:37:59 AM: 
+9/4/2001 4:38:00 AM: 
+
+-- Ethernet --
+
+9/4/2001 4:38:54 AM: Adapter Info
+9/4/2001 4:38:54 AM: ------------
+9/4/2001 4:38:54 AM: Adapter(2): lan90001
+9/4/2001 4:38:54 AM: Type: Ethernet
+9/4/2001 4:38:54 AM: IP: 192.168.10.239
+9/4/2001 4:38:54 AM: Subnet: 255.255.255.0
+9/4/2001 4:38:54 AM: Gateway: 192.168.10.1
+9/4/2001 4:38:54 AM: DHCP Enabled: True
+9/4/2001 4:38:54 AM: DHCP Server: 192.168.10.88
+9/4/2001 4:38:54 AM: *Description: INTERMEC LAN9000 Ethernet Adapter
+9/4/2001 4:38:54 AM: *HasWins: True
+9/4/2001 4:38:54 AM: *LeaseExpires: 9/4/2001 10:38:31 AM
+9/4/2001 4:38:54 AM: *LeaseObtained: 9/4/2001 8:38:31 AM
+9/4/2001 4:38:54 AM: *MacAddress: 00-10-40-03-4A-10-00-00
+9/4/2001 4:38:54 AM: *PrimaryWinsServer: 192.168.10.101
+9/4/2001 4:38:55 AM: *SecondaryWinsServer: 
+9/4/2001 4:38:55 AM: Wireless Error: True
+9/4/2001 4:38:55 AM: 
+9/4/2001 4:38:55 AM: 
+9/4/2001 4:38:55 AM: Connection Info
+9/4/2001 4:38:55 AM: ---------------
+9/4/2001 4:38:55 AM: Connection Status: Unknown
+9/4/2001 4:38:55 AM: Timeout: 5000
+9/4/2001 4:38:55 AM: Connections
+9/4/2001 4:38:55 AM: -----------
+9/4/2001 4:38:55 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+9/4/2001 4:38:55 AM: Description: Default Internet Settings
+9/4/2001 4:38:56 AM: 
+9/4/2001 4:38:56 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+9/4/2001 4:38:56 AM: Description: The WAP Network
+9/4/2001 4:38:56 AM: 
+9/4/2001 4:38:56 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+9/4/2001 4:38:56 AM: Description: Default Work Settings
+9/4/2001 4:38:56 AM: 
+9/4/2001 4:38:56 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+9/4/2001 4:38:56 AM: Description: Internet Settings
+9/4/2001 4:38:56 AM: 
+9/4/2001 4:38:57 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+9/4/2001 4:38:57 AM: Description: Work Settings
+9/4/2001 4:38:57 AM: 
+9/4/2001 4:38:57 AM: 
+9/4/2001 4:38:57 AM: Ping ftp.asiscan.com
+9/4/2001 4:38:57 AM: --------------------
+9/4/2001 4:38:57 AM: Exception: OpenNETCF.Net.NetworkInformation.PingException:Impossible to send a packet. ---> System.MissingMethodException:MissingMethodException
+9/4/2001 4:38:57 AM: 
+9/4/2001 4:38:57 AM: 
+9/4/2001 4:38:57 AM: FTP
+9/4/2001 4:38:58 AM: ---
+9/4/2001 4:38:58 AM: Connect Result: Success
+9/4/2001 4:38:58 AM: Login Result: Success
+9/4/2001 4:38:59 AM: Download Result: Success
+9/4/2001 4:38:59 AM: Disconnect Result: Success
+9/4/2001 4:38:59 AM: 
+9/4/2001 4:38:59 AM: 
+9/4/2001 4:38:59 AM: NTP
+9/4/2001 4:39:00 AM: ---
+9/4/2001 4:39:00 AM: Server: pool.ntp.org
+9/4/2001 4:39:00 AM: Resolution: Success
+9/4/2001 4:39:00 AM: Resolution Delay: 0ms
+9/4/2001 4:39:00 AM: Time Retrieval: Success
+9/4/2001 4:39:00 AM: Time Retrieval Delay: 0ms
+9/4/2001 4:39:00 AM: Time Offset: 2040.11:48:34.3128464
+9/4/2001 4:39:01 AM: 
+9/4/2001 4:39:01 AM: 
+
+-- USB --
+
+9/4/2001 4:39:23 AM: Adapter Info
+9/4/2001 4:39:23 AM: ------------
+9/4/2001 4:39:23 AM: Adapter(3): ppp1
+9/4/2001 4:39:23 AM: Type: PPP
+9/4/2001 4:39:23 AM: IP: 192.168.55.101
+9/4/2001 4:39:23 AM: Subnet: 255.255.255.0
+9/4/2001 4:39:23 AM: Gateway: 192.168.55.100
+9/4/2001 4:39:23 AM: DHCP Enabled: False
+9/4/2001 4:39:23 AM: DHCP Server: 
+9/4/2001 4:39:23 AM: *Description: 
+9/4/2001 4:39:23 AM: *HasWins: False
+9/4/2001 4:39:23 AM: *LeaseExpires: 1/1/1970 12:00:00 AM
+9/4/2001 4:39:23 AM: *LeaseObtained: 1/1/1970 12:00:00 AM
+9/4/2001 4:39:23 AM: *MacAddress: 00-00-00-00-00-00-00-00
+9/4/2001 4:39:23 AM: *PrimaryWinsServer: 
+9/4/2001 4:39:23 AM: *SecondaryWinsServer: 
+9/4/2001 4:39:23 AM: Wireless: False
+9/4/2001 4:39:23 AM: 
+9/4/2001 4:39:24 AM: Adapter(2): lan90001
+9/4/2001 4:39:24 AM: Type: Ethernet
+9/4/2001 4:39:24 AM: IP: 192.168.10.239
+9/4/2001 4:39:24 AM: Subnet: 255.255.255.0
+9/4/2001 4:39:24 AM: Gateway: 192.168.10.1
+9/4/2001 4:39:24 AM: DHCP Enabled: True
+9/4/2001 4:39:24 AM: DHCP Server: 192.168.10.88
+9/4/2001 4:39:24 AM: *Description: INTERMEC LAN9000 Ethernet Adapter
+9/4/2001 4:39:24 AM: *HasWins: True
+9/4/2001 4:39:24 AM: *LeaseExpires: 9/4/2001 10:38:31 AM
+9/4/2001 4:39:24 AM: *LeaseObtained: 9/4/2001 8:38:31 AM
+9/4/2001 4:39:25 AM: *MacAddress: 00-10-40-03-4A-10-00-00
+9/4/2001 4:39:25 AM: *PrimaryWinsServer: 192.168.10.101
+9/4/2001 4:39:25 AM: *SecondaryWinsServer: 
+9/4/2001 4:39:25 AM: Wireless Error: True
+9/4/2001 4:39:25 AM: 
+9/4/2001 4:39:25 AM: 
+9/4/2001 4:39:25 AM: Connection Info
+9/4/2001 4:39:25 AM: ---------------
+9/4/2001 4:39:25 AM: Connection Status: Unknown
+9/4/2001 4:39:25 AM: Timeout: 5000
+9/4/2001 4:39:26 AM: Connections
+9/4/2001 4:39:26 AM: -----------
+9/4/2001 4:39:26 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+9/4/2001 4:39:26 AM: Description: Default Internet Settings
+9/4/2001 4:39:26 AM: 
+9/4/2001 4:39:26 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+9/4/2001 4:39:26 AM: Description: The WAP Network
+9/4/2001 4:39:26 AM: 
+9/4/2001 4:39:26 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+9/4/2001 4:39:26 AM: Description: Default Work Settings
+9/4/2001 4:39:27 AM: 
+9/4/2001 4:39:27 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+9/4/2001 4:39:27 AM: Description: Internet Settings
+9/4/2001 4:39:27 AM: 
+9/4/2001 4:39:27 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+9/4/2001 4:39:27 AM: Description: Work Settings
+9/4/2001 4:39:27 AM: 
+9/4/2001 4:39:27 AM: 
+9/4/2001 4:39:27 AM: Ping ftp.asiscan.com
+9/4/2001 4:39:27 AM: --------------------
+9/4/2001 4:39:28 AM: Exception: OpenNETCF.Net.NetworkInformation.PingException:Impossible to send a packet. ---> System.MissingMethodException:MissingMethodException
+9/4/2001 4:39:28 AM: 
+9/4/2001 4:39:28 AM: 
+9/4/2001 4:39:28 AM: FTP
+9/4/2001 4:39:28 AM: ---
+9/4/2001 4:39:29 AM: Connect Result: Success
+9/4/2001 4:39:29 AM: Login Result: Success
+9/4/2001 4:39:31 AM: Download Result: Success
+9/4/2001 4:39:31 AM: Disconnect Result: Success
+9/4/2001 4:39:31 AM: 
+9/4/2001 4:39:31 AM: 
+9/4/2001 4:39:31 AM: NTP
+9/4/2001 4:39:31 AM: ---
+9/4/2001 4:39:31 AM: Server: pool.ntp.org
+9/4/2001 4:39:31 AM: Resolution: Success
+9/4/2001 4:39:32 AM: Resolution Delay: 0ms
+9/4/2001 4:39:34 AM: Time Retrieval: Failed
+9/4/2001 4:39:34 AM: Time Retrieval Delay: 2000ms
+9/4/2001 4:39:34 AM: 
+9/4/2001 4:39:34 AM: 

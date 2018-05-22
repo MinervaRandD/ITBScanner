@@ -1,0 +1,158 @@
+<distributions formatversion="1">
+  <distribution name="99">
+    <carrier>99</carrier>
+  </distribution>
+  <distribution name="K4">
+    <carrier>K4</carrier>
+  </distribution>
+  <distribution name="B6">
+    <carrier>B6</carrier>
+  </distribution>
+  <distribution name="SY">
+    <carrier>SY</carrier>
+  </distribution>
+  <distribution name="AC">
+    <carrier>AC</carrier>
+  </distribution>
+  <distribution name="CV">
+    <carrier>CV</carrier>
+  </distribution>
+  <distribution name="LO">
+    <carrier>LO</carrier>
+  </distribution>
+  <distribution name="NZ">
+    <carrier>NZ</carrier>
+  </distribution>
+  <distribution name="PR">
+    <carrier>PR</carrier>
+  </distribution>
+  <distribution name="TG">
+    <carrier>TG</carrier>
+  </distribution>
+  <distribution name="US">
+    <carrier>US</carrier>
+  </distribution>
+  <distribution name="CO">
+    <carrier>CO</carrier>
+  </distribution>
+  <distribution name="SK">
+    <carrier>SK</carrier>
+  </distribution>
+  <distribution name="LH">
+    <carrier>LH</carrier>
+  </distribution>
+  <distribution name="NK">
+    <carrier>NK</carrier>
+  </distribution>
+  <distribution name="6O">
+    <carrier>6O</carrier>
+  </distribution>
+  <distribution name="7O">
+    <carrier>7O</carrier>
+  </distribution>
+  <distribution name="HK">
+    <carrier>HK</carrier>
+  </distribution>
+  <distribution name="AV">
+    <carrier>AV</carrier>
+  </distribution>
+  <distribution name="LI">
+    <carrier>LI</carrier>
+  </distribution>
+  <distribution name="UL">
+    <carrier>UL</carrier>
+  </distribution>
+  <distribution name="ME">
+    <carrier>ME</carrier>
+  </distribution>
+  <distribution name="MK">
+    <carrier>MK</carrier>
+  </distribution>
+  <distribution name="JU">
+    <carrier>JU</carrier>
+  </distribution>
+  <distribution name="BA">
+    <carrier>BA</carrier>
+  </distribution>
+  <distribution name="UU">
+    <carrier>UU</carrier>
+  </distribution>
+  <distribution name="OU">
+    <carrier>OU</carrier>
+  </distribution>
+  <distribution name="NH">
+    <carrier>NH</carrier>
+  </distribution>
+  <distribution name="EK">
+    <carrier>EK</carrier>
+  </distribution>
+  <distribution name="EY">
+    <carrier>EY</carrier>
+  </distribution>
+  <distribution name="KU">
+    <carrier>KU</carrier>
+  </distribution>
+  <distribution name="BT">
+    <carrier>BT</carrier>
+  </distribution>
+  <distribution name="OA">
+    <carrier>OA</carrier>
+  </distribution>
+  <distribution name="GF">
+    <carrier>GF</carrier>
+  </distribution>
+  <distribution name="8U">
+    <carrier>8U</carrier>
+  </distribution>
+  <distribution name="TK">
+    <carrier>TK</carrier>
+  </distribution>
+  <distribution name="U8">
+    <carrier>U8</carrier>
+  </distribution>
+  <distribution name="A3">
+    <carrier>A3</carrier>
+  </distribution>
+  <distribution name="HM">
+    <carrier>HM</carrier>
+  </distribution>
+  <distribution name="MD">
+    <carrier>MD</carrier>
+  </distribution>
+  <distribution name="AI">
+    <carrier>AI</carrier>
+  </distribution>
+  <distribution name="IB">
+    <carrier>IB</carrier>
+  </distribution>
+  <distribution name="WFS">
+    <carrier>8U</carrier>
+    <carrier>A3</carrier>
+    <carrier>AI</carrier>
+    <carrier>BA</carrier>
+    <carrier>BT</carrier>
+    <carrier>CO</carrier>
+    <carrier>EK</carrier>
+    <carrier>EY</carrier>
+    <carrier>GF</carrier>
+    <carrier>HM</carrier>
+    <carrier>IB</carrier>
+    <carrier>JU</carrier>
+    <carrier>KU</carrier>
+    <carrier>LO</carrier>
+    <carrier>MD</carrier>
+    <carrier>ME</carrier>
+    <carrier>MK</carrier>
+    <carrier>NH</carrier>
+    <carrier>NZ</carrier>
+    <carrier>OA</carrier>
+    <carrier>OU</carrier>
+    <carrier>TG</carrier>
+    <carrier>TK</carrier>
+    <carrier>TP</carrier>    
+    <carrier>U8</carrier>
+    <carrier>UA</carrier>    
+    <carrier>UL</carrier>
+    <carrier>UU</carrier>
+  </distribution>
+</distributions>

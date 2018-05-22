@@ -1,0 +1,65 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Aviation Software, Inc."
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="TagTrak"
+InstallDir=%CE1%\%AppName%
+
+[CEDevice]
+UnsupportedPlatforms = "HPC","Jupiter","Smartphone"
+
+[Strings]
+
+Flash 	= "\Storage Card\"
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+addreg= regsettings.all
+
+[DefaultInstall.ARMV4]
+Copyfiles=Files.ARMV4
+
+[SourceDisksNames]
+1=,"Common1",,"C:\work\tagtrak\2.6.0\bin\CABBuilder\Input\Symbol\ARMV4\PPC2002"
+[SourceDisksFiles]
+TagTrak.exe=1
+OpenNETCF.dll=1
+OpenNETCF.Net.dll=1
+Rebex.Net.Ftp.dll=1
+Rebex.Net.Time.dll=1
+Rebex.Net.ProxySocket.dll=1
+Rebex.Net.SecureSocket.dll=1
+Rebex.Security.dll=1
+SharpZipLib.dll=1
+Symbol.dll=1
+Symbol.Barcode.dll=1
+Symbol.ResourceCoordination.dll=1
+AirlineSoftware.dll=1
+
+[DestinationDirs]
+Shortcuts=0,%CE2%\Start Menu
+Files.ARMV4=0,%InstallDir%
+
+[Files.ARMV4]
+TagTrak.exe,,,0x40000000
+OpenNETCF.dll,,,0x40000000
+OpenNETCF.Net.dll,,,0x40000000
+Rebex.Net.ProxySocket.dll,,,0x40000000
+Rebex.Net.Ftp.dll,,,0x40000000
+Rebex.Net.SecureSocket.dll,,,0x40000000
+Rebex.Net.Time.dll,,,0x40000000
+Rebex.Security.dll,,,0x40000000
+SharpZipLib.dll,,,0x40000000
+Symbol.dll,,,0x40000000
+Symbol.Barcode.dll,,,0x40000000
+Symbol.ResourceCoordination.dll,,,0x40000000
+AirlineSoftware.dll,,,0x40000000
+
+[Shortcuts]
+TagTrak,0,TagTrak.exe,%CE11%
+
+[RegSettings.All]
+HKLM,"Hardware\Devicemap\Keybd","vkeyGold",0x00000001,00,00,0B,05,02,03,00,00,04,03,BE,00,34,00,00,00,09,01,00,00,BF,00,03,02,00,00,BD,00,75,00,72,00,21,00,01,02,00,00,76,00,09,00,73,00,38,01,00,00,35,00,00,00,BB,01,09,05,22,00,32,01,36,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,07,05,01,05,03,05,02,05
+HKLM,"Hardware\Devicemap\Keybd\ALPHA","vkeyGold",0x00000001,00,00,0B,05,02,03,03,03,04,03,00,00,00,00,72,00,09,01,76,00,75,00,09,00,73,00,00,00,BB,00,38,01,00,00,BF,00,00,00,21,00,32,01,BD,00,31,00,32,00,09,05,22,00,BC,00,BB,01,34,00,35,00,33,00,02,02,08,00,BE,00,37,00,38,00,36,00,03,02,01,02,20,00,30,00,0D,00,39,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,07,05,01,05,03,05,02,05

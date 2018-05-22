@@ -1,0 +1,71 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{CB4CE8C6-1BDB-4DC7-A4D3-65A1999772F8}") = "TagTrak", "TagTrak.vbdproj", "{84598D59-E82E-4633-B18D-567B62D7917B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{112FAB98-8405-442A-A09B-9B0FF2F82A7B}") = "DotfuscatorTT", "..\DotfuscatorTT\DotfuscatorTT.dotfuproj", "{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Dolphin Debug = Dolphin Debug
+		Dolphin Release = Dolphin Release
+		Intermec Debug = Intermec Debug
+		Intermec Release = Intermec Release
+		PC Debug = PC Debug
+		PC Release = PC Release
+		Symbol Debug = Symbol Debug
+		Symbol Release = Symbol Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Dolphin Debug.ActiveCfg = Dolphin Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Dolphin Debug.Build.0 = Dolphin Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Dolphin Debug.Deploy.0 = Dolphin Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Dolphin Release.ActiveCfg = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Dolphin Release.Build.0 = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Dolphin Release.Deploy.0 = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Intermec Debug.ActiveCfg = Intermec Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Intermec Debug.Build.0 = Intermec Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Intermec Debug.Deploy.0 = Intermec Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Intermec Release.ActiveCfg = Intermec Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Intermec Release.Build.0 = Intermec Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Intermec Release.Deploy.0 = Intermec Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.PC Debug.ActiveCfg = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.PC Debug.Build.0 = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.PC Debug.Deploy.0 = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.PC Release.ActiveCfg = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.PC Release.Build.0 = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.PC Release.Deploy.0 = Dolphin Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Symbol Debug.ActiveCfg = Symbol Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Symbol Debug.Build.0 = Symbol Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Symbol Debug.Deploy.0 = Symbol Debug|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Symbol Release.ActiveCfg = Symbol Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Symbol Release.Build.0 = Symbol Release|Pocket PC
+		{84598D59-E82E-4633-B18D-567B62D7917B}.Symbol Release.Deploy.0 = Symbol Release|Pocket PC
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Dolphin Debug.ActiveCfg = Dolphin Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Dolphin Debug.Build.0 = Dolphin Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Dolphin Release.ActiveCfg = Dolphin Release
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Dolphin Release.Build.0 = Dolphin Release
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Intermec Debug.ActiveCfg = Intermec Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Intermec Debug.Build.0 = Intermec Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Intermec Release.ActiveCfg = Intermec Release
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Intermec Release.Build.0 = Intermec Release
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.PC Debug.ActiveCfg = PC Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.PC Debug.Build.0 = PC Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.PC Release.ActiveCfg = PC Release
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.PC Release.Build.0 = PC Release
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Symbol Debug.ActiveCfg = Symbol Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Symbol Debug.Build.0 = Symbol Debug
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Symbol Release.ActiveCfg = Symbol Release
+		{D7451ECA-6ADD-4445-87D5-6A3DFF1A818C}.Symbol Release.Build.0 = Symbol Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

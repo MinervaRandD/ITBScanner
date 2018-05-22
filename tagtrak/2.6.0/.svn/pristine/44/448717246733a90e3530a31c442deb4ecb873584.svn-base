@@ -1,0 +1,235 @@
+2003, no 802, cell (not connecting)
+
+-- Disconnected --
+
+3/21/2003 3:15:37 AM: Adapter Info
+3/21/2003 3:15:37 AM: ------------
+3/21/2003 3:15:37 AM: Adapter(2): LAN90001
+3/21/2003 3:15:37 AM: Type: Ethernet
+3/21/2003 3:15:38 AM: Wireless: False
+3/21/2003 3:15:38 AM: IP: 0.0.0.0
+3/21/2003 3:15:38 AM: Subnet: 0.0.0.0
+3/21/2003 3:15:38 AM: Gateway: 
+3/21/2003 3:15:38 AM: DHCP Enabled: True
+3/21/2003 3:15:38 AM: DHCP Server: 192.168.10.88
+3/21/2003 3:15:38 AM: *Description: 
+3/21/2003 3:15:38 AM: *HasWins: True
+3/21/2003 3:15:38 AM: *LeaseExpires: 3/21/2003 10:11:15 AM
+3/21/2003 3:15:38 AM: *LeaseObtained: 3/21/2003 8:11:15 AM
+3/21/2003 3:15:38 AM: *MacAddress: 00-10-40-08-F1-B2-00-00
+3/21/2003 3:15:38 AM: *PrimaryWinsServer: 192.168.10.101
+3/21/2003 3:15:38 AM: *SecondaryWinsServer: 
+3/21/2003 3:15:38 AM: 
+3/21/2003 3:15:38 AM: 
+3/21/2003 3:15:38 AM: Connection Info
+3/21/2003 3:15:38 AM: ---------------
+3/21/2003 3:15:38 AM: Connection Status: Unknown
+3/21/2003 3:15:38 AM: Timeout: 5000
+3/21/2003 3:15:38 AM: Connections
+3/21/2003 3:15:38 AM: -----------
+3/21/2003 3:15:38 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+3/21/2003 3:15:39 AM: Description: My Work Network
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:39 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+3/21/2003 3:15:39 AM: Description: My ISP
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:39 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+3/21/2003 3:15:39 AM: Description: Work
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:39 AM: GUID: f28d1f74-72be-4394-a4a7-4e296219390c
+3/21/2003 3:15:39 AM: Description: Secure WAP Network
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:39 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+3/21/2003 3:15:39 AM: Description: The WAP Network
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:39 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+3/21/2003 3:15:39 AM: Description: The Internet
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:39 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd5
+3/21/2003 3:15:39 AM: Description: PCS Vision
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:39 AM: 
+3/21/2003 3:15:40 AM: Ping
+3/21/2003 3:15:40 AM: ----
+3/21/2003 3:15:40 AM: Exception: OpenNETCF.Net.NetworkInformation.PingException:Impossible to resolve host or address. ---> System.Net.Sockets.SocketException:No such host is known
+3/21/2003 3:15:40 AM: 
+3/21/2003 3:15:40 AM: 
+3/21/2003 3:15:41 AM: FTP
+3/21/2003 3:15:41 AM: ---
+3/21/2003 3:15:42 AM: Connect Result: Failed
+3/21/2003 3:15:42 AM: 
+3/21/2003 3:15:42 AM: 
+3/21/2003 3:15:42 AM: NTP
+3/21/2003 3:15:42 AM: ---
+3/21/2003 3:15:42 AM: Server: pool.ntp.org
+3/21/2003 3:15:42 AM: Resolution: Failed
+3/21/2003 3:15:42 AM: Resolution Delay: 0ms
+3/21/2003 3:15:42 AM: 
+3/21/2003 3:15:42 AM: 
+
+-- Ethernet --
+
+3/21/2003 3:16:26 AM: Adapter Info
+3/21/2003 3:16:26 AM: ------------
+3/21/2003 3:16:26 AM: Adapter(2): LAN90001
+3/21/2003 3:16:26 AM: Type: Ethernet
+3/21/2003 3:16:26 AM: Wireless: False
+3/21/2003 3:16:26 AM: IP: 192.168.10.220
+3/21/2003 3:16:26 AM: Subnet: 255.255.255.0
+3/21/2003 3:16:26 AM: Gateway: 192.168.10.1
+3/21/2003 3:16:26 AM: DHCP Enabled: True
+3/21/2003 3:16:26 AM: DHCP Server: 192.168.10.88
+3/21/2003 3:16:26 AM: *Description: 
+3/21/2003 3:16:26 AM: *HasWins: True
+3/21/2003 3:16:26 AM: *LeaseExpires: 3/21/2003 10:16:20 AM
+3/21/2003 3:16:26 AM: *LeaseObtained: 3/21/2003 8:16:20 AM
+3/21/2003 3:16:26 AM: *MacAddress: 00-10-40-08-F1-B2-00-00
+3/21/2003 3:16:26 AM: *PrimaryWinsServer: 192.168.10.101
+3/21/2003 3:16:26 AM: *SecondaryWinsServer: 
+3/21/2003 3:16:26 AM: 
+3/21/2003 3:16:27 AM: 
+3/21/2003 3:16:27 AM: Connection Info
+3/21/2003 3:16:27 AM: ---------------
+3/21/2003 3:16:27 AM: Connection Status: Unknown
+3/21/2003 3:16:27 AM: Timeout: 5000
+3/21/2003 3:16:27 AM: Connections
+3/21/2003 3:16:27 AM: -----------
+3/21/2003 3:16:27 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+3/21/2003 3:16:27 AM: Description: My Work Network
+3/21/2003 3:16:27 AM: 
+3/21/2003 3:16:27 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+3/21/2003 3:16:27 AM: Description: My ISP
+3/21/2003 3:16:27 AM: 
+3/21/2003 3:16:27 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+3/21/2003 3:16:27 AM: Description: Work
+3/21/2003 3:16:27 AM: 
+3/21/2003 3:16:27 AM: GUID: f28d1f74-72be-4394-a4a7-4e296219390c
+3/21/2003 3:16:27 AM: Description: Secure WAP Network
+3/21/2003 3:16:27 AM: 
+3/21/2003 3:16:27 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+3/21/2003 3:16:27 AM: Description: The WAP Network
+3/21/2003 3:16:27 AM: 
+3/21/2003 3:16:28 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+3/21/2003 3:16:28 AM: Description: The Internet
+3/21/2003 3:16:28 AM: 
+3/21/2003 3:16:28 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd5
+3/21/2003 3:16:28 AM: Description: PCS Vision
+3/21/2003 3:16:28 AM: 
+3/21/2003 3:16:28 AM: 
+3/21/2003 3:16:28 AM: Ping
+3/21/2003 3:16:28 AM: ----
+3/21/2003 3:16:28 AM: Status: Success
+3/21/2003 3:16:28 AM: Address: 67.29.176.35
+3/21/2003 3:16:28 AM: RTT: 14ms
+3/21/2003 3:16:28 AM: TTL: 55
+3/21/2003 3:16:28 AM: 
+3/21/2003 3:16:28 AM: 
+3/21/2003 3:16:28 AM: FTP
+3/21/2003 3:16:28 AM: ---
+3/21/2003 3:16:29 AM: Connect Result: Success
+3/21/2003 3:16:29 AM: Login Result: Success
+3/21/2003 3:16:29 AM: Download Result: Success
+3/21/2003 3:16:29 AM: Disconnect Result: Success
+3/21/2003 3:16:29 AM: 
+3/21/2003 3:16:29 AM: 
+3/21/2003 3:16:29 AM: NTP
+3/21/2003 3:16:29 AM: ---
+3/21/2003 3:16:29 AM: Server: pool.ntp.org
+3/21/2003 3:16:29 AM: Resolution: Success
+3/21/2003 3:16:29 AM: Resolution Delay: 0ms
+3/21/2003 3:16:30 AM: Time Retrieval: Success
+3/21/2003 3:16:30 AM: Time Retrieval Delay: 1000ms
+3/21/2003 3:16:30 AM: Time Offset: 1477.08:26:27.2837624
+3/21/2003 3:16:30 AM: 
+3/21/2003 3:16:30 AM: 
+
+-- USB --
+
+3/21/2003 3:17:20 AM: Adapter Info
+3/21/2003 3:17:20 AM: ------------
+3/21/2003 3:17:20 AM: Adapter(2): LAN90001
+3/21/2003 3:17:20 AM: Type: Ethernet
+3/21/2003 3:17:20 AM: Wireless: False
+3/21/2003 3:17:20 AM: IP: 0.0.0.0
+3/21/2003 3:17:20 AM: Subnet: 0.0.0.0
+3/21/2003 3:17:20 AM: Gateway: 
+3/21/2003 3:17:20 AM: DHCP Enabled: True
+3/21/2003 3:17:20 AM: DHCP Server: 192.168.10.88
+3/21/2003 3:17:20 AM: *Description: 
+3/21/2003 3:17:20 AM: *HasWins: True
+3/21/2003 3:17:20 AM: *LeaseExpires: 3/21/2003 10:16:20 AM
+3/21/2003 3:17:20 AM: *LeaseObtained: 3/21/2003 8:16:20 AM
+3/21/2003 3:17:20 AM: *MacAddress: 00-10-40-08-F1-B2-00-00
+3/21/2003 3:17:20 AM: *PrimaryWinsServer: 192.168.10.101
+3/21/2003 3:17:20 AM: *SecondaryWinsServer: 
+3/21/2003 3:17:20 AM: 
+3/21/2003 3:17:20 AM: Adapter(131075): USB Cable:
+3/21/2003 3:17:20 AM: Type: PPP
+3/21/2003 3:17:20 AM: Wireless: False
+3/21/2003 3:17:21 AM: IP: 192.168.55.101
+3/21/2003 3:17:21 AM: Subnet: 255.255.255.0
+3/21/2003 3:17:21 AM: Gateway: 192.168.55.100
+3/21/2003 3:17:21 AM: DHCP Enabled: False
+3/21/2003 3:17:21 AM: DHCP Server: 
+3/21/2003 3:17:21 AM: *Description: 
+3/21/2003 3:17:21 AM: *HasWins: False
+3/21/2003 3:17:21 AM: *LeaseExpires: 1/1/1970 12:00:00 AM
+3/21/2003 3:17:21 AM: *LeaseObtained: 1/1/1970 12:00:00 AM
+3/21/2003 3:17:21 AM: *MacAddress: 00-00-00-00-00-00-00-00
+3/21/2003 3:17:21 AM: *PrimaryWinsServer: 
+3/21/2003 3:17:21 AM: *SecondaryWinsServer: 
+3/21/2003 3:17:21 AM: 
+3/21/2003 3:17:21 AM: 
+3/21/2003 3:17:21 AM: Connection Info
+3/21/2003 3:17:21 AM: ---------------
+3/21/2003 3:17:21 AM: Connection Status: Unknown
+3/21/2003 3:17:21 AM: Timeout: 5000
+3/21/2003 3:17:21 AM: Connections
+3/21/2003 3:17:21 AM: -----------
+3/21/2003 3:17:21 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+3/21/2003 3:17:21 AM: Description: My Work Network
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+3/21/2003 3:17:22 AM: Description: My ISP
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+3/21/2003 3:17:22 AM: Description: Work
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: GUID: f28d1f74-72be-4394-a4a7-4e296219390c
+3/21/2003 3:17:22 AM: Description: Secure WAP Network
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+3/21/2003 3:17:22 AM: Description: The WAP Network
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+3/21/2003 3:17:22 AM: Description: The Internet
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd5
+3/21/2003 3:17:22 AM: Description: PCS Vision
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: 
+3/21/2003 3:17:22 AM: Ping
+3/21/2003 3:17:22 AM: ----
+3/21/2003 3:17:28 AM: Status: TimedOut
+3/21/2003 3:17:28 AM: Address: 0.0.0.0
+3/21/2003 3:17:28 AM: RTT: 0ms
+3/21/2003 3:17:28 AM: TTL: 0
+3/21/2003 3:17:28 AM: 
+3/21/2003 3:17:28 AM: 
+3/21/2003 3:17:28 AM: FTP
+3/21/2003 3:17:28 AM: ---
+3/21/2003 3:17:28 AM: Connect Result: Success
+3/21/2003 3:17:28 AM: Login Result: Success
+3/21/2003 3:17:32 AM: Download Result: Success
+3/21/2003 3:17:32 AM: Disconnect Result: Success
+3/21/2003 3:17:32 AM: 
+3/21/2003 3:17:32 AM: 
+3/21/2003 3:17:32 AM: NTP
+3/21/2003 3:17:32 AM: ---
+3/21/2003 3:17:32 AM: Server: pool.ntp.org
+3/21/2003 3:17:32 AM: Resolution: Success
+3/21/2003 3:17:32 AM: Resolution Delay: 0ms
+3/21/2003 3:17:35 AM: Time Retrieval: Failed
+3/21/2003 3:17:35 AM: Time Retrieval Delay: 2000ms
+3/21/2003 3:17:35 AM: 
+3/21/2003 3:17:35 AM: 

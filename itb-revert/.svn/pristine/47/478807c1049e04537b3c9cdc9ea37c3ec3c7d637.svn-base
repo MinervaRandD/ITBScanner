@@ -1,0 +1,27 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Aviation Software Inc."
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="TagTrak Resources"
+InstallDir=%CE1%\TagTrak
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=4.99
+
+[DefaultInstall]
+CopyFiles=Files.Common
+
+[SourceDisksNames]
+1=,"Common1",,"C:\TagTrakBaggage\BatchBuilder\Dotfuscated\"
+
+[SourceDisksFiles]
+Resources.dll=1
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+
+[Files.Common]
+Resources.dll,,,0x40000000

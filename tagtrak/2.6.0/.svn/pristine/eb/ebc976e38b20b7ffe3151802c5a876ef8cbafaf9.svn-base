@@ -1,0 +1,24 @@
+Decryption:
+* AES Decrypt 256-bit using Key:
+	Key:
+		- Is computed from a 2 character carrier code (C1 & C2) and a Master key array.
+		- Offset = Asc(C1) * 36 + Asc(C2)
+		- Key(0) = Not Asc(C1)
+		- Key(1) = Not Asc(C2)
+		- Key(2) = Master((2 + Offset) Mod Master.Length)
+		- Key(3) = Master((3 + Offset) Mod Master.Length)
+		- ... 
+		- Key(i) = Master((i + Offset) Mod Master.Length)
+		- Key(31) = Master((31 + Offset) Mod Master.Length)
+
+Binary Contents:
+	Test Int = [Integer]
+	Config File Text Size = [Integer]
+	Admin Logo File Size = [Integer]
+	Init Logo File Size = [Integer]
+	Scan Logo File Size = [Integer]
+	[ConfigFileText]
+	[AdminLogo]
+	[InitLogo]
+	[ScanLogo]
+	

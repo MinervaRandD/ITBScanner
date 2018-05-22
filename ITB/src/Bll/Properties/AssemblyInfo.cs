@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Bll")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Aviation Software Inc.")]
+[assembly: AssemblyCompany("Minerva Research and Development, LLC")]
 [assembly: AssemblyProduct("Bll")]
-[assembly: AssemblyCopyright("Copyright © ASI 2009")]
+[assembly: AssemblyCopyright("Copyright © Minerva Research and Development, LLC")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

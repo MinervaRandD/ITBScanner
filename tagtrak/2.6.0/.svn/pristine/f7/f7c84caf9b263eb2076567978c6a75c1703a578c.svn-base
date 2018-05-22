@@ -1,0 +1,1189 @@
+
+    private Function parseButtonSpec(ByVal buttonType string, ByVal buttonParms string) string
+
+#if (  ValidationLevel >= 3 ) {
+
+        if (  diagnosticLevel >= 2 ) {
+            verify(Not buttonType == null, 30)
+            verify(Not buttonParms == null, 31)
+        End if ( 
+
+#End if ( 
+
+        Dim buttonSpecRecord buttonSpecRecordClass
+
+        Select Case buttonType.ToUpper
+
+            Case "SUMMARY"
+                buttonSpecRecord = summaryButtonSpec
+
+                'Case "ADMIN"
+                '    buttonSpecRecord = adminButtonSpec
+
+            Case "PRESETS"
+                buttonSpecRecord = presetsButtonSpec
+
+            Case "BINUPLOAD"
+                buttonSpecRecord = binUploadButtonSpec
+
+            Case "BINCHANGE"
+                buttonSpecRecord = binChangeButtonSpec
+
+            Case "CARGOSCAN"
+                buttonSpecRecord = cargoButtonSpec
+
+            Case "MAILSCAN"
+                buttonSpecRecord = mailButtonSpec
+
+            Case "MANIFEST"
+                buttonSpecRecord = manifestButtonSpec
+
+            Case Else
+                return "Invalid button type"
+
+        End Select
+
+        buttonSpecRecord.parse(buttonParms)
+
+        if (  Not buttonSpecRecord.visible ) { return "Invalid button spec parameter"
+
+        return "OK"
+
+    }
+
+    private Function parseButtonSpecstring(ByVal buttonSpecstring string) string
+
+#if (  ValidationLevel >= 3 ) {
+
+        if (  diagnosticLevel >= 2 ) {
+            verify(Not buttonSpecstring == null, 32)
+        End if ( 
+
+#End if ( 
+
+        Dim result string
+
+        Dim nextButtonSpecstring string
+
+        Dim buttonSpecStrinStart int = 0
+        Dim buttonSpecstringEnd int = buttonSpecstring.IndexOf("],")
+
+        Dim buttonType string
+        Dim equalPosition int
+
+        While buttonSpecstringEnd > 0
+
+            verify(Length(buttonSpecstring) >= buttonSpecstringEnd + 1, 33)
+
+            nextButtonSpecstring = Substring(buttonSpecstring, 0, buttonSpecstringEnd + 1)
+
+            verify(Length(buttonSpecstring) >= buttonSpecstringEnd + 2, 34)
+
+            buttonSpecstring = Substring(buttonSpecstring, buttonSpecstringEnd + 2)
+
+            equalPosition = nextButtonSpecstring.IndexOf("="c)
+
+            if (  equalPosition < 0 ) { return "Parse of buttons spec failed."
+
+            verify(Length(buttonSpecstring) >= equalPosition, 36)
+
+            buttonType = Substring(nextButtonSpecstring, 0, equalPosition)
+
+            verify(Length(buttonSpecstring) >= buttonSpecstringEnd - equalPosition - 2, 37)
+
+            nextButtonSpecstring = Substring(nextButtonSpecstring, equalPosition + 2, buttonSpecstringEnd - equalPosition - 2)
+
+            result = parseButtonSpec(buttonType, nextButtonSpecstring)
+            if (  result <> "OK" ) { return result
+
+            buttonSpecstringEnd = buttonSpecstring.IndexOf("],")
+
+        End While
+
+        if (  Not isNonNullstring(buttonSpecstring) ) {
+            return "OK"
+        End if ( 
+
+        'nextButtonSpecstring = buttonSpecstring
+
+        equalPosition = buttonSpecstring.IndexOf("="c)
+
+        if (  equalPosition < 0 ) { return "Parse of buttons spec failed."
+
+        verify(Length(buttonSpecstring) >= equalPosition, 39)
+
+        buttonType = Substring(buttonSpecstring, 0, equalPosition)
+
+        nextButtonSpecstring = Substring(buttonSpecstring, equalPosition + 2, Length(buttonSpecstring) - equalPosition - 3)
+
+        result = parseButtonSpec(buttonType, nextButtonSpecstring)
+        if (  result <> "OK" ) { return result
+
+        return "OK"
+
+    }
+
+    private Sub setupDefaultButtonSpecs()
+
+        summaryButtonSpec = new buttonSpecRecordClass("Summary", true, new System.Drawing.Point(21, 254), new System.Drawing.Size(70, 19), "Summary")
+        presetsButtonSpec = new buttonSpecRecordClass("Presets", true, new System.Drawing.Point(91, 254), new System.Drawing.Size(67, 19), "Presets")
+        manifestButtonSpec = new buttonSpecRecordClass("Manifest", true, new System.Drawing.Point(158, 254), new System.Drawing.Size(61, 19), "Manifest")
+        binUploadButtonSpec = new buttonSpecRecordClass("BinUpload", true, new System.Drawing.Point(120, 272), new System.Drawing.Size(99, 19), "Cart Upload")
+        binChangeButtonSpec = new buttonSpecRecordClass("BinChange", true, new System.Drawing.Point(21, 272), new System.Drawing.Size(99, 19), "Change Cart")
+
+        mailButtonSpec = new buttonSpecRecordClass("MailScan", true, new System.Drawing.Point(186, 5), new System.Drawing.Size(69, 19), "Mail Scan")
+        cargoButtonSpec = new buttonSpecRecordClass("CargoScan", true, new System.Drawing.Point(186, 25), new System.Drawing.Size(69, 19), "Cargo Scan")
+        'adminButtonSpec = new buttonSpecRecordClass("Admin", true, new System.Drawing.Point(131, 5), new System.Drawing.Size(55, 19), "Admin")
+
+        'summaryButtonSpec.visible = true
+        'presetsButtonSpec.visible = true
+        'adminButtonSpec.visible = true
+        'binUploadButtonSpec.visible = true
+        'binChangeButtonSpec.visible = true
+        'manifestButtonSpec.visible = true
+        'scanButtonSpec.visible = true
+
+    End Sub
+
+    public Function parse(ByRef inputBuffer() Byte, ByVal inputBufferLength int) string
+
+#if (  ValidationLevel >= 3 ) {
+
+        if (  diagnosticLevel >= 2 ) {
+            verify(Not inputBuffer == null, 40)
+        End if ( 
+
+#End if ( 
+
+        reset()
+
+        Dim nextChar Char
+        Dim i int = 0
+        Dim parsestring string = ""
+        Dim lastNonWhiteSpaceChar Char = Chr(0)
+
+        While i < inputBufferLength
+
+            nextChar = Chr(inputBuffer(i))
+
+            if (  nextChar = "#"c ) {
+
+                i += 1
+
+                While i < inputBufferLength
+
+                    nextChar = Chr(inputBuffer(i))
+
+                    if (  nextChar = Chr(13) Or nextChar = Chr(10) ) { Exit While
+
+                    i += 1
+
+                End While
+
+            else if (  nextChar = "'"c ) {
+
+                i += 1
+
+                While i < inputBufferLength
+
+                    nextChar = Chr(inputBuffer(i))
+
+                    if (  nextChar = "'"c ) {
+                        i += 1
+                        Exit While
+                    End if ( 
+
+                    parsestring &= nextChar
+
+                    i += 1
+
+                End While
+
+            else if (  nextChar = Chr(13) Or nextChar = Chr(10) ) {
+
+                if (  lastNonWhiteSpaceChar = ","c Or lastNonWhiteSpaceChar = "{"c Or lastNonWhiteSpaceChar = "}"c _
+                   Or lastNonWhiteSpaceChar = "["c Or lastNonWhiteSpaceChar = "]"c ) {
+                    i += 1
+                else if (  lastNonWhiteSpaceChar = Chr(0) ) {
+                    i += 1
+                Else
+                    parsestring &= ","c
+                    lastNonWhiteSpaceChar = ","c
+                    i += 1
+                End if ( 
+
+            else if (  Char.IsWhiteSpace(nextChar) ) {
+
+                i += 1
+
+            Else
+
+                lastNonWhiteSpaceChar = nextChar
+
+                parsestring &= nextChar
+                i += 1
+
+            End if ( 
+
+        End While
+
+
+        if (  Not parsestring.StartsWith("User={") ) {
+            return "Invalid or corrupt ConfigGen configuration file: Must start with 'User=' clause."
+        End if ( 
+
+        if (  Not parsestring.EndsWith("}") ) {
+            return "Invalid or corrupt ConfigGen configuration file: Must end with '}'."
+        End if ( 
+
+        parsestring = parsestring.Remove(Length(parsestring) - 1, 1)
+
+        Dim cityListLocationStart int = parsestring.IndexOf("CityList=")
+        Dim cityListLocationEnd int
+
+        if (  cityListLocationStart >= 0 ) {
+
+            if (  Substring(parsestring, cityListLocationStart + 9, 8).ToUpper = "FULLLIST" ) {
+                cityListstring = "FULLLIST"
+                cityListLocationEnd = cityListLocationStart + 17
+            Else
+
+                if (  Substring(parsestring, cityListLocationStart + 9, 1) <> "{" ) {
+
+                    reset()
+                    return "Missing terminating '}' in city list"
+
+                End if ( 
+
+                cityListLocationEnd = parsestring.IndexOf("}"c, cityListLocationStart + 10)
+
+                if (  cityListLocationEnd < 0 ) {
+
+                    reset()
+                    return "Missing terminating '}' in city list"
+
+                End if ( 
+
+                cityListstring = Substring(parsestring, cityListLocationStart + 10, cityListLocationEnd - (cityListLocationStart + 10))
+
+            End if ( 
+
+            if (  Length(parsestring) > cityListLocationEnd ) {
+                parsestring = Substring(parsestring, 0, cityListLocationStart) & Substring(parsestring, cityListLocationEnd + 1)
+            Else
+                parsestring = Substring(parsestring, 0, cityListLocationStart)
+            End if ( 
+
+        End if ( 
+
+        Dim operListLocationStart int = parsestring.IndexOf("OperationsList=")
+        Dim operListLocationEnd int
+
+        if (  operListLocationStart >= 0 ) {
+
+            if (  Substring(parsestring, operListLocationStart + 15, 8).ToUpper = "FULLLIST" ) {
+                operationListstring = "FULLLIST"
+                operListLocationEnd = operListLocationStart + 23
+            Else
+
+                if (  Substring(parsestring, operListLocationStart + 15, 1) <> "{" ) {
+
+                    reset()
+                    return "Missing terminating '}' in operations list"
+
+                End if ( 
+
+                operListLocationEnd = parsestring.IndexOf("}"c, operListLocationStart + 15)
+
+                if (  operListLocationEnd < 0 ) {
+
+                    reset()
+                    return "Missing terminating '}' in operations list"
+
+                End if ( 
+
+                operationListstring = Substring(parsestring, operListLocationStart + 16, operListLocationEnd - (operListLocationStart + 16))
+
+            End if ( 
+
+            if (  Length(parsestring) > operListLocationEnd ) {
+                parsestring = Substring(parsestring, 0, operListLocationStart) & Substring(parsestring, operListLocationEnd + 1)
+            Else
+                parsestring = Substring(parsestring, 0, operListLocationStart)
+            End if ( 
+
+        End if ( 
+
+        Dim buttonSpecLocationStart int = parsestring.IndexOf("Buttons=")
+        Dim buttonSpecLocationEnd int
+
+        if (  buttonSpecLocationStart >= 0 ) {
+
+            if (  Substring(parsestring, buttonSpecLocationStart + 8, 1) <> "{" ) {
+
+                reset()
+                return "Missing starting '{' in button specification list"
+
+            End if ( 
+
+            buttonSpecLocationEnd = parsestring.IndexOf("}"c, buttonSpecLocationStart + 9)
+
+            if (  buttonSpecLocationEnd < 0 ) {
+
+                reset()
+                return "Missing terminating '}' in button list"
+
+            End if ( 
+
+            buttonSpecstring = Substring(parsestring, buttonSpecLocationStart + 9, buttonSpecLocationEnd - (buttonSpecLocationStart + 9))
+
+            if (  Length(parsestring) > buttonSpecLocationEnd ) {
+                parsestring = Substring(parsestring, 0, buttonSpecLocationStart) & Substring(parsestring, buttonSpecLocationEnd + 1)
+            Else
+                parsestring = Substring(parsestring, 0, buttonSpecLocationStart)
+            End if ( 
+
+        End if ( 
+
+        defnstring = Substring(parsestring, 6)
+
+        Dim parmList() string = defnstring.Split(",")
+
+        Dim parm string
+
+        For Each parm In parmList
+            parseParm(Trim(parm))
+        Next
+
+        'Dim citystring string
+
+        cityListstring = cityListstring.ToUpper
+
+        if (  cityListstring = "FULLLIST" ) {
+
+            MsgBox("City full list not implemented")
+            Stop
+
+        Else
+
+            Dim tokenSet() string = cityListstring.Split(",")
+
+            Dim token string
+
+            For Each token In tokenSet
+
+                if (  isNonNullstring(token) ) {
+
+                    Dim subTokenSet() string = token.Split("/")
+
+                    Dim locationstring string = subTokenSet(0)
+
+                    if (  Length(locationstring) < 3 ) { locationstring = locationstring.PadRight(3)
+
+                    Dim citystring string = Substring(locationstring, 0, 3)
+
+                    citystring = Substring(token, 0, 3)
+
+                    if (  Not cityTable.ContainsKey(citystring) ) {
+                        cityList.Add(citystring)
+                        cityTable.Add(citystring, null)
+                    End if ( 
+
+                    if (  Not airportLocationTable.ContainsKey(locationstring) ) {
+                        airportLocationTable.Add(locationstring, token)
+                        airportLocationList.Add(locationstring)
+                    End if ( 
+
+                End if ( 
+
+            Next
+
+        End if ( 
+
+        Dim operation string
+
+        i = 0
+
+        if (  operationListstring.ToUpper = "FULLLIST" ) {
+
+            For Each operation In operationsMasterList
+                operationsTable.Add(operation, i)
+                operationsList.Add(operation)
+                i += 1
+            Next
+
+        Else
+
+            Dim tempOperationsList() string = operationListstring.Split(",")
+
+            For Each operation In tempOperationsList
+
+                if (  isNonNullstring(operation) ) {
+
+                    if (  operation = "PartialOffload" ) {
+                        operation = "Partial Offload"
+                    else if (  operation = "CompleteOffload" ) {
+                        operation = "Complete Offload"
+                    else if (  operation = "Possession&Load" ) {
+                        operation = "Possession & Load"
+                    End if ( 
+
+                    operationsTable.Add(operation, null)
+                    operationsList.Add(operation)
+
+                End if ( 
+
+            Next
+
+        End if ( 
+
+        Dim result string
+
+        if (  Not isNonNullstring(buttonSpecstring) ) {
+            setupDefaultButtonSpecs()
+            return "OK"
+        End if ( 
+
+        if (  buttonSpecstring.ToUpper = "DEFAULTS" ) {
+            setupDefaultButtonSpecs()
+            return "OK"
+        End if ( 
+
+        result = parseButtonSpecstring(buttonSpecstring)
+
+        if (  result <> "OK" ) { return result
+
+        return "OK"
+
+    }
+
+    private Function parseboolValue(ByVal tagName string, ByRef switch bool) string
+
+        Dim nodelist XmlNodeList
+        Dim xmlText string
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName(tagName)
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of '" & tagName & "' nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            xmlText = Trim(nodelist(0).InnerText)
+            xmlText = xmlText.ToUpper
+
+            if (  xmlText = "TRUE" ) {
+                switch = true
+            else if (  xmlText = "T" ) {
+                switch = true
+            else if (  xmlText = "FALSE" ) {
+                switch = false
+            else if (  xmlText = "F" ) {
+                switch = false
+            Else
+                return "Parse of '" & tagName & "' failed: invalid boolean value."
+            End if ( 
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseintValue(ByVal tagName string, ByRef returnValue int) string
+
+        Dim nodelist XmlNodeList
+        Dim xmlText string
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName(tagName)
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of '" & tagName & "' nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            xmlText = Trim(nodelist(0).InnerText)
+
+            try {
+                returnValue = CInt(xmlText)
+            } catch (Exception ex)
+                return "Invalid Integral Value"
+            End try {
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseCarrierCode() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("CarrierCode")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of carrier code nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            carrierCode = Trim(nodelist(0).InnerText)
+
+            if (  Not isValidCarrierCode(carrierCode) ) { return "Parse of carrier code failed: invalid carrier code."
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseDefaultLocation() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("DefaultLocation")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of default location nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            defaultLocation = Trim(nodelist(0).InnerText)
+
+            if (  Not isValidLocationCode(defaultLocation) ) { return "Parse of default location failed: invalid default location."
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseFtpHostName() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("FtpHostName")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of ftp host name nodes."
+        End if ( 
+
+        if (  nodelist.Count >= 1 ) {
+
+            ftpHostName = Trim(nodelist(0).InnerText)
+
+            if (  ftpHostName.Length <= 0 ) { return "Parse of ftp host name failed: ftp host name."
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseFtpLoginID() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("FtpLoginID")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of ftp host name nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            ftpLoginID = Trim(nodelist(0).InnerText)
+
+            if (  ftpLoginID.Length <= 0 ) { return "Parse of ftp login ID failed: ftp login ID name."
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseFtpPassword() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("FtpPassword")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of ftp password nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            ftpPassword = Trim(nodelist(0).InnerText)
+
+            if (  ftpPassword.Length <= 0 ) { return "Parse of ftp password failed: ftp password."
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseFtpPortNumber() string
+
+        Dim nodelist XmlNodeList
+        Dim xmlText string
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("FtpPortNumber")
+
+        if (  nodelist.Count >= 1 ) {
+
+            xmlText = Trim(nodelist(nodelist.Count - 1).InnerText)
+
+            if (  Not Isint(xmlText) ) { return "Parse of ftp port number failed: non-integral value."
+
+            try {
+                ftpPortNumber = CInt(xmlText)
+            } catch (Exception ex)
+                return "Parse of ftp port number failed: non-integral value."
+            End try {
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseUserFullName() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("UserFullName")
+
+        if (  nodelist.Count >= 1 ) {
+
+            userFullName = Trim(nodelist(nodelist.Count - 1).InnerText)
+
+            if (  userFullName.Length <= 0 ) { return "Parse of user full name failed: invalid value."
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseUserName() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("UserName")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of user name nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            userName = Trim(nodelist(0).InnerText)
+
+            if (  userName.Length <= 0 ) { return "Parse of user name failed: invalid value."
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    public Function parseCityListstring() string
+
+        Dim tokenSet() string = cityListstring.Split(",")
+
+        Dim token string
+
+        cityList.Clear()
+        cityTable.Clear()
+        airportLocationTable.Clear()
+        airportLocationList.Clear()
+
+        For Each token In tokenSet
+
+            token = token.Trim(trimChars)
+
+            if (  isNonNullstring(token) ) {
+
+                Dim subTokenSet() string = token.Split("/")
+
+                Dim locationstring string = subTokenSet(0)
+
+                if (  Length(locationstring) < 3 ) {
+                    locationstring = locationstring.PadRight(3)
+                    Stop
+                End if ( 
+
+                Dim citystring string = Substring(locationstring, 0, 3)
+
+                'citystring = Substring(token, 0, 3)
+
+                if (  Not cityTable.ContainsKey(citystring) ) {
+                    cityList.Add(citystring)
+                    cityTable.Add(citystring, null)
+                End if ( 
+
+                if (  Not airportLocationTable.ContainsKey(locationstring) ) {
+                    airportLocationTable.Add(locationstring, token)
+                    airportLocationList.Add(locationstring)
+                End if ( 
+
+            End if ( 
+
+        Next
+
+        cityList.Sort()
+
+        return "OK"
+
+    }
+
+    public Function parseEthernetCityListstring() string
+
+        Dim tokenSet() string = ethernetCityListstring.Split(",")
+
+        Dim token string
+
+        ethernetCityTable.Clear()
+
+        For Each token In tokenSet
+            token = token.Trim(trimChars)
+            token = Substring(token, 0, 3)
+            ethernetCityTable.Add(token, null)
+        Next
+
+        return "OK"
+
+    }
+
+    public Function parseWirelessCityListstring() string
+
+        Dim tokenSet() string = wirelessCityListstring.Split(",")
+
+        Dim token string
+
+        wirelessCityTable.Clear()
+
+        For Each token In tokenSet
+            token = token.Trim(trimChars)
+            token = Substring(token, 0, 3)
+            wirelessCityTable.Add(token, null)
+        Next
+
+        return "OK"
+
+    }
+
+    private Function parseCityList() string
+
+        Dim result string
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("CityList")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of city list nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+            cityListstring = Trim(nodelist(0).InnerText)
+            result = parseCityListstring()
+
+            return result
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseEthernetCityList() string
+
+        Dim result string
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("EthernetCityList")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of ethernet city list nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+            ethernetCityListstring = Trim(nodelist(0).InnerText)
+            result = parseEthernetCityListstring()
+
+            return result
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseWirelessCityList() string
+
+        Dim result string
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("WirelessCityList")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of wireless city list nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+            wirelessCityListstring = Trim(nodelist(0).InnerText)
+            result = parseWirelessCityListstring()
+
+            return result
+        End if ( 
+
+        return "OK"
+
+    }
+
+    public Function parseOperationListstring() string
+
+        Dim operation string
+        Dim i int
+
+        operationsTable.Clear()
+
+        if (  operationListstring == null ) {
+            operationListstring = ""
+        End if ( 
+
+        operationListstring = operationListstring.Trim(trimChars)
+
+        if (  operationListstring.ToUpper = "FULLLIST" ) {
+
+            For Each operation In operationsMasterList
+                operationsTable.Add(operation, null)
+                operationsList.Add(operation)
+            Next
+
+        Else
+
+            Dim tempOperationsList() string = operationListstring.Split(",")
+
+            For Each operation In tempOperationsList
+
+                operation = operation.Trim(trimChars)
+
+                if (  isNonNullstring(operation) ) {
+
+                    if (  operation = "PartialOffload" ) {
+                        operation = "Partial Offload"
+                    else if (  operation = "CompleteOffload" ) {
+                        operation = "Complete Offload"
+                    else if (  operation = "Possession&Load" ) {
+                        operation = "Possession & Load"
+                    End if ( 
+
+                    operationsTable.Add(operation, i)
+                    operationsList.Add(operation)
+
+                    i += 1
+
+                End if ( 
+
+            Next
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseOperationsList() string
+
+        Dim nodelist XmlNodeList
+
+        Dim result string
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("OperationsList")
+
+        if (  nodelist.Count > 1 ) {
+            return "Corrupt XML User Specification: invalid number of operation list nodes."
+        End if ( 
+
+        if (  nodelist.Count = 1 ) {
+
+            operationListstring = Trim(nodelist(0).InnerText)
+
+            result = parseOperationListstring()
+
+            return result
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function parseButtonsList() string
+
+        Dim nodelist XmlNodeList
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName("Buttons")
+
+        setupDefaultButtonSpecs()
+
+        if (  nodelist.Count >= 1 ) {
+
+            buttonSpecstring = Trim(nodelist(nodelist.Count - 1).InnerText)
+
+            if (  buttonSpecstring == null ) {
+                buttonSpecstring = ""
+            End if ( 
+
+            buttonSpecstring = buttonSpecstring.Trim(trimChars)
+
+            if (  buttonSpecstring.ToUpper = "DEFAULTS" ) { return "OK"
+
+            summaryButtonSpec.visible = false
+            presetsButtonSpec.visible = false
+            'adminButtonSpec.visible = false
+            binUploadButtonSpec.visible = false
+            binChangeButtonSpec.visible = false
+            manifestButtonSpec.visible = false
+            mailButtonSpec.visible = false
+            cargoButtonSpec.visible = false
+
+            Dim buttonNodeList XmlNodeList
+
+            buttonNodeList = nodelist(nodelist.Count - 1).ChildNodes
+
+            Dim buttonNode XmlNode
+
+            Dim buttonSpecRecord buttonSpecRecordClass
+
+            For Each buttonNode In buttonNodeList
+
+                Select Case buttonNode.Name.ToUpper
+
+                    Case "SUMMARY"
+                        buttonSpecRecord = summaryButtonSpec
+
+                        'Case "ADMIN"
+                        '    buttonSpecRecord = adminButtonSpec
+
+                    Case "PRESETS"
+                        buttonSpecRecord = presetsButtonSpec
+
+                    Case "BINUPLOAD"
+                        buttonSpecRecord = binUploadButtonSpec
+
+                    Case "BINCHANGE"
+                        buttonSpecRecord = binChangeButtonSpec
+
+                    Case "MAILSCAN"
+                        buttonSpecRecord = mailButtonSpec
+
+                    Case "CARGOSCAN"
+                        buttonSpecRecord = cargoButtonSpec
+
+                    Case "MANIFEST"
+                        buttonSpecRecord = manifestButtonSpec
+
+                    Case Else
+
+                        return "Parse of button specification failed: invalid button type"
+
+                End Select
+
+                Dim locationstring string = ""
+                Dim sizestring string = ""
+                Dim textstring string = ""
+
+                Dim buttonSpecList XmlNodeList = buttonNode.ChildNodes
+
+                Dim buttonSpec XmlNode
+
+                For Each buttonSpec In buttonSpecList
+
+                    Dim buttonSpecName string = Trim(buttonSpec.Name)
+
+                    Select Case buttonSpecName.ToUpper
+
+                        Case "SIZE"
+                            sizestring = Trim(buttonSpec.InnerText)
+
+                        Case "LOCATION"
+                            locationstring = Trim(buttonSpec.InnerText)
+
+                        Case "TEXT"
+                            textstring = Trim(buttonSpec.InnerText)
+
+                        Case Else
+                            return "Parse of button specification failed: invalid node."
+
+                    End Select
+
+                Next
+
+                buttonSpecRecord.parse(locationstring, sizestring, textstring)
+
+                if (  Not buttonSpecRecord.visible ) { return "Invalid button spec parameter"
+
+            Next
+
+        End if ( 
+
+        return "OK"
+
+    }
+
+    private Function getOrCreateRootNode() XmlNode
+
+        Dim nodeList XmlNodeList
+        Dim rootNode XmlNode
+
+        nodeList = userSpecRecordXMLDocument.GetElementsByTagName("User")
+
+        if (  nodeList.Count = 0 ) {
+
+            rootNode = userSpecRecordXMLDocument.CreateNode(XmlNodeType.Element, "User", "")
+
+        else if (  nodeList.Count = 1 ) {
+
+            rootNode = nodeList(0)
+
+        Else
+
+            rootNode = null
+
+        End if ( 
+
+        return rootNode
+
+    }
+
+    public Function updateTextValue(ByVal tagName string, ByVal textValue string) string
+
+        Dim nodelist XmlNodeList
+        Dim xmlText string
+
+        Dim rootNode XmlNode
+        Dim childNode XmlNode
+
+        nodelist = userSpecRecordXMLDocument.GetElementsByTagName(tagName)
+
+        if (  nodelist.Count = 0 ) {
+
+            rootNode = getOrCreateRootNode()
+
+            if (  rootNode == null ) {
+                return "Corrupt XML Document: missing root node <User>"
+            End if ( 
+
+            childNode = userSpecRecordXMLDocument.CreateNode(XmlNodeType.Element, tagName, "")
+
+            if (  childNode == null ) {
+                return "Creation of new node for text value failed."
+            End if ( 
+
+            rootNode.AppendChild(childNode)
+
+        else if (  nodelist.Count = 1 ) {
+
+            childNode = nodelist(0)
+
+        Else
+
+            return "Corrupt XML User Spec Representation. Fails on tag '" & tagName & "'"
+
+        End if ( 
+
+        childNode.InnerText = Trim(textValue)
+
+        return "OK"
+
+    }
+
+    private Function updateboolValue(ByVal tagName string, ByVal switch bool) string
+
+        return updateTextValue(tagName, CStr(switch))
+
+    }
+
+    private Function updatebuttonSpec(ByVal buttonSpec buttonSpecRecordClass, ByRef buttonNode XmlNode) string
+
+        Dim sizeNodeFound bool = false
+        Dim locationNodeFound bool = false
+        Dim textNodeFound bool = false
+
+        Dim node XmlNode
+
+        For Each node In buttonNode.ChildNodes
+
+            Select Case node.Name
+
+                Case "Size"
+
+                    sizeNodeFound = true
+                    node.InnerText = CStr(buttonSpec.size.Width) & "," & CStr(buttonSpec.size.Height)
+
+                Case "Location"
+
+                    locationNodeFound = true
+                    node.InnerText = CStr(buttonSpec.location.X) & "," & CStr(buttonSpec.location.Y)
+
+                Case "Text"
+
+                    textNodeFound = true
+                    node.InnerText = Trim(buttonSpec.text)
+
+            End Select
+
+        Next
+
+        if (  Not sizeNodeFound ) {
+
+            Dim childNode XmlNode = userSpecRecordXMLDocument.CreateNode(XmlNodeType.Element, "Size", "")
+
+            if (  childNode == null ) {
+                return "Creation of new node for button size value failed."
+            End if ( 
+
+            childNode.InnerText = CStr(buttonSpec.size.Width) & "," & CStr(buttonSpec.size.Height)
+
+            buttonNode.AppendChild(childNode)
+
+        End if ( 
+
+        if (  Not locationNodeFound ) {
+
+            Dim childNode XmlNode = userSpecRecordXMLDocument.CreateNode(XmlNodeType.Element, "Location", "")
+
+            if (  childNode == null ) {
+                return "Creation of new node for button location value failed."
+            End if ( 
+
+            childNode.InnerText = CStr(buttonSpec.location.X) & "," & CStr(buttonSpec.location.Y)
+
+            buttonNode.AppendChild(childNode)
+
+        End if ( 
+
+        if (  Not textNodeFound ) {
+
+            Dim childNode XmlNode = userSpecRecordXMLDocument.CreateNode(XmlNodeType.Element, "Text", "")
+
+            if (  childNode == null ) {
+                return "Creation of new node for button text value failed."
+            End if ( 
+
+            childNode.InnerText = Trim(buttonSpec.text)
+
+            buttonNode.AppendChild(childNode)
+
+        End if ( 
+
+        return "OK"
+
+    }
+

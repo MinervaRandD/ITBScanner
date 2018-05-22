@@ -1,0 +1,361 @@
+<VisualStudioProject>
+    <EVisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.6030"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{23300B30-3909-48DC-8F95-8E42D9EC2B4F}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "ASINetTest"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "On"
+                OutputFileFolder = "\Program Files\ASINetTest"
+                RootNamespace = "ASINetTest"
+                StartupObject = "ASINetTest.FormMain"
+            >
+                <Platform Name = "Pocket PC" />
+                <Config
+                    Name = "Debug|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "MSCORLIB"
+                    AssemblyName = "mscorlib"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "OpenNETCF"
+                    AssemblyName = "OpenNETCF"
+                    HintPath = "DLLs\OpenNETCF.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "OpenNETCF.Drawing"
+                    AssemblyName = "OpenNETCF.Drawing"
+                    HintPath = "DLLs\OpenNETCF.Drawing.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "OpenNETCF.Windows.Forms"
+                    AssemblyName = "OpenNETCF.Windows.Forms"
+                    HintPath = "DLLs\OpenNETCF.Windows.Forms.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "OpenNETCF.VisualBasic"
+                    AssemblyName = "OpenNETCF.VisualBasic"
+                    HintPath = "DLLs\OpenNETCF.VisualBasic.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System"
+                    AssemblyName = "System"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.Time"
+                    AssemblyName = "Rebex.Net.Time"
+                    HintPath = "DLLs\Rebex.Net.Time.dll"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.Ftp"
+                    AssemblyName = "Rebex.Net.Ftp"
+                    HintPath = "DLLs\Rebex.Net.Ftp.dll"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.SecureSocket"
+                    AssemblyName = "Rebex.Net.SecureSocket"
+                    HintPath = "DLLs\Rebex.Net.SecureSocket.dll"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Security"
+                    AssemblyName = "Rebex.Security"
+                    HintPath = "DLLs\Rebex.Security.dll"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.ProxySocket"
+                    AssemblyName = "Rebex.Net.ProxySocket"
+                    HintPath = "DLLs\Rebex.Net.ProxySocket.dll"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "OpenNETCF.Net"
+                    AssemblyName = "OpenNETCF.Net"
+                    HintPath = "DLLs\OpenNETCF.Net.dll"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Design"
+                    AssemblyName = "System.CF.Design"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Design.UI"
+                    AssemblyName = "System.CF.Design.UI"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Windows.Forms"
+                    AssemblyName = "System.CF.Windows.Forms"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Drawing"
+                    AssemblyName = "System.CF.Drawing"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System"
+                    AssemblyName = "System"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "OpenNETCF.CF.Windows.Forms"
+                    AssemblyName = "OpenNETCF.CF.Windows.Forms"
+                    HintPath = "DLLs\OpenNETCF.Windows.Forms.dll"
+                    Private = "False"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+                <Import Namespace = "OpenNETCF" />
+                <Import Namespace = "OpenNETCF.Configuration" />
+                <Import Namespace = "OpenNETCF.Diagnostics" />
+                <Import Namespace = "OpenNETCF.Drawing" />
+                <Import Namespace = "OpenNETCF.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Changes.txt"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "FormMain.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FormMain.resx"
+                    DependentUpon = "FormMain.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UIMan.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DLLs\icmpwrap.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DLLs\psuuid0c.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PanelHelpers\Finish.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PanelHelpers\General.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PanelHelpers\Submit.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PanelHelpers\Testing.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PanelHelpers\Upload.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PanelHelpers\Welcome.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\DNS.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\FTP.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\Generic.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\NetworkSettings.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\NTP.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\Ping.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\Tester.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\Timing.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\TraceRoute.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\Writer.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\ToolBox\Ping.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\ToolBox\RAS.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\ToolBox\Registry.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Test\ToolBox\TraceRoute.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Uploader\Results.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Util\SerialNumber.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </EVisualBasic>
+</VisualStudioProject>
+

@@ -1,0 +1,40 @@
+<!-- Files listed here will be automatically copied from their source location into the Input folder before every CAB build -->
+<updates>
+    <update>
+    	<filename>Asi.Itb.Bll.dll</filename>
+    	<source>..\..\src\UI\bin\Debug</source>
+    </update>
+	<update>
+    	<filename>Asi.Itb.Dal.dll</filename>
+    	<source>..\..\src\UI\bin\Debug</source>
+    </update>
+	<update>
+    	<filename>Asi.Itb.Utilities.dll</filename>
+    	<source>..\..\src\UI\bin\Debug</source>
+    </update>
+	<update>
+    	<filename>BugzScout.dll</filename>
+    	<source>..\..\src\UI\bin\Debug</source>
+    </update>	
+	<update>
+    	<filename>Gps.Location.dll</filename>
+    	<source>..\..\src\UI\bin\Debug</source>
+    </update>
+	<update>
+    	<filename>Hardware.dll</filename>
+    	<source>..\..\src\UI\bin\Debug</source>
+    </update>
+	
+	<update>
+    	<filename>Itb.exe</filename>
+    	<source>..\..\src2\Xenocode\Itb\Debug</source>
+    </update>	
+	<update>
+    	<filename>AsiUpdater.exe</filename>
+    	<source>..\..\src2\Xenocode\AsiUpdater</source>
+    </update>	
+	<update>
+    	<filename>ASINetTest.exe</filename>
+    	<source>..\..\src2\Xenocode\NetTester</source>
+    </update>    
+</updates>

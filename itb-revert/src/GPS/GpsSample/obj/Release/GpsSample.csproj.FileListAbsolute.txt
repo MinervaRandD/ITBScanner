@@ -1,0 +1,10 @@
+C:\work\itb-revert\src\GPS\GpsSample\bin\Release\GpsSample.exe
+C:\work\itb-revert\src\GPS\GpsSample\bin\Release\GpsSample.pdb
+C:\work\itb-revert\src\GPS\GpsSample\bin\Release\Gps.Location.dll
+C:\work\itb-revert\src\GPS\GpsSample\bin\Release\Gps.Location.pdb
+C:\work\itb-revert\src\GPS\GpsSample\obj\Release\ResolveAssemblyReference.cache
+C:\work\itb-revert\src\GPS\GpsSample\obj\Release\GpsTest.Form1.resources
+C:\work\itb-revert\src\GPS\GpsSample\obj\Release\GpsSample.Properties.Resources.resources
+C:\work\itb-revert\src\GPS\GpsSample\obj\Release\GpsSample.csproj.GenerateResource.Cache
+C:\work\itb-revert\src\GPS\GpsSample\obj\Release\GpsSample.exe
+C:\work\itb-revert\src\GPS\GpsSample\obj\Release\GpsSample.pdb

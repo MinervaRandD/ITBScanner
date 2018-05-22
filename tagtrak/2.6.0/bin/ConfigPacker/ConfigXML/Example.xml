@@ -1,0 +1,211 @@
+<!-- Everything MUST be in the User tag -->
+<User>
+    <!-- Configuration version, with any changes to the options in this file you MUST increment this number. -->
+    <myConfigVersion>2.6.0.0.7</myConfigVersion>
+
+    <!-- User name (NO SPACES) -->
+    <UserName>TestCarrier</UserName>
+    <!-- User full name -->
+    <UserFullName>99 Airline</UserFullName>
+    <!-- Carrier code -->
+    <CarrierCode>99</CarrierCode>
+    <!-- FTP host name -->
+    <FtpHostName>ftp.asiscan.com</FtpHostName>
+    <!-- FTP port -->
+    <FtpPortNumber>21</FtpPortNumber>
+    <!-- FTP login -->
+    <FtpLoginID>99</FtpLoginID>
+    <!-- FTP password -->
+    <FtpPassword>cnyNiZ</FtpPassword>
+
+    <!-- Enables transfer point entry for Transfer operation in domestic -->
+    <TransferPointOnScanForm>False</TransferPointOnScanForm>
+    
+    <!-- Undefined, not used -->
+    <TailNumberOnScanForm>False</TailNumberOnScanForm>
+    
+    <!-- Undefined, not used -->
+    <RejectReasonOnScanForm>False</RejectReasonOnScanForm>
+    
+    <!-- Undefined, not used -->
+    <CanChangeLocationOnScanForm>False</CanChangeLocationOnScanForm>
+    
+    <!-- Is a password required to change location (at init time as well) -->
+    <PasswordRequiredForLocationChangeOnScanForm>true</PasswordRequiredForLocationChangeOnScanForm>
+    
+    <!-- Are transfer scans processed as load scans? (Domestic) -->
+    <TreatTransferScansAsLoadScans>True</TreatTransferScansAsLoadScans>
+    
+    <!-- Does Load or Posession and Load require a selection from a preset? (Domestic and International) -->
+    <LoadScansRequireSelectionFromPreset>False</LoadScansRequireSelectionFromPreset>
+    
+    <!-- When adding a preset do we require a destination? -->
+    <PresetsRequireDestinationSpecifications>True</PresetsRequireDestinationSpecifications>
+    
+    <!-- Allow to release lock-down (Start Menu) from admin form -->
+    <LockDownReleasedInAdminForm>False</LockDownReleasedInAdminForm>
+    
+    <!-- Put up a warning on a duplicate scan, if this is False scan is ignored (Domestic and International) -->
+    <WarnOnDuplicateScan>False</WarnOnDuplicateScan>
+    
+    <!-- Should the flight number/destination/origin get validated with the flight schedule? On a mismatch a warning pops up. (Domestic and International) -->
+    <DisplayFlightValidationMessages>True</DisplayFlightValidationMessages>
+    
+    <!-- Is "Messages" shown in the start menu -->
+    <MessagesEnabled>True</MessagesEnabled>
+    
+    <!-- Is "Cargo Ops" shown in the start menu -->
+    <CargoScanEnabled>True</CargoScanEnabled>
+    
+    <!-- Is "International Mail Ops" shown in the start menu -->
+    <InternationalMailEnabled>True</InternationalMailEnabled>
+    
+    <!-- Is "Intl Mail (Simple)" shown in the start menu -->
+    <InternationalSimpleMailEnabled>True</InternationalSimpleMailEnabled>
+    
+    <!-- Is "Mail Ops" shown in the start menu -->
+    <MailScanEnabled>True</MailScanEnabled>
+    
+    <!-- Is "Mail Ops (Simple)" shown in the start menu -->
+    <MailSimpleScanEnabled>True</MailSimpleScanEnabled>
+    
+    <!-- Is "THS Ops" shown in the start menu -->
+    <THSScanEnabled>True</THSScanEnabled>
+    
+    <!-- Is "Baggage Scan" shown in the start menu -->
+    <BaggageScanEnabled>True</BaggageScanEnabled>
+    
+    <!-- Undefined, not used -->
+    <DisplayInternationalPostOffices>True</DisplayInternationalPostOffices>
+    
+    <!-- Prompt for CARDIT routing information if not known? (International) -->
+    <IntlPromptCardit>True</IntlPromptCardit>
+    
+    <!-- If bar code matches this pattern, it's a cart ID (International) -->
+    <IntlCartIdPattern>^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$</IntlCartIdPattern>
+    
+    <!-- If bar code matches this pattern, it's a cart ID (Domestic, THS) -->
+    <MailCartIdPattern>^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$</MailCartIdPattern>
+    
+    <!-- Undefined, not used -->
+    <PostalOfficeList>US, DK</PostalOfficeList>
+    
+    <!-- Is the unload entire cart option enabled? (International) -->
+    <UnloadEntireCart>False</UnloadEntireCart>
+    
+    <!-- Is the unload entire flight option enabled? (International) -->
+    <UnloadEntireFlight>False</UnloadEntireFlight>
+ 
+    <!-- Keeps the laser on after a scan is complete to provide continuous scanning without pushing the trigger each time. -->
+    <continuousMailScan>True</continuousMailScan>
+    
+    <!-- Disables backups of scan files. -->
+    <DisableBackups>False</DisableBackups>
+
+    <!-- Prompt for weight in excess of 100 pounds. Will send 0.0 if weight is not known. (Domestic) -->
+    <PromptForExcessWeight>True</PromptForExcessWeight>
+    
+    <!-- After this timeout (in minutes) of user inactivity the entry fields will be reset. -->
+    <ScreenTimeOutValue>1</ScreenTimeOutValue>
+    
+        <!-- After this timeout (in minutes) of user inactivity, if logins are enabled, the login form be shown. -->
+    <logoutTimeOutValue>20</logoutTimeOutValue>
+    
+    <!-- NTP servers to use to synchronize tome on every "Send" or "Check upload/download". Requires UDP access. -->
+    <NTPList>
+        0.pool.ntp.org, 1.pool.ntp.org, 2.pool.ntp.org, pool.ntp.org
+    </NTPList>
+        
+     <!-- Defines list of available cities with various options -->
+    <CityList>
+        <!-- City -->
+        <ACK>
+            <!-- If either one of the two tags below is True we use the wireless connection method. -->
+            <!-- Wireless connections will also be used if the city used in not in this list. -->
+            <!-- For a wireless connection first we try to connect to FTP with a 15 second timeout. 
+              <!-- If that fails we try and establish a Dial Up (Cell) connection for 120 seconds. -->
+            <!-- If that succeeds we go ahead and try to connect to the FTP site with a 15 second timeout and 3 retries. -->  
+            <!-- If any operation fails we abort. -->  
+            <Wireless802.11>True</Wireless802.11>
+            <Wireless>True</Wireless>
+            
+            <!-- Uses the "Ethernet" FTP connection method. -->
+            <!-- For this connection method the device must be in the cradle (unless "Dolphin"). Cradled devices are defined as devices that are receiving power. -->
+            <!-- Connections are retried 3 times with a 30 second timeout. -->
+            <!-- This overrides the <Wireless> and <Wireless802.11> tags if those are enabled -->
+            <Wired>True</Wired>
+            
+            <!-- This will enable periodic attempts to start a "Send" process. -->
+            <Autosend>True</Autosend>
+            
+            <!-- This specifies the interval (in seconds) at which the "AutoSend" operation will occur. -->
+            <AutosendPeriodicity>30</AutosendPeriodicity>
+            
+            <!-- Undefined, not used -->
+            <Groundhandler>False</Groundhandler>
+            
+            <!-- This will turn off checking for late mail (mail past the close-out date). -->
+            <LateMailPrompt>True</LateMailPrompt>
+            
+            <!-- This specifies if mail within a specified grace period (see <AllowLateMailAcceptPeriod> below) will be accepted without prompting. -->
+            <AllowLateMailAccept>False</AllowLateMailAccept>
+            
+            <!-- If <AllowLateMailAccept> is set to True, this defines (in minutes) the grace period past the closeout date for late mail. -->
+            <!-- Mail past the closeout date but within the grace period will automatically be accepted without prompting. -->
+            <AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod>
+        </ACK>
+    </CityList> 
+    
+    <!-- Re-mapps operation code names to different ones. If this tag is omitted default names are used -->
+    <OperationsMapping>
+        <Map> <Name>Load</Name> <MapTo>Load</MapTo> </Map>
+        <Map> <Name>Unload</Name> <MapTo>Unload</MapTo> </Map>
+        <Map> <Name>Delivery</Name> <MapTo>Delivery</MapTo> </Map>
+        <Map> <Name>Transfer</Name> <MapTo>Transfer</MapTo> </Map>
+        <Map> <Name>Partial Offload</Name> <MapTo>Partial Offload</MapTo> </Map>
+        <Map> <Name>Complete Offload</Name> <MapTo>Complete Offload</MapTo> </Map>
+        <Map> <Name>Return</Name> <MapTo>Return</MapTo> </Map>
+        <Map> <Name>Possession</Name> <MapTo>Possession</MapTo> </Map>
+        <Map> <Name>Offline Trns. Conveyed</Name> <MapTo>Offline Trns. Conveyed</MapTo> </Map>
+        <Map> <Name>Offline Trns. Received</Name> <MapTo>Offline Trns. Received</MapTo> </Map>
+        <Map> <Name>Online Transfer</Name> <MapTo>Online Transfer</MapTo> </Map>
+    </OperationsMapping>
+
+    <!-- List of enabled operation names for domestic -->
+    <OperationsList>
+       Possession,  Load, Delivery, Transfer, Partial Offload, Complete Offload, Return 
+    </OperationsList>
+
+    <!-- List of enabled operation names for THS -->
+    <THSOperationsList>
+       Build, Close, Tender, Receive, Break, Reassign, Ex. - Not Loaded, Ex. - Void
+    </THSOperationsList>
+
+    <!-- This list of carriers will show up on the CARDIT screen if there is no routing information present -->
+    <!-- If omitted, just the current carrier will show up -->
+    <CarditRouteCarrierList>
+        99,70,6O,AC,B6,CO,LH,LO,NH,NZ,OZ,OS,RG,SK,SQ,TG,UA,US
+    </CarditRouteCarrierList>
+
+    <!-- This is the list if carriers the users can selects as adjunct carriers from the International and International simple form -->
+    <!-- If omitted, just the current carrier will show up -->
+    <AdjunctCarrierList>
+        AC, LH, LO, NH, NZ, OS, OZ, RG, SK, SQ, TG, UA, US
+    </AdjunctCarrierList>
+
+    <!-- Operations enabled for international -->
+    <InternationalOperationsList>
+        Possession, Load, Unload, Delivery, Partial Offload, Complete Offload, Offline Trns. Conveyed, Offline Trns. Received, Online Transfer, Return 
+    </InternationalOperationsList>
+
+    <!-- Operations enabled for international simple -->
+    <IntlSimpleOperationsList>
+        Possession,  Delivery, Offline Trns. Received, Return 
+    </IntlSimpleOperationsList>
+
+    <!-- Operations enabled for cargo -->
+    <CargoOperationsList>
+        Acceptance, Load, Unload, Delivery, Offload, Online Transfer, Offline Transfer, Warehouse Move
+    </CargoOperationsList>
+
+</User>

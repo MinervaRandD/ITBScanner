@@ -1,0 +1,30 @@
+SR05145001 (5-25-2005)
+
+
+Applicable Software Versions
+----------------------------
+This SR has been tested for PSM 3.77 running OS v4.51 on the following platforms:
+- Windows Mobile 2003 Premium on 700CXL
+- Windows Mobile 2003 GPRS Phone SKU on 700CXL.
+
+
+
+This service pack addresses the following issue:
+------------------------------------------------
+When a unit was resumed using the left or right buttons, a series of error beeps occurred.  The beeps have been disabled.
+
+
+Installation Procedure
+----------------------
+This CAB file only needs to be run once.
+
+
+FILES:
+------
+"IKLTrigger.cpp" was changed which produced a new "IKLdecoder.dll" in iva_4.00.19.0065.
+
+
+
+
+
+

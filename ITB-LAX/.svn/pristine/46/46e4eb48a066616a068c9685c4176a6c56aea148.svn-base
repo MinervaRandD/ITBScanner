@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<configuration>
+	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="OpenNETCF" publicKeyToken="30C767B29D52D6E6" culture="neutral"/>
+				<bindingRedirect oldVersion="0.0.0.0-1.4.50804.0" newVersion="1.4.50804.0"/>
+			</dependentAssembly>
+		</assemblyBinding>
+	</runtime>
+</configuration>

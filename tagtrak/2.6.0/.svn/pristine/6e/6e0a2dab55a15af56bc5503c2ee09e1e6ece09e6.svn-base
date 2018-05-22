@@ -1,0 +1,64 @@
+2002, no 802, cell (CORE enabled, no sim card)
+
+-- Cell (Not Connecting) --
+
+9/4/2001 4:51:25 AM: Adapter Info
+9/4/2001 4:51:26 AM: ------------
+9/4/2001 4:51:26 AM: Adapter(2): lan90001
+9/4/2001 4:51:26 AM: Type: Ethernet
+9/4/2001 4:51:26 AM: IP: 192.168.10.239
+9/4/2001 4:51:26 AM: Subnet: 255.255.255.0
+9/4/2001 4:51:26 AM: Gateway: 192.168.10.1
+9/4/2001 4:51:26 AM: DHCP Enabled: True
+9/4/2001 4:51:26 AM: DHCP Server: 192.168.10.88
+9/4/2001 4:51:26 AM: *Description: INTERMEC LAN9000 Ethernet Adapter
+9/4/2001 4:51:26 AM: *HasWins: True
+9/4/2001 4:51:26 AM: *LeaseExpires: 9/4/2001 10:38:31 AM
+9/4/2001 4:51:26 AM: *LeaseObtained: 9/4/2001 8:38:31 AM
+9/4/2001 4:51:26 AM: *MacAddress: 00-10-40-03-4A-10-00-00
+9/4/2001 4:51:27 AM: *PrimaryWinsServer: 192.168.10.101
+9/4/2001 4:51:27 AM: *SecondaryWinsServer: 
+9/4/2001 4:51:27 AM: Wireless Error: True
+9/4/2001 4:51:27 AM: 
+9/4/2001 4:51:27 AM: 
+9/4/2001 4:51:28 AM: Connection Info
+9/4/2001 4:51:28 AM: ---------------
+9/4/2001 4:51:28 AM: Connection Status: Unknown
+9/4/2001 4:51:28 AM: Timeout: 5000
+9/4/2001 4:51:28 AM: Connections
+9/4/2001 4:51:28 AM: -----------
+9/4/2001 4:51:28 AM: GUID: 436ef144-b4fb-4863-a041-8f905a62c572
+9/4/2001 4:51:29 AM: Description: Default Internet Settings
+9/4/2001 4:51:29 AM: 
+9/4/2001 4:51:29 AM: GUID: 7022e968-5a97-4051-bc1c-c578e2fba5d9
+9/4/2001 4:51:29 AM: Description: The WAP Network
+9/4/2001 4:51:29 AM: 
+9/4/2001 4:51:29 AM: GUID: a1182988-0d73-439e-87ad-2a5b369f808b
+9/4/2001 4:51:29 AM: Description: Default Work Settings
+9/4/2001 4:51:29 AM: 
+9/4/2001 4:51:30 AM: GUID: adb0b001-10b5-3f39-27c6-9742e785fcd4
+9/4/2001 4:51:30 AM: Description: Internet Settings
+9/4/2001 4:51:30 AM: 
+9/4/2001 4:51:30 AM: GUID: 18ad9fbd-f716-acb6-fd8a-1965db95b814
+9/4/2001 4:51:30 AM: Description: Work Settings
+9/4/2001 4:51:30 AM: 
+9/4/2001 4:51:30 AM: 
+9/4/2001 4:51:31 AM: Ping ftp.asiscan.com
+9/4/2001 4:51:31 AM: --------------------
+9/4/2001 4:52:28 AM: Exception: OpenNETCF.Net.NetworkInformation.PingException:Impossible to resolve host or address. ---> System.Net.Sockets.SocketException:No such host is known
+9/4/2001 4:52:28 AM: Ping Delay: 57000ms
+9/4/2001 4:52:29 AM: 
+9/4/2001 4:52:29 AM: 
+9/4/2001 4:52:30 AM: FTP
+9/4/2001 4:52:30 AM: ---
+9/4/2001 4:53:29 AM: Connect Result: Failed
+9/4/2001 4:53:29 AM: Connect Delay: 59000ms
+9/4/2001 4:53:30 AM: 
+9/4/2001 4:53:30 AM: 
+9/4/2001 4:53:30 AM: NTP
+9/4/2001 4:53:30 AM: ---
+9/4/2001 4:53:30 AM: Server: pool.ntp.org
+9/4/2001 4:54:25 AM: Resolution: Failed
+9/4/2001 4:54:26 AM: Resolution Delay: 55000ms
+9/4/2001 4:54:26 AM: 
+9/4/2001 4:54:26 AM: 

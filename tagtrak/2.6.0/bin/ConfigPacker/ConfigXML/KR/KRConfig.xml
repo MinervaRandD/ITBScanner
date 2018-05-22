@@ -1,0 +1,58 @@
+<User>
+		<myConfigVersion>2.5.1.0.0</myConfigVersion>
+		
+        <UserName>KR</UserName>
+        <UserFullName>Kitty Hawk, Inc</UserFullName>
+        <CarrierCode>KR</CarrierCode>
+        <FtpHostName>ftp.asiscan.com</FtpHostName>
+        <FtpPortNumber>21</FtpPortNumber>
+        <FtpLoginID>kittyhawk</FtpLoginID>
+        <FtpPassword>H52xwv</FtpPassword>
+
+        <TransferPointOnScanForm>False</TransferPointOnScanForm>
+        <TailNumberOnScanForm>False</TailNumberOnScanForm>
+        <RejectReasonOnScanForm>False</RejectReasonOnScanForm>
+        <CanChangeLocationOnScanForm>False</CanChangeLocationOnScanForm>
+        <PasswordRequiredForLocationChangeOnScanForm>true</PasswordRequiredForLocationChangeOnScanForm>
+        <TreatTransferScansAsLoadScans>True</TreatTransferScansAsLoadScans>
+        <LoadScansRequireSelectionFromPreset>False</LoadScansRequireSelectionFromPreset>
+        <PresetsRequireDestinationSpecifications>True</PresetsRequireDestinationSpecifications>
+        <LockDownReleasedInAdminForm>False</LockDownReleasedInAdminForm>
+        <WarnOnDuplicateScan>True</WarnOnDuplicateScan>
+        <DisplayFlightValidationMessages>True</DisplayFlightValidationMessages>
+	<MessagesEnabled>True</MessagesEnabled>
+	<CargoScanEnabled>True</CargoScanEnabled>
+	<BaggageScanEnabled>True</BaggageScanEnabled>
+	<InternationalMailEnabled>True</InternationalMailEnabled>
+	<InternationalSimpleMailEnabled>True</InternationalSimpleMailEnabled>
+    <DisplayInternationalPostOffices>True</DisplayInternationalPostOffices>
+       <CityList> 
+        ATL, AUS, BDL, BNA, BOS, BUF, BWI, CLE, CLT, CMH, CVG, DAY, DEN, DFW, DTW, ELP, EWR, FWA, GRR, IAD, IAH, IND, JAX, JFK, LAS, LAX, LEX, MCI, MCO, MIA, MKE, MSP, OMA, ORD, ORF, PDX, PHL, PHX, PIT, RDU, RIC, SAN, SDF, SEA, SFO, SJU, SLC, STL, TPA, YYZ
+       </CityList>
+ 
+       <EthernetCityList>
+	ATL, AUS, BDL, BNA, BOS, BUF, BWI, CLE, CLT, CMH, CVG, DAY, DEN, DFW, DTW, ELP, EWR, FWA, GRR, IAD, IAH, IND, JAX, JFK, LAS, LAX, LEX, MCI, MCO, MIA, MKE, MSP, OMA, ORD, ORF, PDX, PHL, PHX, PIT, RDU, RIC, SAN, SDF, SEA, SFO, SJU, SLC, STL, TPA, YYZ
+       </EthernetCityList>
+ 
+       <OperationsList>
+           Possession,  Load, Delivery, Transfer, PartialOffload, CompleteOffload, Return 
+       </OperationsList>
+
+       <AdjunctCarrierList>AA, US, TZ, B6, LH</AdjunctCarrierList>
+ 
+       <InternationalOperationsList>
+           Possession,  Load, Delivery, Partial Offload, Complete Offload, Offline Trns. Conveyed, Offline Trns. Received, Online Transfer, Return 
+       </InternationalOperationsList>
+
+       <IntlSimpleOperationsList>
+           Possession,  Delivery, Offline Trns. Received, Return 
+       </IntlSimpleOperationsList>
+ 
+       <CargoOperationsList>
+           Acceptance, Load, Unload, Delivery, Offload, Consignee, Online Transfer, Offline Transfer
+       </CargoOperationsList>
+
+    <IntlPromptCardit>True</IntlPromptCardit>
+    <IntlCartIdPattern>^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$</IntlCartIdPattern>
+    <MailCartIdPattern>^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$</MailCartIdPattern>
+</User>

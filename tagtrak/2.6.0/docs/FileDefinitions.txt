@@ -1,0 +1,194 @@
+File definitions 
+================
+This is a basic description of all the various data files used by TagTrak 2.x
+
+
+
+GENERAL
+=======
+
+airport_codes.gz
+================
+Contains a list of all known airport codes, each three character airport code is on a separate line.
+
+Example
+-------
+CUR
+CUU
+CUZ
+CVF
+CVG
+CVJ
+CVM
+CVN
+CVQ
+CVS
+CVT
+CWA
+CWB
+CWL
+CWT
+CXB
+CXH
+CXI
+
+scanner_passwd.gz
+=================
+Contains a list of user name/password hash sets grouped by carrier and city. This is used to validate logins.
+
+Format
+------
+[USER NAME SHA1 HASH][TAB][PASSWORD SHA1 HASH][TAB][CARRIERS]
+[CARRIERS] = ":" separated list of carriers
+
+Example
+-------
+1613f36d06342303f69469f5a1b29c21	e6e66b8981c1030d5650da159e79539a	SK	EWR	
+1adb706dd4cd8188585eec974d47c47b	f6ca8f027f555426eb96ea49df7dba88	SK	CPH	
+9197a649f7dd993240a80fe1dce964e2	f6ca8f027f555426eb96ea49df7dba88	SK	CPH	
+66b66ff37e743903d1d1137a66048c4b	66b66ff37e743903d1d1137a66048c4b	SK	CPH	
+9c678c2b7bf6559e242d12d1cb559d5e	3aa036de14108646909e411c525f19bb	99	AKL:AUA:CDG:CPH:PPT	I
+
+Note that there are some extra fields at the end that are never actually used and are there for future implementations.
+
+
+
+
+CITY ROOT
+=========
+
+cardit.txt.gz
+=============
+Not Used.
+
+flightroutes.txt.gz
+===================
+Stores bar codes matched to a flight number and effective dates. Not used correctly.
+
+Format
+------
+[EFFECTIVE DATE]"|"[DISCONTINUE DATE]
+[FLIGHT][ROUTE CODE][ROUTE CODE]...
+
+FLIGHT = 4 characters
+ROUTE CODE = 4 characters
+
+Example
+-------
+03-31-2007|04-02-2007
+0102GGIM
+1020R1YFR1YG
+1021FEZWFX3BGDPKL1YEL203PXR1PXRLQ794Q79I
+10237K697K6B7K8K7K8LNFWING0VQZNG
+
+Routings.bin
+============
+Contains a list of route codes as bit-mapped hashed values. Basically we take a 4 character route code, hash it to a bit position and set that bit.
+Using this we determine if a domestic route code is valid.
+
+RoutingUpdates.txt
+==================
+Contains updates to Routings.bin as text entries on separate lines.
+
+Example
+-------
+AN5QK
+GA3RS
+...
+
+time
+====
+Contains the latest date and time on a single line.
+
+tz2/tz2.gz
+==========
+Contains time zone UTC offset information for cities.
+
+Format
+------
+"[CITY][SP][OFFSET]([CR])[LF]"
+
+[CITY] = 3 character city code.
+[OFFSET] = floating point UTC offset numeral.
+
+([CR])[LF] after every record, [CR] is optional.
+
+Example
+-------
+IAD -4
+GIG -3
+GOT  2
+MXP  2
+CPH  2
+LIS  1
+ZRH  2
+MAD  2
+
+
+
+
+CITY
+====
+
+cargit.txt.gz
+=============
+Defines bar codes (and optionally flight numbers for which we have CARDIT routing information. If any defined barcodes are scanned we don't 
+prompt for routing information, otherwise we do.
+
+Example
+-------
+
+IEDUBADKCPHAAUN6023600900
+IEDUBADKCPHAAUN6023600700
+*6011,82,33
+IEDUBADKCPHAAUN6023600100
+IEDUBADKCPHAAUN6023600200
+*1023,99
+HUBUDACNBJSAAEN6021400110
+HUBUDACNBJSAAUN6023500111
+*
+SESTOACNBJSAAUN6020300500
+IEDUBACNBJSAAUN6023800100
+
+In this case, there will be no valid flight number checking for the first two cardit records. The second two cardit records 
+must be loaded on either flight 6011, 82, or 33. The third two cardit records must be loaded on either flight 1023 or 99. 
+The final two cardit records will not be checked for valid flight numbers
+
+FlightInfoExt.txt.gz
+====================
+Keeps track of inbound and outbound flight numbers and their destinations or origins. If a scan is done with an incorrect flight number and/or 
+an incorrect origin/detination pair a prompt will come up asking the user to verify their actions.
+
+Data format
+-----------
+
+CLT,ABX|0234|DFW
+-------               Origin cities (comma separated) (optional)
+        ----          Flight number
+             ---      Destination cities (comma separated) (optional)
+             
+
+CTY.ontime.gz
+=============
+This is used to find the close-out time, departure time and flight number for domestic bar codes. If a bar code is past the close-out time we 
+warn the user. The departure time/flight number pair is stored for bar code grouping. For example, we can use the departure time/flight number 
+to not prompt the user on every bar code in a group if a prompt was already shown and accepted for a bar code in the group.
+
+Format
+------
++[CLOSEOUT DATE],[DEPARTURE DATE],[FLIGHT]
+[BARCODE]
+[BARCODE]
+...
+
+Example
+-------
++2006-12-24 14:30,2006-12-24 16:00,471
+HFSDH11LBF
+HFSDH11LBJ
+HFSDH11LBM
+
+tz
+==
+(OBSOLETE)
+This is the time zone offset.

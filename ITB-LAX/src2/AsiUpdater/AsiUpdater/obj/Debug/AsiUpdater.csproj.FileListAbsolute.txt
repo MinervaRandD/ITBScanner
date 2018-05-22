@@ -1,0 +1,16 @@
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\UpdaterConfig.xml
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\AsiUpdater.exe
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\AsiUpdater.pdb
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\Hardware.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\OpenNETCF.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\OpenNETCF.Windows.Forms.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\Symbol.Barcode.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\Symbol.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\Symbol.StandardForms.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\Intermec.DataCollection.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\bin\Debug\Symbol.ResourceCoordination.dll
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\obj\Debug\ResolveAssemblyReference.cache
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\obj\Debug\AsiUpdater.Properties.Resources.resources
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\obj\Debug\AsiUpdater.csproj.GenerateResource.Cache
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\obj\Debug\AsiUpdater.exe
+C:\work\ITB-LAX\src2\AsiUpdater\AsiUpdater\obj\Debug\AsiUpdater.pdb

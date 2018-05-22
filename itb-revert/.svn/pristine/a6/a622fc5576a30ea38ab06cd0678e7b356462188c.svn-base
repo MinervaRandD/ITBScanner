@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItbRequest>
+  <SN>123456789</SN>
+  <ProgramVersion>1.0.1.14</ProgramVersion>
+  <ConfigVersion>LAX1.0</ConfigVersion>
+  <DownloadFile>
+    <Name>ITB.1.1.3.cab</Name>
+    <StartByte>0</StartByte>
+    <ChunkSize>1024</ChunkSize>
+  </DownloadFile>
+  <Gps>33.72434,-118.212891</Gps>
+  <LastUpdateServerTime>2009-09-01 18:52:27.6558</LastUpdateServerTime>
+  <Scans>
+    <Scan>
+      <Barcode>CO175431</Barcode>
+      <Operation>1</Operation>
+      <Location>ABCD123</Location>
+      <UserName>twink</UserName>
+      <ScanTime>2009-09-01 18:54:32.9865</ScanTime>
+    </Scan>
+    <Scan>
+      <Barcode>CO175432</Barcode>
+      <Operation>1</Operation>
+      <Location>ABCD123</Location>
+      <UserName>twink</UserName>
+      <ScanTime>2009-09-01 18:54:35.55215</ScanTime>
+      <Damaged />
+    </Scan>
+    <Scan>
+      <Barcode>CO175431</Barcode>
+      <Operation>2</Operation>
+      <Location>XYZ1234</Location>
+      <UserName>twink</UserName>
+      <ScanTime>2009-09-01 19:09:01.6528</ScanTime>
+    </Scan>
+  </Scans>
+</ItbRequest>
+<!-- 
+Definitions:
+
+- ItbRequest: root element; mandatory for xml validity.
+- SN: serial number of the scanner; mandatory.
+- ProgramVersion: version number of current scanner software; optional; present when checking for upgrade.
+- ConfigVersion: version number of current scanner configuration; optional; present when checking for upgrade.
+- DownloadFile: file to download from server; optional; present when downloading program/config upgrade file from server, typically after response from previous checking for upgrade request contains upgrade file list, and user decided to get them. The request will not contains other case when this node is present.
+  - Name:  name of file to download; required.
+  - StartByte: starting position to download file; optional; present when downloading file by chunks, default to 0.
+  - ChunkSize: size of each chunk to download; optional; present when downloading file by chunks, default to whole file size.
+- Gps: latitude,longitude of current gps location; optional; present when gps data is available or when the set gps upload time limit has elapsed (TBD).
+- LastUpdateServerTime: locally stored server UTC timestamp when the scanner last updated/downloaded information from server; mandatory. This value informs server how "up-to-date" the scanner is, so that server only need to send down changes happened after this time on the server.
+- Scans: list of local scans; optional; present when there are local scans not yet uploaded.
+   - Scan: individual scan record; child node of Scans.
+      - Barcode: barcode/tag/license plate of the bag; required as child node of Scan.
+      - Operation: operation code of the scan; required as child node of Scan. 
+      - Location: barcode of the location, gate number if operation code is Gate Pickup/Dropoff; required as child node of Scan.
+      - Username: username of the employee who did the scan; required as child node of Scan.
+      - ScanTime: UTC time when the scan occurred; required as child node of Scan.
+      - Damage: whether the bag is deemed to be damaged; optional; present when the "Damaged" menu is checked on the scan screen. 
+      
+-->

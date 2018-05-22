@@ -1,0 +1,32 @@
+SR05038001 (02-07-2005)
+
+
+Applicable Hardware
+-------------------
+Pocket PC 700 Color
+Pocket PC 730
+Pocket PC 700CXL
+
+
+
+Applicable Software Versions
+----------------------------
+This SR has been tested for PSM v3.65 running OS v4.41.
+
+
+
+This service pack addresses the following issue:
+------------------------------------------------
+1.) Addresses problem with occasional lockup after Warm Booting and Suspending/Resuming the terminal.
+
+
+
+Installation Procedure
+----------------------
+This CAB file only needs to be run once.
+Warm boot after installation.
+
+
+FILES:
+------
+PSMLock.dll

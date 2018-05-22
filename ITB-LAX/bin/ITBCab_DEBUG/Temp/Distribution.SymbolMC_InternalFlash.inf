@@ -1,0 +1,80 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Aviation Software, Inc."
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="InterBag Installer"
+InstallDir="\Application"
+
+[CEDevice]
+VersionMin=4.0
+VersionMax=6.99
+BuildMax=0xE0000000
+
+[Strings]
+Flash = "\Application\"
+StartUp="StartUp\"
+StartUpCtl="StartUpCtl\"
+StartUpCtlBin="Bin\"
+Reset="OnReset\"
+CABS="CabFiles\"
+
+[DefaultInstall]
+CopyFiles=CABS,STARTUP,STARTUPCTL,STARTUPCTLBIN,RESET
+AddReg = RegSettings.All
+
+[SourceDisksNames]
+1=,"PrerequisiteCAB",,"C:\work\ITB-LAX\bin\ITBCab_DEBUG\Input"
+2=,"MainCAB",,"C:\work\ITB-LAX\bin\ITBCab_DEBUG\CABs\Itb"
+3=,"NetTestCAB",,"C:\work\ITB-LAX\bin\ITBCab_DEBUG\CABs\NetTest"
+4=,"SupportFiles",,"C:\work\ITB-LAX\bin\ITBCab_DEBUG\Input"
+5=,"AsiUpdaterCAB",,"C:\work\ITB-LAX\bin\ITBCab_DEBUG\CABs\AsiUpdater"
+
+[SourceDisksFiles]
+NETCFv35.wm.ARMV4I.cab=1
+NETCFv35.Messages.EN.wm.cab=1
+sqlce.ppc.wce5.armv4i.CAB=1
+sqlce.repl.ppc.wce5.armv4i.CAB=1
+ITB.CAB=2
+NetTest.CAB=3
+StartUpCtl.exe=4
+StartUpCtlConfig.txt=4
+copyfiles.exe=4
+regmerge.exe=4
+OnReset.txt=4
+OnReset_1.txt=4
+AsiUpdater.CAB=5
+
+[DestinationDirs]
+CABS=0,%InstallDir%\%CABS%
+STARTUP=0,%Flash%%StartUp%
+STARTUPCTL=0,%InstallDir%\%StartUpCtl%
+STARTUPCTLBIN=0, %InstallDir%\%StartUpCtl%%StartUpCtlBin%
+RESET=0,%InstallDir%\%StartUpCtl%%Reset%
+
+[CABS]
+NETCFv35.wm.ARMV4I.cab,,,0x40000000
+NETCFv35.Messages.EN.wm.cab,,,0x40000000
+sqlce.ppc.wce5.armv4i.CAB,,,0x40000000
+sqlce.repl.ppc.wce5.armv4i.CAB,,,0x40000000
+ITB.CAB,,,0x40000000
+NetTest.CAB,,,0x40000000
+AsiUpdater.CAB,,,0x40000000
+[STARTUP]
+StartUpCtl.exe,,,0x40000000
+
+[STARTUPCTL]
+StartUpCtlConfig.txt,,,0x40000000
+
+[STARTUPCTLBIN]
+copyfiles.exe,,,0x40000000
+regmerge.exe,,,0x40000000
+
+[RESET]
+OnReset.txt,,,0x40000000
+OnReset_1.txt,,,0x40000000
+
+[RegSettings.All]
+HKLM,HARDWARE\DEVICEMAP\KEYBD,RedKeyOverride,0x00000000,
+HKLM,HARDWARE\DEVICEMAP\KEYBD,GreenKeyOverride,0x00000000,

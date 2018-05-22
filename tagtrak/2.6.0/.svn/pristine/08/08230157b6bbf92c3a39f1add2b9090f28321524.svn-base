@@ -1,0 +1,66 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Airline-Software, Inc."
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="USPS Mail"
+InstallDir=%CE1%\%AppName%
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=4.99
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+addreg= regsettings.all
+
+[DefaultInstall.ARMV4]
+CopyFiles=Files.ARMV4
+CESetupDLL=vsd_setup.dll
+
+[SourceDisksNames]
+1=,"Common1",,"C:\Airline Software\Projects\TagTrack\SystemBuilder\SystemBuilder\ARMV4 Common Files\"
+2=,"Common2",,"C:\Airline Software\Projects\TagTrack\SystemBuilder\SystemBuilder\Intermec Files\"
+3=,"Common3",,"C:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\"
+
+[SourceDisksNames.ARMV4]
+6=,"ARMV4_Source",,"C:\Airline Software\Projects\USPS Mail\USPS Mail. Release\obj\Intermec"
+7=,"ARMV4_Setup",,"C:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE\wce300\ARMV4\"
+
+[SourceDisksFiles]
+USPS Mail.exe=6
+USPS Mail.pdb=6
+GAC_OpenNETCF.Net_v1_1_3288_0_cneutral_1.dll=1
+Intermec.DataCollection.dll=3
+Rebex.Net.Ftp.dll=1
+Rebex.Net.ProxySocket.dll=1
+OpenNETCF.dll=1
+OpenNETCF.Net.dll=1
+
+[SourceDisksFiles.ARMV4]
+vsd_config.txt.ARMV4=6
+vsd_setup.dll=7
+
+[DestinationDirs]
+Shortcuts=0,%CE2%\Start Menu
+Files.ARMV4=0,%InstallDir%
+
+[Files.ARMV4]
+vsd_config.txt,vsd_config.txt.ARMV4,,0
+vsd_setup.dll,,,0xc0000002
+USPS Mail.exe,,,0
+USPS Mail.pdb,,,0
+GAC_OpenNETCF.Net_v1_1_3288_0_cneutral_1.dll,,,0xc0000002
+Intermec.DataCollection.dll,,,0xc0000002
+Rebex.Net.Ftp.dll,,,0xc0000002
+OpenNETCF.dll,,,0xc0000002
+OpenNETCF.Net.dll,,,0xc0000002
+Rebex.Net.ProxySocket.dll,,,0xc0000002
+
+[Shortcuts]
+USPS Mail,0,USPS Mail.exe,%CE11%
+
+[RegSettings.All]
+HKLM,"Hardware\Devicemap\Keybd","vkeyGold",0x00000001,00,00,0b,05,02,03,c1,07,04,03,00,00,00,00,72,00,09,01,75,00,76,00,09,00,09,00,5b,00,bb,00,38,01,00,00,bf,00,00,00,21,00,32,01,bd,00,00,00,32,00,09,05,22,00,bc,00,bb,01,34,00,35,00,33,00,02,02,08,00,be,00,37,00,38,00,36,00,03,02,01,02,20,00,30,00,0d,00,39,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,07,05,01,05,03,05,02,05
+HKLM,"Hardware\Devicemap\Keybd\ALPHA","vkeyGold",0x00000001,00,00,0b,05,02,03,c1,07,04,03,00,00,00,00,72,00,09,01,75,00,76,00,09,00,09,00,5b,00,bb,00,38,01,00,00,bf,00,00,00,21,00,32,01,bd,00,00,00,32,00,09,05,22,00,bc,00,bb,01,34,00,35,00,33,00,02,02,08,00,be,00,37,00,38,00,36,00,03,02,01,02,20,00,30,00,0d,00,39,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,07,05,01,05,03,05,02,05

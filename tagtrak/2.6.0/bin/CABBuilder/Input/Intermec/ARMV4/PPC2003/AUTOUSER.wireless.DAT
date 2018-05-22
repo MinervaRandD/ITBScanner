@@ -1,0 +1,4 @@
+WAIT 5
+RUN "\SDMMC Disk\CORE\CORE.exe"
+WAIT 25
+RUN "\Program Files\TagTrak\TagTrak.exe"

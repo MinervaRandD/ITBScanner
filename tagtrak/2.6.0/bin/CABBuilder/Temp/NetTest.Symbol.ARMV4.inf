@@ -1,0 +1,54 @@
+[Version]
+Signature = "$Windows NT$"
+Provider = "ASI"
+CESignature = "$Windows CE$"
+
+[CEStrings]
+AppName = "ASI Net Test"
+InstallDir=%CE1%\%AppName%
+
+[CEDevice]
+VersionMin=3.0
+VersionMax=4.99
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+CopyFiles=Files.Common
+
+[SourceDisksNames]
+1=,"Common1",,"C:\work\tagtrak\2.6.0\bin\CABBuilder\Input\Symbol\ARMV4\PPC2002"
+
+[SourceDisksFiles]
+ASINetTest.exe=1
+icmpwrap.dll=1
+Rebex.Net.Time.dll=1
+Rebex.Security.dll=1
+Rebex.Net.SecureSocket.dll=1
+Rebex.Net.Ftp.dll=1
+Rebex.Net.ProxySocket.dll=1
+OpenNETCF.dll=1
+OpenNETCF.Drawing.dll=1
+OpenNETCF.Net.dll=1
+OpenNETCF.VisualBasic.dll=1
+OpenNETCF.Windows.Forms.dll=1
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+Shortcuts=0,%CE2%\Start Menu
+
+[Files.Common]
+ASINetTest.exe, , , 0
+icmpwrap.dll, , , 0
+Rebex.Net.Time.dll, , , 0
+Rebex.Security.dll, , , 0
+Rebex.Net.SecureSocket.dll, , , 0
+Rebex.Net.Ftp.dll, , , 0
+Rebex.Net.ProxySocket.dll, , , 0
+OpenNETCF.dll, , , 0
+OpenNETCF.Drawing.dll, , , 0
+OpenNETCF.Net.dll, , , 0
+OpenNETCF.VisualBasic.dll, , , 0
+OpenNETCF.Windows.Forms.dll, , , 0
+
+[Shortcuts]
+ASI Net Test,0,ASINetTest.exe,%CE11%

@@ -1,0 +1,25 @@
+2.6.0 Testing Addendum
+======================
+
+1. There's new logic to obtain the time when TagTrak starts up for the first time after a clean install. If the initial connection fails, 
+   we have no way of knowing if the time/time zone settings are right and we force the user to try and set those without needing a password. 
+   If after this the location is changed (from within the scanning screen) the scanner operates in a special mode where it doesn't know the time.
+  
+  - Things to test:
+    - Do a clean install and then do a check upload download WITHOUT having a connection to the Internet, let it FAIL to enter this new special mode.
+    - Play around and make sure everything works here bofore you do a sync. Scan stuff, use different function, ect...
+    
+  - Note:
+    - If the scanner has absolutely no idea what time it is, you'll get a message box telling you to set the time. This is only for testing and 
+      will not happen in production versions. If you see these, make a note of where/when they showed up.
+    
+2. I've changed the way TagTrak gets the list of all possible cities. It now downloads them from FTP. This 
+   mostly affects the routing screen for international.
+  
+    - Things to test:
+        - Routing screen for bar codes without routing information. Also test this when doing test 1.
+        
+3. Time/time zone testing. I've scrapped the old time/time zone infrastructure and put in a new one.
+
+    - What to test:
+        - Pay special attention to time/date correctness for various location.

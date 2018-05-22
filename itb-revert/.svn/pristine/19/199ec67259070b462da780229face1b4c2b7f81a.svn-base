@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItbResponse>
+  <ServerTime>2009-09-01 12:25:01.435243</ServerTime>
+  <ProgramUpgradeFiles>
+    <File>
+      <Name>ITB.1.1.3.cab</Name>
+      <Size>9872347</Size>
+    </File>
+    <File>
+      <Name>ITB.Bll.1.1.3.cab</Name>
+      <Size>438347</Size>
+    </File>
+  </ProgramUpgradeFiles>
+  <ConfigUpgradeFiles>
+    <File>
+      <Name>Config.LAX2.cab</Name>
+      <Size>348946</Size>
+    </File>
+  </ConfigUpgradeFiles>
+  <ExitCode>1342ade123c498bc12</ExitCode>
+  <GpsUploadIntervalSeconds>60</GpsUploadIntervalSeconds>
+  <BagDropOffTimeLimitMinutes>10</BagDropOffTimeLimitMinutes>
+  <Users>
+    <User>
+      <UserName>twink</UserName>
+      <Password>254a3657bc45de23f</Password>
+      <Salt>m9DPOYd24b7TQmdq6DBo</Salt>
+      <Level>Transport</Level>
+    </User>
+    <User>
+      <UserName>mavis</UserName>
+      <Password>9548b657bc45de290</Password>
+      <Salt>n8TPOYd24PiTR7dq6DBy</Salt>
+      <Level>Transport</Level>
+    </User>
+  </Users>
+  <Locations>
+    <Location>
+      <Name>ABC23434</Name>
+      <Type>P</Type>
+      <Gps>33.72434,-118.476562</Gps>
+      <Carriers>CO,UA</Carriers>
+    </Location>
+    <Location>
+      <Name>CDE2343</Name>
+      <Type>D</Type>
+      <Gps>33.72438,-118.476589</Gps>
+      <Carriers>AA,US,DL</Carriers>
+    </Location>
+  </Locations>
+  <Flights>
+    <Flight>
+      <Carrier>CO</Carrier>
+      <Number>77</Number>
+      <ArrivalTime>09:34</ArrivalTime>
+    </Flight>
+    <Flight>
+      <Carrier>UA</Carrier>
+      <Number>485</Number>
+      <DepartureTime>14:25</DepartureTime>
+    </Flight>
+    <Flight>
+      <Carrier>CO</Carrier>
+      <Number>123</Number>
+      <ArrivalTime>10:09</ArrivalTime>
+    </Flight>
+    <Flight>
+      <Carrier>US</Carrier>
+      <Number>59</Number>
+      <ArrivalTime>11:00</ArrivalTime>
+      <DepartureTime>12:30</DepartureTime>
+    </Flight>
+  </Flights>
+  <Bsm>
+    <Bag>
+      <Barcode>3205175431</Barcode>
+      <DestLocation>CDE2324</DestLocation>
+      <InboundCarrier>CO</InboundCarrier>
+      <InboundFlight>77</InboundFlight>
+      <OutboundCarrier>UA</OutboundCarrier>
+      <OutboundFlight>485</OutboundFlight>
+    </Bag>
+    <Bag>
+      <Barcode>3205175432</Barcode>
+      <DestLocation>ABC1234</DestLocation>
+      <InboundCarrier>CO</InboundCarrier>
+      <InboundFlight>123</InboundFlight>
+      <OutboundCarrier>US</OutboundCarrier>
+      <OutboundFlight>59</OutboundFlight>
+    </Bag>
+  </Bsm>
+  <Scans>
+    <Scan>
+      <Barcode>3205175433</Barcode>
+      <Operation>1</Operation>
+      <Location>ABCD123</Location>
+      <ScanTime>2009-09-01 18:55:35.55215</ScanTime>
+    </Scan>
+    <Scan>
+      <Barcode>3205175432</Barcode>
+      <Operation>2</Operation>
+      <Location>XYZ1234</Location>
+      <ScanTime>2009-09-01 19:10:01.6528</ScanTime>
+    </Scan>
+  </Scans>
+  <Messages>
+    <Message>
+      <Subject>Flight CO123 is delayed</Subject>
+      <Content>By 1 minute.</Content>
+      <MessageTime>2009-09-01 09:10:34.32323</MessageTime>
+    </Message>
+    <Message>
+      <Subject>Flight UA124 is canceled.</Subject>
+      <Content>Due to weather condition at SFO.</Content>
+      <MessageTime>2009-09-01 11:12:14.98798</MessageTime>
+    </Message>
+  </Messages>
+</ItbResponse>
+<!-- 
+Definitions:
+
+- ItbResponse: root element; mandatory for xml validity.
+- ServerTime: (database) server UTC timestamp when the response is generated; mandatory. This value is stored by the scanner, and sent up in next request.
+- (Program|Config)UpgradeFiles: list of upgrade files available for current scanner, determined by ProgramVersion/ConfigVerison in request; optional; present when ProgramVersion/ConfigVersion is present in request.
+  - File: invididual upgrade file information; child node of (Program|Config)UpgradeFiles
+    - Name: name of the upgrade file; required; will be used by successive download requests to identify file to download.
+    - Size: size of the upgrade file; requried. needed for downloading files in chunks.
+- ExitCode: exit code used to exit the software, in encripted/hashed form; optional; present when the code was changed after LastUpdateSeverTime in request.
+- GpsUploadIntervalSeconds: airport settable parameter of the required time interval/frequency for scanners to upload GPS data; optional; present when the value is changed after LastUpdateServerTime in request.
+- BagDropOffTimeLimitMinutes: time limit value before which bags must be dropped off, otherwise be deemed LATE; optional; present when the value is changed after LastUpdateServerTime in request.
+- Users: list of users authorized to use this scanner (the spec says "local authorization credentials by airport", but it might not be necessary if a scanner is assigned to certain employee(s)); optional; present when any of the user info is changed after LastUpdateServerTime in request.
+   - User: individual user info; child node of Users.
+      - UserName: username; required as child node of User
+      - Password: password in hash/encrypted form; required as child node of Users
+      - Salt: salt string used in SHA encryption
+      - Level: user level of the user; required as child node of Users. Can be any of Transport/Supervisor/Auditor/ASI.
+- Locations: list of locations this scanner will iterate, derived from scanner route assignment; optional; present when the list is changed after LastUpdateServerTime in request.
+   - Location: individual location info; child node of Locations.
+      - Code: barcode of the location to be scanned; required as child node of Location.
+      - Operation: scan operation designated to the location; required as child node of Location.
+      - Gps: GPS latitude,longitude values of the location; required as child node of Location.
+      - Carriers: comma-delimited list of carriers for current location; required as child node of Location
+- BSM: list of BSM info for the airport. I am not sure how this information will be used by the scanner, and we may want to compress the list to only include bags relevant to current scanner; optional; present when the information is changed after LastUpdateSeverTime in request.
+   - Bag: individual bag info; child node of BSM.
+       - Barcode: tag/license plate of the bag; required as child node of Bag.
+       - DestLocation: destination location of the bag, derived from BSM/flight/location mapping; required as child node of Bag.
+       - InboundCarrier: inbound carrier of the bag; required as child node of Bag
+       - OutboundCarrier: outinbound carrier of the bag; required as child node of Bag
+- Scans: list of scans performed by other scanners assigned to the same tug as current scanner; optional; present when there have been new scans uploaded since LastUpdateServerTime in request.
+   - Scan: individual scan info; child node of Scans.
+       - Barcode: tag/license plate of the bag; required as child node of Scan.        
+       - Operation: operation code of the scan; required as child node of Scan.
+       - Location: barcode of the location; required as child node of scan.
+       - ScanTime: UTC time when the scan occurred; required as child node of scan.
+- Messages: list of new messages to send to the scanner; optional; present when there have been new messages since LastUpdateServerTime in request.
+   - Message: individual message info; child node of Messages.
+      - Subject: subject line of message to show in summary list; required as child node of Message.
+      - Content: detail content; required as child node of Message.
+      - MessageTime: UTC time of message creation; required as child node of Message. 
+-->

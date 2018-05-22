@@ -1,0 +1,1438 @@
+<VisualStudioProject>
+    <EVisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{84598D59-E82E-4633-B18D-567B62D7917B}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "TagTrak"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                OutputFileFolder = "\Program Files\TagTrak"
+                RootNamespace = "TagTrak"
+                StartupObject = ""
+            >
+                <Platform Name = "Pocket PC" />
+                <Config
+                    Name = "Intermec Release|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = 'deviceType="Intermec"'
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Intermec Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Intermec Debug|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = 'deviceType="Intermec"'
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Symbol Debug|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = 'deviceType="Symbol"'
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Symbol Release|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = 'deviceType="Symbol"'
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Symbol Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Dolphin Debug|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = 'deviceType="Dolphin"'
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Dolphin Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Dolphin Release|Pocket PC"
+                    BaseAddress = "0"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = 'deviceType="Dolphin"'
+                    DefineDebug = "false"
+                    DefineTrace = "false"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "false"
+                    OutputPath = "bin\Dolphin Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System"
+                    AssemblyName = "System"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Microsoft.WindowsCE.Forms"
+                    AssemblyName = "Microsoft.WindowsCE.Forms"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "System.Windows.Forms.DataGrid"
+                    AssemblyName = "System.Windows.Forms.DataGrid"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "mscorlib"
+                    AssemblyName = "mscorlib"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Symbol.ResourceCoordination"
+                    AssemblyName = "Symbol.ResourceCoordination"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Symbol.Barcode"
+                    AssemblyName = "Symbol.Barcode"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Symbol"
+                    AssemblyName = "Symbol"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "HHP.DataCollection.Common"
+                    AssemblyName = "HHP.DataCollection.Common"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "HHP.DataCollection.Decoding"
+                    AssemblyName = "HHP.DataCollection.Decoding"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Intermec.DataCollection"
+                    AssemblyName = "Intermec.DataCollection"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "OpenNETCF"
+                    AssemblyName = "OpenNETCF"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "OpenNETCF.Net"
+                    AssemblyName = "OpenNETCF.Net"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.Ftp"
+                    AssemblyName = "Rebex.Net.Ftp"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.ProxySocket"
+                    AssemblyName = "Rebex.Net.ProxySocket"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.SecureSocket"
+                    AssemblyName = "Rebex.Net.SecureSocket"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Net.Time"
+                    AssemblyName = "Rebex.Net.Time"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "Rebex.Security"
+                    AssemblyName = "Rebex.Security"
+                />
+                <Reference
+                    Platform = "Pocket PC"
+                    Name = "SharpZipLib"
+                    AssemblyName = "SharpZipLib"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Design.UI"
+                    AssemblyName = "System.CF.Design.UI"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Windows.Forms"
+                    AssemblyName = "System.CF.Windows.Forms"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Drawing"
+                    AssemblyName = "System.CF.Drawing"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System"
+                    AssemblyName = "System"
+                    Private = "False"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "System.CF.Windows.Forms.DataGrid"
+                    AssemblyName = "System.CF.Windows.Forms.DataGrid"
+                />
+                <Reference
+                    Platform = "Pocket PC-Designer"
+                    Name = "Microsoft.CF.WindowsCE.Forms"
+                    AssemblyName = "Microsoft.CF.WindowsCE.Forms"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AdminBaseForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminBaseForm.resx"
+                    DependentUpon = "AdminBaseForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminConfigForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminConfigForm.resx"
+                    DependentUpon = "AdminConfigForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminDateTimeForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminDateTimeForm.resx"
+                    DependentUpon = "AdminDateTimeForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminDownloadFileForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminDownloadFileForm.resx"
+                    DependentUpon = "AdminDownloadFileForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminFormRepositoryClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminFtpClientForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminFtpClientForm.resx"
+                    DependentUpon = "AdminFtpClientForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminFunctionsNotificationForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminFunctionsNotificationForm.resx"
+                    DependentUpon = "AdminFunctionsNotificationForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminLoggingForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminLoggingForm.resx"
+                    DependentUpon = "AdminLoggingForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminLoginForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminLoginForm.resx"
+                    DependentUpon = "AdminLoginForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminPasswordForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminPasswordForm.resx"
+                    DependentUpon = "AdminPasswordForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminResditFileDisplayForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminResditFileDisplayForm.resx"
+                    DependentUpon = "AdminResditFileDisplayForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminResditForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminResditForm.resx"
+                    DependentUpon = "AdminResditForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminSubConfigForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminSubConfigForm.resx"
+                    DependentUpon = "AdminSubConfigForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminUploadFileForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminUploadFileForm.resx"
+                    DependentUpon = "AdminUploadFileForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AdminUploadResditFileForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AdminUploadResditFileForm.resx"
+                    DependentUpon = "AdminUploadResditFileForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AutoFtpProcessForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AutoFtpProcessForm.resx"
+                    DependentUpon = "AutoFtpProcessForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AutoSendTimer.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BagRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BagScanBaseForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BagScanBaseForm.resx"
+                    DependentUpon = "BagScanBaseForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BagScanFormRepositoryClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BagScanRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BagScanTransaction.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BinChangeRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BinUploadRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CarditFlightLegClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CarditRoutingClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CarditRoutingRecord.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CargoRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CargoScanBaseForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CargoScanBaseForm.resx"
+                    DependentUpon = "CargoScanBaseForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CargoScanFormRepositoryClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CargoScanRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CargoScanTransaction.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "changeLocationInputBox.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "changeLocationInputBox.resx"
+                    DependentUpon = "changeLocationInputBox.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Changes.txt"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CityConfig.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CN41Entry.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CN41Entry.resx"
+                    DependentUpon = "CN41Entry.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Configuration.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CriticalSectionSemiphoreClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DandRTagClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DateAndTimeUtilities.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DateTimeIntervalRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DaylightSavingChangeDateClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DefaultConfigurationFile.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DefaultXMLConfiguration.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DestinationWarning.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DestinationWarning.resx"
+                    DependentUpon = "DestinationWarning.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DeviceHardwareErrorMessage.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DeviceHardwareErrorMessage.resx"
+                    DependentUpon = "DeviceHardwareErrorMessage.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DeviceUI.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Emulator.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ErrorLogForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ErrorLogForm.resx"
+                    DependentUpon = "ErrorLogForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FileUtilities.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FlightLoadingRecord.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FlightRoutesClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FlightScheduleError.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FlightScheduleError.resx"
+                    DependentUpon = "FlightScheduleError.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FlightStatusMessage.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FlightStatusMessage.resx"
+                    DependentUpon = "FlightStatusMessage.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpFailureNotification.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpFailureNotification.resx"
+                    DependentUpon = "FtpFailureNotification.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpFormRepositoryClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormDeviceNotInCradle.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormDeviceNotInCradle.resx"
+                    DependentUpon = "FtpMsgFormDeviceNotInCradle.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormDeviceNotInCradleHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormDeviceNotInCradleHelp.resx"
+                    DependentUpon = "FtpMsgFormDeviceNotInCradleHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormEtherConnFail.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormEtherConnFail.resx"
+                    DependentUpon = "FtpMsgFormEtherConnFail.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormEtherConnFailHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormEtherConnFailHelp.resx"
+                    DependentUpon = "FtpMsgFormEtherConnFailHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormLoginFailure.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormLoginFailure.resx"
+                    DependentUpon = "FtpMsgFormLoginFailure.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormLoginFailureHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormLoginFailureHelp.resx"
+                    DependentUpon = "FtpMsgFormLoginFailureHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormSysError.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormSysError.resx"
+                    DependentUpon = "FtpMsgFormSysError.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormSysWarning.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormSysWarning.resx"
+                    DependentUpon = "FtpMsgFormSysWarning.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessConnFail.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessConnFail.resx"
+                    DependentUpon = "FtpMsgFormWirelessConnFail.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessConnFailHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessConnFailHelp.resx"
+                    DependentUpon = "FtpMsgFormWirelessConnFailHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessFtpConnFail.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessFtpConnFail.resx"
+                    DependentUpon = "FtpMsgFormWirelessFtpConnFail.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessFtpConnFailHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgFormWirelessFtpConnFailHelp.resx"
+                    DependentUpon = "FtpMsgFormWirelessFtpConnFailHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgUploadDownloadProcessFail.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgUploadDownloadProcessFail.resx"
+                    DependentUpon = "FtpMsgUploadDownloadProcessFail.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpMsgUploadDownloadProcessFailHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpMsgUploadDownloadProcessFailHelp.resx"
+                    DependentUpon = "FtpMsgUploadDownloadProcessFailHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "FtpProcessClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpProcessForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FtpProcessForm.resx"
+                    DependentUpon = "FtpProcessForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "InitializationForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "InitializationForm.resx"
+                    DependentUpon = "InitializationForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LocationClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LogEventRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LogMaintenance.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LogRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailDomsScanRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailIntlScanRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanBinChangeForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanBinChangeForm.resx"
+                    DependentUpon = "MailScanBinChangeForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanBinUploadForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanBinUploadForm.resx"
+                    DependentUpon = "MailScanBinUploadForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanCreateNewPresetForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanCreateNewPresetForm.resx"
+                    DependentUpon = "MailScanCreateNewPresetForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanDomsForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanDomsForm.resx"
+                    DependentUpon = "MailScanDomsForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanFormRepositoryClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanGetCarditRoute.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanGetCarditRoute.resx"
+                    DependentUpon = "MailScanGetCarditRoute.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanGetWeightForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanGetWeightForm.resx"
+                    DependentUpon = "MailScanGetWeightForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanIntlForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanIntlForm.resx"
+                    DependentUpon = "MailScanIntlForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanIntlSimpleForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanIntlSimpleForm.resx"
+                    DependentUpon = "MailScanIntlSimpleForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanManifestForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanManifestForm.resx"
+                    DependentUpon = "MailScanManifestForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanManifestSummary.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanManifestSummary.resx"
+                    DependentUpon = "MailScanManifestSummary.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanPresetsForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanPresetsForm.resx"
+                    DependentUpon = "MailScanPresetsForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanRerouteForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanRerouteForm.resx"
+                    DependentUpon = "MailScanRerouteForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MailScanTransactionDoms.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailScanTransactionIntl.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailSwitch.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MailSwitch.resx"
+                    DependentUpon = "MailSwitch.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MessagesForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MessagesForm.resx"
+                    DependentUpon = "MessagesForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MsAddRoutingForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MsAddRoutingForm.resx"
+                    DependentUpon = "MsAddRoutingForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MsMsgGetCarditRoutingHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MsMsgGetCarditRoutingHelp.resx"
+                    DependentUpon = "MsMsgGetCarditRoutingHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MsMsgInvalidRouting.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MsMsgInvalidRouting.resx"
+                    DependentUpon = "MsMsgInvalidRouting.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MsMsgInvalidRoutingHelp.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MsMsgInvalidRoutingHelp.resx"
+                    DependentUpon = "MsMsgInvalidRoutingHelp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NavigationMainMenu.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NewRoutingRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NewVersionNotification.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NewVersionNotification.resx"
+                    DependentUpon = "NewVersionNotification.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NonUSMailWarning.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NonUSMailWarning.resx"
+                    DependentUpon = "NonUSMailWarning.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NtpClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Ontime.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OntimeManagementForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OntimeManagementForm.resx"
+                    DependentUpon = "OntimeManagementForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OntimeManagementHelpForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OntimeManagementHelpForm.resx"
+                    DependentUpon = "OntimeManagementHelpForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OntimeRecord.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OperationsMapClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PasswordGenerator.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PasswordRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PresetRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PsuuidClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RejectReason.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RejectReason.resx"
+                    DependentUpon = "RejectReason.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ResditFileSpecRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ResditUploadReminderForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ResditUploadReminderForm.resx"
+                    DependentUpon = "ResditUploadReminderForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "routingSetClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ScannerLibClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ScanReaderClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ScanRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ScanRecordSetClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "scanStateClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SetDateAndTimeLoginForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SetDateAndTimeLoginForm.resx"
+                    DependentUpon = "SetDateAndTimeLoginForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "StartupProcess.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "StringUtilities.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SystemTime.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TabPageActivation.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakBackgroundFtpTimerClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakBaseConfigParms.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakBaseForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakBaseForm.resx"
+                    DependentUpon = "TagTrakBaseForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TagTrakCarrier.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakCarrier.resx"
+                    DependentUpon = "TagTrakCarrier.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TagTrakCurrentLocationClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakFormRepositoryClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakGlobals.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakLogin.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakLogin.resx"
+                    DependentUpon = "TagTrakLogin.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TagTrakSetupMenuForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TagTrakSetupMenuForm.resx"
+                    DependentUpon = "TagTrakSetupMenuForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UploadLogFileForm.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UploadLogFileForm.resx"
+                    DependentUpon = "UploadLogFileForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserSpecRecordClass.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Utilities.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ValidateInternationalFields.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Data\Cities\List.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Data\FlightLoadInfo\Info.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Data\FlightSchedule\Flights.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Data\FlightSchedule\Validation.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Support DLLs\AirlineSoftware.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\Intermec.DataCollection.dll"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Support DLLs\itcscan.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\OpenNETCF.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\OpenNETCF.Net.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\psuuid0c.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\Rebex.Net.Ftp.dll"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Support DLLs\Rebex.Net.ProxySocket.dll"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Support DLLs\Rebex.Net.SecureSocket.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\Rebex.Net.Time.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\Rebex.Security.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Support DLLs\SharpZipLib.dll"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Time\Local.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Time\TimeZone.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Time\UTC.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </EVisualBasic>
+</VisualStudioProject>
+

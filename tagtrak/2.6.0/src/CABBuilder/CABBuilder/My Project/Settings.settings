@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BINPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\bin\ConfigPacker\ConfigBin</Value>
+    </Setting>
+    <Setting Name="InputPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\bin\CABBuilder\Input</Value>
+    </Setting>
+    <Setting Name="DistroConfigPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\</Value>
+    </Setting>
+    <Setting Name="FullVersionInDistro" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CABPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\CABs</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

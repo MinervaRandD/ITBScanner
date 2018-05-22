@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.1.dtd">
+<dotfuscator version="2.1">
+  <!--This is application generated code. Do not edit manually.-->
+  <input>
+    <asmlist>
+      <inputassembly>
+        <option>stripoa</option>
+        <file dir="${active84598d59e82e4633b18d567b62d7917b}" name="TagTrak.exe" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\Dotfuscated" />
+  </output>
+  <renaming>
+    <option>keepnamespace</option>
+    <excludelist>
+      <type name="TagTrak.TagTrakGlobals/TimeSyncTypes">
+        <field name="FTPTime" />
+        <field name="None" />
+        <field name="NTP" />
+        <field name="value__" />
+      </type>
+    </excludelist>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="map.xml" />
+      </mapoutput>
+    </mapping>
+  </renaming>
+  <controlflow level="high" />
+  <stringencrypt />
+  <eventlist>
+    <event type="postbuild">
+      <option>buildsuccessful</option>
+      <program>
+        <file dir="" name="" />
+        <environment commandline="" workingdir="" />
+      </program>
+    </event>
+    <event type="prebuild">
+      <program>
+        <file dir="" name="" />
+        <environment commandline="" workingdir="" />
+      </program>
+    </event>
+  </eventlist>
+</dotfuscator>

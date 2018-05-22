@@ -1,0 +1,5 @@
+C:\work\ITB-LAX\src\Utilities\bin\Release\Asi.Itb.Utilities.dll
+C:\work\ITB-LAX\src\Utilities\bin\Release\Asi.Itb.Utilities.pdb
+C:\work\ITB-LAX\src\Utilities\obj\Release\ResolveAssemblyReference.cache
+C:\work\ITB-LAX\src\Utilities\obj\Release\Asi.Itb.Utilities.dll
+C:\work\ITB-LAX\src\Utilities\obj\Release\Asi.Itb.Utilities.pdb

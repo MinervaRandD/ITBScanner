@@ -1,0 +1,4 @@
+Warning: Section [DefaultInstall] key "AddReg" - there are no section entries to process
+Warning: Section [DestinationDirs] key "Config" is not using the string "%InstallDir%"
+Warning: Section [DestinationDirs] key "Fonts" is not using the string "%InstallDir%"
+Warning: Section [DefaultInstall] key "AddReg" - there are no section entries to process

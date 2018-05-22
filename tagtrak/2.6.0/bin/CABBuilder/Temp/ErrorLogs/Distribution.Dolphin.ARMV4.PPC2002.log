@@ -1,0 +1,5 @@
+Warning: Section [DefaultInstall] key "AddReg" - there are no section entries to process
+Warning: Section [DestinationDirs] key "Cabs" is not using the string "%InstallDir%"
+Warning: Section [DestinationDirs] key "Dolphin1" is not using the string "%InstallDir%"
+Warning: Section [Dolphin1] has no data
+Warning: Section [DefaultInstall] key "AddReg" - there are no section entries to process

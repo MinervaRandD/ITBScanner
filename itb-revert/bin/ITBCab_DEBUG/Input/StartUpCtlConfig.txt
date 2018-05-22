@@ -1,0 +1,9 @@
+[Application_Properties]
+Debug=FALSE
+
+
+
+[LogFile_Properties]
+LogFileTempFolder=
+LogFileFolder=\Application\StartUpCtl
+MaxLogFileSize= 

@@ -1,0 +1,65 @@
+
+;==================================================
+
+[Version]
+
+Signature	= "$Windows NT$"
+Provider	= "Aviation Software, Inc."
+CESignature	= "$Windows CE$"
+
+[CEDevice]
+Processortype	= 2577
+VersionMin 	= 3.0
+VersionMax	= 100
+
+[CEStrings]
+
+InstallDir = "\IPSP\"
+AppName=TagTrak Installer
+
+[Strings]
+
+SDMMC  = "\Storage Card\"
+Flash  = "\IPSM\"
+CABS   = "cabfiles\"
+AutoInstall = "AutoInstall\"
+
+;==================================================
+
+[DefaultInstall]
+
+CopyFiles = Cabs, Dolphin1
+
+;==================================================
+
+[SourceDisksNames]
+
+1 =, "BuildSource" ,, "C:\work\tagtrak\2.6.0\bin\CABBuilder\Input\Dolphin\ARMV4\PPC2003"
+2 =, "MainCABSource" ,, "C:\work\tagtrak\2.6.0\dist\CABs\TagTrak\Dolphin\ARMV4"
+3 =, "NetTestCABSource" ,, "C:\work\tagtrak\2.6.0\dist\CABs\NetTest\Dolphin\ARMV4"
+10=, "MainCABSource0" ,, "C:\work\tagtrak\2.6.0\dist\CABs\99\Dolphin\ARMV4"
+
+[SourceDisksFiles]
+
+TagTrak.cab=2
+NetTest.cab=3
+DependentFiles.99.cab=10
+netcf.hhp.wce4.armv4_2.05.CAB=1
+
+;==================================================
+
+; Output directories for files & shortcuts
+
+[DestinationDirs]
+Cabs = 0, %Flash%%AutoInstall%
+Dolphin1 = 0, %Flash%
+CORE=0, %SDMMC%%CRE%
+CORE_Modules_Installed=0, %SDMMC%%CRE%%MDL%%Instl%
+
+[Cabs]
+TagTrak.cab,,,0x40000000
+NetTest.cab,,,0x40000000
+DependentFiles.99.cab,,,0x40000000
+netcf.hhp.wce4.armv4_2.05.CAB,,,0x40000000
+
+[Dolphin1]

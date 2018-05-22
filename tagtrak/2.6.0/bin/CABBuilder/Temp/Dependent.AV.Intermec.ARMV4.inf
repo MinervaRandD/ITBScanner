@@ -1,0 +1,53 @@
+[Version]
+Signature="$Windows NT$"
+Provider="Aviation Software, Inc."
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="TagTrak Support Files"
+InstallDir = "\SDMMC Disk\"
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=100
+
+[Strings]
+
+Flash 	= "\SDMMC Disk\"
+Windows = %CE2%
+
+;==================================================
+
+[DefaultInstall]
+
+CopyFiles=Config, Fonts
+
+;==================================================
+
+[SourceDisksNames]
+
+1 =, "Config" ,, "C:\work\tagtrak\2.6.0\bin\ConfigPacker\ConfigBIN\AV"
+2 =, "Common1",, "C:\work\tagtrak\2.6.0\bin\CABBuilder\Input\Intermec\ARMV4\PPC2002"
+
+[SourceDisksFiles]
+
+ScannerConfig.bin=1
+ARIALN.TTF=2
+lucon.ttf=2
+
+;==================================================
+
+; Output directories for files & shortcuts
+
+[DestinationDirs]
+
+Config = 0, %Flash%carriers\AV\TagTrakConfig
+Fonts = 0, %CE15%
+
+[Config]
+ScannerConfig.bin,ScannerConfig.bin,,0x20000000
+
+[Fonts]
+
+ARIALN.TTF,,,0x00000010
+lucon.ttf,,,0x00000010

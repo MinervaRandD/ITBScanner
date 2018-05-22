@@ -1,0 +1,131 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\SOFTWARE\Symbol\AppCenter]
+"ShowVolume"=dword:00000001
+"ShowBatteryLevel"=dword:00000001
+"ShowSignalStrength"=dword:00000000
+"ShowAirBEAM"=dword:00000000
+"ShowTime"=dword:00000001
+"HideStartMenu"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Symbol\AppCenter\MailTracker]
+"Description"="MailTracker"
+"Execute"="\\Program Files\\MailTracker\\MailTracker.exe"
+"ExeName"="MailTracker.exe"
+"Arguments"=""
+"IconFile"="\\Program Files\\MailTracker\\MailTracker.exe"
+"Window1"="*|*"
+"ReadOnly"=dword:00000000
+"HideFromUser"=dword:00000000
+"HideMenuBar"=dword:00000000
+"HideDoneButton"=dword:00000000
+"HideStartMenu"=dword:00000001
+"HideSip"=dword:00000000
+"AutoStart"=dword:00000000
+"StartupDelay"=dword:00000000
+"RelaunchInterval"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Symbol\AppCenter\CloudUpdate]
+"Description"="CloudUpdate"
+"Execute"="\\Storage Card\\CloudSync\\CloudUpdate.exe"
+"ExeName"="CloudUpdate.exe"
+"Arguments"="-auto:install"
+"IconFile"="\\Storage Card\\CloudSync\\CloudUpdate.exe"
+"Window1"="*|*"
+"ReadOnly"=dword:00000000
+"HideFromUser"=dword:00000000
+"HideMenuBar"=dword:00000000
+"HideDoneButton"=dword:00000000
+"HideStartMenu"=dword:00000001
+"HideSip"=dword:00000000
+"AutoStart"=dword:00000000
+"StartupDelay"=dword:00000000
+"RelaunchInterval"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Symbol\AppCenter\MotoLoader]
+"Description"="MotoLoader"
+"Execute"="/Application/MotoLoader/Motoloader.exe"
+"ExeName"="/Application/MotoLoader/Motoloader.exe"
+"Arguments"=""
+"IconFile"=""
+"Window1"="*|*"
+"ReadOnly"=dword:00000000
+"HideFromUser"=dword:00000001
+"HideMenuBar"=dword:00000000
+"HideDoneButton"=dword:00000000
+"HideStartMenu"=dword:00000001
+"HideSip"=dword:00000000
+"AutoStart"=dword:00000000
+"StartupDelay"=dword:00000000
+"RelaunchInterval"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Symbol\AppCenter\Athena Service Host]
+"Description"="Athena Service Host"
+"Execute"="\\Program Files\\Odyssey Software\\Athena\\Athena.exe"
+"ExeName"="Athena.exe"
+"Arguments"=""
+"IconFile"="\\Program Files\\Odyssey Software\\Athena\\Athena.exe"
+"Window1"="Athena|Athena"
+"ReadOnly"=dword:00000000
+"HideFromUser"=dword:00000001
+"HideMenuBar"=dword:00000000
+"HideDoneButton"=dword:00000001
+"HideStartMenu"=dword:00000001
+"HideSip"=dword:00000000
+"AutoStart"=dword:00000000
+"StartupDelay"=dword:00000000
+"RelaunchInterval"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Symbol\AppCenter\eConnect]
+"Description"="eConnect"
+"Execute"="\\Windows\\eConnect.exe"
+"ExeName"="eConnect.exe"
+"Arguments"=""
+"IconFile"="\\Windows\\eConnect.exe"
+"Window1"="*|*"
+"ReadOnly"=dword:00000000
+"HideFromUser"=dword:00000001
+"HideMenuBar"=dword:00000000
+"HideDoneButton"=dword:00000000
+"HideStartMenu"=dword:00000001
+"HideSip"=dword:00000000
+"AutoStart"=dword:00000000
+"StartupDelay"=dword:00000000
+"RelaunchInterval"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Symbol\AppCenter\Clock]
+"Description"="Clock"
+"Execute"="ctlpnl.exe"
+"ExeName"="clock.exe"
+"Arguments"="cplmain.cpl,16"
+"IconFile"="cplmain.cpl,-5020"
+"Window1"="*|World Clock"
+"ReadOnly"=dword:00000000
+"HideFromUser"=dword:00000000
+"HideMenuBar"=dword:00000000
+"HideDoneButton"=dword:00000000
+"HideStartMenu"=dword:00000001
+"HideSip"=dword:00000000
+"AutoStart"=dword:00000000
+"StartupDelay"=dword:00000000
+"RelaunchInterval"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Symbol\AppCenter]
+"BatteryPercentFormat"=dword:00000000
+"24HourTimeFormat"=dword:00000000
+"AlwaysCloseExes"="always1.exe, always2.exe"
+"NeverCloseExes"="never1.exe, never2.exe"
+"{B6235F29-5B71-4389-A0A6-ACF2758AC1DC}"=hex:00,00,00,00
+"{2EACC9DF-C9BF-428E-9074-D50B57D0D747}"=hex:2F,00,2A,00,22,00,24,00,3B,00,3B,00,41,00,13,00,07,00,1F,00,17,00,3C,00,2B,00,25,00,27,00,25,00,16,00,0A,00,3C,00,3D,00,0D,00,2A,00,3E,00,25,00,37,00,21,00,08,00,06,00,19,00,11,00,0C,00,57,00
+"TitleFontSize"=dword:0000000B
+"TitleBold"=dword:00000001
+"DisplayMacAddress"=dword:00000000
+"DisplayIpAddress"=dword:00000000
+"AdapterName"="NETWLAN1"
+"UnresponsiveAppTimeout"=dword:00000005
+"AlternateTitle"=""
+"AdminLoginDisabled"=dword:00000000
+"BrowseFolders"="\\Windows\\Start Menu|\\Windows\\Startup|\\Windows\\Programs|\\Program Files"
+"BrowseExtensions"="exe|vb"
+"BrowseAllShortcuts"=dword:00000001
+

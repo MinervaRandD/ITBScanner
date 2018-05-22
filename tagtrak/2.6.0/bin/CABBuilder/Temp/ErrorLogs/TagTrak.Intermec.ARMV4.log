@@ -1,0 +1,3 @@
+Warning: Section [DestinationDirs] key "Shortcuts" is not using the string "%InstallDir%"
+Warning: Section [regsettings.all] registry value "vkeyGold" contains 138 bytes of data - please verify. If incorrect, the wrong binary format may be in use.
+Warning: Section [regsettings.all] registry value "vkeyGold" contains 138 bytes of data - please verify. If incorrect, the wrong binary format may be in use.

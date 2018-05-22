@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ITBCab.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <userSettings>
+        <ITBCab.Properties.Settings>
+            <setting name="InputPath" serializeAs="String">
+                <value>.\Input</value>
+            </setting>
+            <setting name="CabWizPath" serializeAs="String">
+                <value>.\CabWiz</value>
+            </setting>
+            <setting name="CABPath" serializeAs="String">
+                <value>.\CABs</value>
+            </setting>
+        </ITBCab.Properties.Settings>
+    </userSettings>
+</configuration>

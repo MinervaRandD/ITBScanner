@@ -1,0 +1,84 @@
+
+;==================================================
+
+[Version]
+
+Signature	= "$Windows NT$"
+Provider	= "Aviation Software, Inc."
+CESignature	= "$Windows CE$"
+
+[CEDevice]
+Processortype	= 2577
+VersionMin 	= 3.0
+VersionMax	= 100
+
+[CEStrings]
+
+InstallDir = "\SDMMC Disk\"
+AppName=TagTrak Installer
+
+[Strings]
+
+SDMMC  = "\SDMMC Disk\"
+Flash  = "\Flash File Store\"
+CABS   = "cabfiles\"
+OTH	   = "2577\"
+CRE	   = "CORE\"
+MDL	   = "Modules\"
+Instl	   = "Installed\"
+
+;==================================================
+
+[DefaultInstall]
+
+CopyFiles	= Cabs,Start1,Start2
+
+;==================================================
+
+[SourceDisksNames]
+
+1 =, "BuildSource" ,, "C:\work\tagtrak\2.6.0\bin\CABBuilder\Input\Intermec\ARMV4\PPC2002"
+2 =, "MainCABSource" ,, "C:\work\tagtrak\2.6.0\dist\CABs\TagTrak\Intermec\ARMV4"
+3 =, "NetTestCABSource" ,, "C:\work\tagtrak\2.6.0\dist\CABs\NetTest\Intermec\ARMV4"
+10=, "MainCABSource0" ,, "C:\work\tagtrak\2.6.0\dist\CABs\99\Intermec\ARMV4"
+
+[SourceDisksFiles]
+
+TagTrak.cab=2
+NetTest.cab=3
+DependentFiles.99.cab=10
+autouser.dat=1
+autorun.dat=1
+netcf.core.ppc3.arm.cab=1
+autorun.exe=1
+autocab.exe=1
+regflush.cab=1
+bootstrap.exe=1
+flash_autorun.dat=1
+
+;==================================================
+
+; Output directories for files & shortcuts
+
+[DestinationDirs]
+Cabs = 0, %SDMMC%%CABS%
+Start1 = 0, %Flash%%OTH%
+Start2  = 0, %SDMMC%%OTH%
+
+[Cabs]
+TagTrak.cab,,,0x40000000
+NetTest.cab,,,0x40000000
+DependentFiles.99.cab,,,0x40000000
+FCDotNet.cab,netcf.core.ppc3.arm.cab,,0x40000000
+regflush.cab,,,0x40000000
+
+[Start1]
+autorun.exe,,,0x40000000
+autorun.dat,flash_autorun.dat,,0x40000000
+bootstrap.exe,,,0x40000000
+[Start2]
+
+autorun.exe,,,0x40000000
+autorun.dat,,,0x40000000
+autocab.exe,,,0x40000000
+autouser.dat,,,0x40000000

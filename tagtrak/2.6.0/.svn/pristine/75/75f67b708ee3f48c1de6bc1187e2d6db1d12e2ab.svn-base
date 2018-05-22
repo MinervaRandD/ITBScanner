@@ -1,0 +1,102 @@
+<User>
+        <myConfigVersion>2.6.0.1.1</myConfigVersion>
+        
+	<UserName>Frontier</UserName>
+        <UserFullName>Frontier</UserFullName>
+        <CarrierCode>F9</CarrierCode>
+        <FtpHostName>ftp.asiscan.com</FtpHostName>
+        <FtpPortNumber>21</FtpPortNumber>
+        <FtpLoginID>frontair</FtpLoginID>
+        <FtpPassword>b0ldlyg0</FtpPassword>
+
+        <TransferPointOnScanForm>False</TransferPointOnScanForm>
+        <TailNumberOnScanForm>False</TailNumberOnScanForm>
+        <RejectReasonOnScanForm>False</RejectReasonOnScanForm>
+        <CanChangeLocationOnScanForm>False</CanChangeLocationOnScanForm>
+        <PasswordRequiredForLocationChangeOnScanForm>true</PasswordRequiredForLocationChangeOnScanForm>
+        <TreatTransferScansAsLoadScans>False</TreatTransferScansAsLoadScans>
+        <LoadScansRequireSelectionFromPreset>False</LoadScansRequireSelectionFromPreset>
+        <PresetsRequireDestinationSpecifications>True</PresetsRequireDestinationSpecifications>
+        <LockDownReleasedInAdminForm>False</LockDownReleasedInAdminForm>
+        <WarnOnDuplicateScan>False</WarnOnDuplicateScan>
+        <DisplayFlightValidationMessages>True</DisplayFlightValidationMessages>
+	<MessagesEnabled>True</MessagesEnabled>
+	<CargoScanEnabled>True</CargoScanEnabled>
+	<InternationalMailEnabled>False</InternationalMailEnabled>
+	<InternationalSimpleMailEnabled>False</InternationalSimpleMailEnabled>
+        <MailScanEnabled>True</MailScanEnabled>
+        <THSScanEnabled>False</THSScanEnabled>
+        <MailSimpleScanEnabled>True</MailSimpleScanEnabled>
+        <BaggageScanEnabled>False</BaggageScanEnabled>
+    <DisplayInternationalPostOffices>True</DisplayInternationalPostOffices>
+    <IntlPromptCardit>True</IntlPromptCardit>
+    <IntlCartIdPattern>^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$</IntlCartIdPattern>
+    <MailCartIdPattern>^[a-zA-Z]{3}\d{4,5}[a-zA-Z\d]{2}$</MailCartIdPattern>
+    <PostalOfficeList>US, DK</PostalOfficeList>
+	<UnloadEntireCart>False</UnloadEntireCart>
+	<UnloadEntireFlight>True</UnloadEntireFlight>
+    <continuousMailScan>False</continuousMailScan>
+    <DisableBackups>False</DisableBackups>
+    <PromptForExcessWeight>True</PromptForExcessWeight>
+    
+        <NTPList>
+			0.pool.ntp.org, 1.pool.ntp.org, 2.pool.ntp.org, pool.ntp.org
+		</NTPList>
+        
+       <CityList>
+ 
+            <ATL><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></ATL>
+            <AUS><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>False</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></AUS>
+            <BDL><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></BDL>
+            <DEN><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DEN>
+            <DFW><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DFW>
+            <DTW><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></DTW>
+            <JAX><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></JAX>
+            <LAX><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></LAX>
+            <MCO><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></MCO>
+            <SAT><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></SAT>
+            <SLC><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></SLC>
+            <TPA><Wireless802.11>False</Wireless802.11><Wireless>False</Wireless><Wired>True</Wired><Autosend>True</Autosend><AutosendPeriodicity>30</AutosendPeriodicity><Groundhandler>False</Groundhandler><LateMailPrompt>True</LateMailPrompt><AllowLateMailAccept>False</AllowLateMailAccept><AllowLateMailAcceptPeriod></AllowLateMailAcceptPeriod></TPA>
+
+       </CityList> 
+	   
+		<OperationsMapping>
+			<Map> <Name>Load</Name> <MapTo>Load</MapTo> </Map>
+			<Map> <Name>Unload</Name> <MapTo>Unload</MapTo> </Map>
+			<Map> <Name>Delivery</Name> <MapTo>Delivery</MapTo> </Map>
+			<Map> <Name>Transfer</Name> <MapTo>Transfer</MapTo> </Map>
+			<Map> <Name>Partial Offload</Name> <MapTo>Partial Offload</MapTo> </Map>
+			<Map> <Name>Complete Offload</Name> <MapTo>Complete Offload</MapTo> </Map>
+			<Map> <Name>Return</Name> <MapTo>Return</MapTo> </Map>
+			<Map> <Name>Possession</Name> <MapTo>Possession</MapTo> </Map>
+			<Map> <Name>Offline Trns. Conveyed</Name> <MapTo>Offline Trns. Conveyed</MapTo> </Map>
+			<Map> <Name>Offline Trns. Received</Name> <MapTo>Offline Trns. Received</MapTo> </Map>
+			<Map> <Name>Online Transfer</Name> <MapTo>Online Transfer</MapTo> </Map>
+		</OperationsMapping>
+		
+       <OperationsList>
+           Possession,  Load, Delivery, Transfer, Partial Offload, Complete Offload, Return 
+       </OperationsList>
+
+        <THSOperationsList>
+            Build, Close, Tender, Receive, Break, Reassign, Ex. - Not Loaded, Ex. - Void
+        </THSOperationsList>
+    
+       <CarditRouteCarrierList>
+           99,70,6O,AC,B6,CO,LH,LO,NH,NZ,OZ,OS,RG,SK,SQ,TG,UA,US
+       </CarditRouteCarrierList>
+
+       <AdjunctCarrierList>AC, LH, LO, NH, NZ, OS, OZ, RG, SK, SQ, TG, UA, US</AdjunctCarrierList>
+ 
+       <InternationalOperationsList>
+           Possession, Load, Unload, Delivery, Partial Offload, Complete Offload, Offline Trns. Conveyed, Offline Trns. Received, Online Transfer, Return 
+       </InternationalOperationsList>
+ 
+       <IntlSimpleOperationsList>
+           Possession,  Delivery, Offline Trns. Received, Return 
+       </IntlSimpleOperationsList>
+
+       <CargoOperationsList>
+           Acceptance, Load, Unload, Delivery, Offload, Online Transfer, Offline Transfer, Warehouse Move
+       </CargoOperationsList>
+</User>

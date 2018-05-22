@@ -1,0 +1,51 @@
+[Version]
+Signature = "$Windows NT$"
+Provider = "ASI"
+CESignature = "$Windows CE$"
+
+[CEStrings]
+AppName = "ASIUpdater"
+InstallDir=%CE1%\%AppName%
+
+[CEDevice]
+VersionMin=4.0
+VersionMax=6.99
+BuildMax=0xE0000000
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+CopyFiles=Files.Common
+
+[SourceDisksNames]
+1=,"Common1",,"C:\work\ITB-LAX\bin\ITBCab\Input"
+
+[SourceDisksFiles]
+AsiUpdater.exe=1
+Hardware_AsiUpdater.dll=1
+Intermec.DataCollection.dll=1
+OpenNETCF_AsiUpdater.dll=1
+OpenNETCF.Windows.Forms_AsiUpdater.dll=1
+Symbol.Barcode.dll=1
+Symbol.dll=1
+Symbol.ResourceCoordination.dll=1
+Symbol.StandardForms.dll=1
+UpdaterConfig.xml=1
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+Shortcuts=0,%CE2%\Start Menu
+
+[Files.Common]
+AsiUpdater.exe, , , 0
+Hardware.dll,Hardware_AsiUpdater.dll, , 0
+Intermec.DataCollection.dll, , , 0
+OpenNETCF.dll,OpenNETCF_AsiUpdater.dll, , 0
+OpenNETCF.Windows.Forms.dll,OpenNETCF.Windows.Forms_AsiUpdater.dll, , 0
+Symbol.Barcode.dll, , , 0
+Symbol.dll, , , 0
+Symbol.ResourceCoordination.dll, , , 0
+Symbol.StandardForms.dll, , , 0
+UpdaterConfig.xml, , , 0
+
+[Shortcuts]
+ASIUpdater,0,AsiUpdater.exe,%CE11%

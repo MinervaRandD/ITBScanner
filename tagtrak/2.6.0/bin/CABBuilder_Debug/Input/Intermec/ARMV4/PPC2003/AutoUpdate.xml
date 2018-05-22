@@ -1,0 +1,16 @@
+<!-- Files listed here will be automatically copied from their source location into the Input folder before every CAB build -->
+<updates>
+    <update>
+    	<filename>TagTrak.exe</filename>
+    	<source>..\..\src\DotfuscatorTT\Intermec Debug\Dotfuscated</source>
+        <!--<source>..\..\src\TagTrak\bin\Intermec Release</source>-->
+    </update>
+    <update>
+        <filename>icmpwrap.dll</filename>
+        <source>..\..\src\ICMPwrap\ARMRel</source>
+    </update>
+    <update>
+        <filename>ASINetTest.exe</filename>
+        <source>..\..\src\NetTester\Obfuscated\DotfuscatorASINetTest\Release\Dotfuscated</source>
+    </update>
+</updates>

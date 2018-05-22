@@ -1,0 +1,26 @@
+# Wavelink property file.
+
+RealTimeStatsInterval=300
+RogueScan.Supported=0
+e.constr.RogueScan.Supported=3
+e.constantmac=1
+Series=C
+e.constr.Series=3
+ModelName=ITC700PPC03
+e.constr.ModelName=3
+OsType=PocketPC
+e.constr.OsType=3
+Processor=ARM
+e.constr.Processor=3
+ProcessorRevision=0006
+e.constr.ProcessorRevision=3
+OsVer=4.20
+e.constr.OsVer=3
+EnablerVer=3.10-23
+e.constr.EnablerVer=3
+ProcessorType=XScale
+e.constr.ProcessorType=3
+CoreEnabler=3
+e.constr.CoreEnabler=3
+RadioType=DS
+e.constr.RadioType=3

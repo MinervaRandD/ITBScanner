@@ -1,0 +1,5 @@
+C:\work\itb-revert\src\Dal\bin\Release\Asi.Itb.Dal.dll
+C:\work\itb-revert\src\Dal\bin\Release\Asi.Itb.Dal.pdb
+C:\work\itb-revert\src\Dal\obj\Release\ResolveAssemblyReference.cache
+C:\work\itb-revert\src\Dal\obj\Release\Asi.Itb.Dal.dll
+C:\work\itb-revert\src\Dal\obj\Release\Asi.Itb.Dal.pdb

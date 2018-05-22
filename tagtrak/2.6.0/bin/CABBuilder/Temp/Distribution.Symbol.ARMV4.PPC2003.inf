@@ -1,0 +1,63 @@
+
+;==================================================
+
+[Version]
+
+Signature	= "$Windows NT$"
+Provider	= "Aviation Software, Inc."
+CESignature	= "$Windows CE$"
+
+[CEDevice]
+Processortype	= 2577
+VersionMin 	= 3.0
+VersionMax	= 100
+
+[CEStrings]
+
+InstallDir = "\Storage Card\"
+AppName=TagTrak Installer
+
+[Strings]
+
+SDMMC  = "\Storage Card\"
+Flash  = "\Application\"
+CABS   = "Application\"
+Startup = "Startup\"
+
+;==================================================
+
+[DefaultInstall]
+
+CopyFiles = Cabs, Symbol1
+
+;==================================================
+
+[SourceDisksNames]
+
+1 =, "BuildSource" ,, "C:\work\tagtrak\2.6.0\bin\CABBuilder\Input\Symbol\ARMV4\PPC2003"
+2 =, "MainCABSource" ,, "C:\work\tagtrak\2.6.0\dist\CABs\TagTrak\Symbol\ARMV4"
+3 =, "NetTestCABSource" ,, "C:\work\tagtrak\2.6.0\dist\CABs\NetTest\Symbol\ARMV4"
+10=, "MainCABSource0" ,, "C:\work\tagtrak\2.6.0\dist\CABs\99\Symbol\ARMV4"
+
+[SourceDisksFiles]
+
+TagTrak.cab=2
+NetTest.cab=3
+DependentFiles.99.cab=10
+AppCenter.reg=1
+
+;==================================================
+
+; Output directories for files & shortcuts
+
+[DestinationDirs]
+Cabs = 0, %Flash%%CABS%
+Symbol1 = 0, %Flash%
+
+[Cabs]
+TagTrak.cab,,,0x40000000
+NetTest.cab,,,0x40000000
+DependentFiles.99.cab,,,0x40000000
+
+[Symbol1]
+AppCenter.reg,,,0x40000000

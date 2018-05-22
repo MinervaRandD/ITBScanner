@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:TagTrakSync" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="urn:TagTrakSync" name="TagTrakSync" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types />
+  <message name="UploadBagScansRequest">
+    <part name="data" type="s:string" />
+    <part name="username" type="s:string" />
+    <part name="password" type="s:string" />
+    <part name="compress" type="s:boolean" />
+    <part name="format" type="s:string" />
+  </message>
+  <message name="UploadBagScansResponse">
+    <part name="result" type="s:int" />
+  </message>
+  <message name="GmtTimeRequest" />
+  <message name="GmtTimeResponse">
+    <part name="gmttime" type="s:string" />
+  </message>
+  <portType name="TagTrakSyncPort">
+    <operation name="UploadBagScans">
+      <input message="tns:UploadBagScansRequest" />
+      <output message="tns:UploadBagScansResponse" />
+    </operation>
+    <operation name="GmtTime">
+      <input message="tns:GmtTimeRequest" />
+      <output message="tns:GmtTimeResponse" />
+    </operation>
+  </portType>
+  <binding name="TagTrakSyncBinding" type="tns:TagTrakSyncPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="UploadBagScans">
+      <soap:operation soapAction="http://schemas.xmlsoap.org/soap/envelope/#TagTrakSync#UploadBagScans" />
+      <input>
+        <soap:body use="encoded" namespace="http://schemas.xmlsoap.org/soap/envelope/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://schemas.xmlsoap.org/soap/envelope/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="GmtTime">
+      <soap:operation soapAction="http://schemas.xmlsoap.org/soap/envelope/#TagTrakSync#GmtTime" />
+      <input>
+        <soap:body use="encoded" namespace="http://schemas.xmlsoap.org/soap/envelope/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://schemas.xmlsoap.org/soap/envelope/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TagTrakSyncService">
+    <port name="TagTrakSyncPort" binding="tns:TagTrakSyncBinding">
+      <soap:address location="http://baggage-ws.asiscan.com/tagtraksync.php" />
+    </port>
+  </service>
+</definitions>

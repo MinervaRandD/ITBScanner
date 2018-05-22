@@ -1,0 +1,2 @@
+EXEC "Flash File Store\2577\AutoCab.exe" -CHKRST=1 -SHOW=1
+CALL "Flash File Store\2577\AutoUser.dat"

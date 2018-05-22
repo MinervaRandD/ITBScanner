@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="User">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="myConfigVersion" type="xs:string" minOccurs="0" />
+        <xs:element name="UserName" type="xs:string" minOccurs="0" />
+        <xs:element name="UserFullName" type="xs:string" minOccurs="0" />
+        <xs:element name="CarrierCode" type="xs:string" minOccurs="0" />
+        <xs:element name="FtpHostName" type="xs:string" minOccurs="0" />
+        <xs:element name="FtpPortNumber" type="xs:string" minOccurs="0" />
+        <xs:element name="FtpLoginID" type="xs:string" minOccurs="0" />
+        <xs:element name="FtpPassword" type="xs:string" minOccurs="0" />
+        <xs:element name="TransferPointOnScanForm" type="xs:string" minOccurs="0" />
+        <xs:element name="TailNumberOnScanForm" type="xs:string" minOccurs="0" />
+        <xs:element name="RejectReasonOnScanForm" type="xs:string" minOccurs="0" />
+        <xs:element name="CanChangeLocationOnScanForm" type="xs:string" minOccurs="0" />
+        <xs:element name="PasswordRequiredForLocationChangeOnScanForm" type="xs:string" minOccurs="0" />
+        <xs:element name="TreatTransferScansAsLoadScans" type="xs:string" minOccurs="0" />
+        <xs:element name="LoadScansRequireSelectionFromPreset" type="xs:string" minOccurs="0" />
+        <xs:element name="PresetsRequireDestinationSpecifications" type="xs:string" minOccurs="0" />
+        <xs:element name="LockDownReleasedInAdminForm" type="xs:string" minOccurs="0" />
+        <xs:element name="WarnOnDuplicateScan" type="xs:string" minOccurs="0" />
+        <xs:element name="DisplayFlightValidationMessages" type="xs:string" minOccurs="0" />
+        <xs:element name="MessagesEnabled" type="xs:string" minOccurs="0" />
+        <xs:element name="MailScanEnabled" type="xs:string" minOccurs="0" />
+        <xs:element name="MailSimpleScanEnabled" type="xs:string" minOccurs="0" />
+        <xs:element name="CargoScanEnabled" type="xs:string" minOccurs="0" />
+        <xs:element name="BaggageScanEnabled" type="xs:string" minOccurs="0" />
+        <xs:element name="InternationalMailEnabled" type="xs:string" minOccurs="0" />
+        <xs:element name="InternationalSimpleMailEnabled" type="xs:string" minOccurs="0" />
+        <xs:element name="IntlPromptCardit" type="xs:string" minOccurs="0" />
+        <xs:element name="IntlCartIdPattern" type="xs:string" minOccurs="0" />
+        <xs:element name="MailCartIdPattern" type="xs:string" minOccurs="0" />
+        <xs:element name="NTPList" type="xs:string" minOccurs="0" />
+        <xs:element name="OperationsList" type="xs:string" minOccurs="0" />
+        <xs:element name="AdjunctCarrierList" type="xs:string" minOccurs="0" />
+        <xs:element name="InternationalOperationsList" type="xs:string" minOccurs="0" />
+        <xs:element name="IntlSimpleOperationsList" type="xs:string" minOccurs="0" />
+        <xs:element name="CargoOperationsList" type="xs:string" minOccurs="0" />
+        <xs:element name="CityList" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUD" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="BUH" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CDG" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GDN" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="IEV" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="IST" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="JFK" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="KRK" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="KTW" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="LED" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="LWO" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="MSQ" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ODS" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="POZ" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PRG" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="RIX" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SOF" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SVO" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TLL" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="VNO" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="WAW" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="WRO" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Wireless802.11" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wireless" type="xs:string" minOccurs="0" />
+                    <xs:element name="Wired" type="xs:string" minOccurs="0" />
+                    <xs:element name="Autosend" type="xs:string" minOccurs="0" />
+                    <xs:element name="AutosendPeriodicity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Groundhandler" type="xs:string" minOccurs="0" />
+                    <xs:element name="LateMailPrompt" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAccept" type="xs:string" minOccurs="0" />
+                    <xs:element name="AllowLateMailAcceptPeriod" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="User" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

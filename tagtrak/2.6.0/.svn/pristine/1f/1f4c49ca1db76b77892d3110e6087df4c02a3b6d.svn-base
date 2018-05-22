@@ -1,0 +1,7 @@
+[HKEY_LOCAL_MACHINE\Software\Wavelink\Avalanche]
+"InstallDir"="\Program Files\Wavelink\Avalanche"
+"AVA"="\Program Files\Wavelink\Avalanche"
+"APPS"="\Program Files\Wavelink\Avalanche\Apps"
+"WORK"="\Flash File Store\Avalanche\Work"
+"TEMP"="\temp"
+"FLASH"="\Flash File Store\Avalanche"

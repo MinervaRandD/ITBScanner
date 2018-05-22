@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VisualStudioProject>
+  <Dotfuscator ProductVersion="3.0" SchemaVersion="2.1" ProjectGuid="{d7451eca-6add-4445-87d5-6a3dff1a818c}">
+    <Build>
+      <Config Name="Intermec Release" ConfigPath="Intermec Release\Dotfuscator.xml" />
+      <Config Name="Dolphin Release" ConfigPath="Dolphin Release\Dotfuscator.xml" />
+      <Config Name="Symbol Release" ConfigPath="Symbol Release\Dotfuscator.xml" />
+      <Config Name="Dolphin Debug" ConfigPath="Dolphin Debug\Dotfuscator.xml" />
+      <Config Name="Intermec Debug" ConfigPath="Intermec Debug\Dotfuscator.xml" />
+      <Config Name="Symbol Debug" ConfigPath="Symbol Debug\Dotfuscator.xml" />
+    </Build>
+    <TriggerAssemblies>
+      <TriggerAssembly Guid="{252957ff-d0d6-485b-be35-d01c83410d8a}" Type="DynamicProjectOutput" ProjectGuid="{84598d59-e82e-4633-b18d-567b62d7917b}" ProjectUniqueName="TagTrak.vbdproj" ProjectDisplayName="TagTrak" FileName="TagTrak.exe" OutputGroupCanonicalName="Built" OutputGroupDisplayName="Primary output" />
+    </TriggerAssemblies>
+  </Dotfuscator>
+</VisualStudioProject>

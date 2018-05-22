@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<data name="RGConfig">
+		<value>&lt;User&gt;
+        &lt;UserName&gt;Varig&lt;/UserName&gt;
+        &lt;UserFullName&gt;Varig&lt;/UserFullName&gt;
+        &lt;CarrierCode&gt;RG&lt;/CarrierCode&gt;
+        &lt;FtpHostName&gt;ftp.asiscan.com&lt;/FtpHostName&gt;
+        &lt;FtpPortNumber&gt;21&lt;/FtpPortNumber&gt;
+        &lt;FtpLoginID&gt;varig&lt;/FtpLoginID&gt;
+        &lt;FtpPassword&gt;br@z1l&lt;/FtpPassword&gt;
+        &lt;TransferPointOnScanForm&gt;False&lt;/TransferPointOnScanForm&gt;
+        &lt;TailNumberOnScanForm&gt;False&lt;/TailNumberOnScanForm&gt;
+        &lt;RejectReasonOnScanForm&gt;False&lt;/RejectReasonOnScanForm&gt;
+        &lt;CanChangeLocationOnScanForm&gt;False&lt;/CanChangeLocationOnScanForm&gt;
+        &lt;PasswordRequiredForLocationChangeOnScanForm&gt;True&lt;/PasswordRequiredForLocationChangeOnScanForm&gt;
+        &lt;TreatTransferScansAsLoadScans&gt;True&lt;/TreatTransferScansAsLoadScans&gt;
+        &lt;LoadScansRequireSelectionFromPreset&gt;False&lt;/LoadScansRequireSelectionFromPreset&gt;
+        &lt;PresetsRequireDestinationSpecifications&gt;True&lt;/PresetsRequireDestinationSpecifications&gt;
+        &lt;WarnOnDuplicateScan&gt;True&lt;/WarnOnDuplicateScan&gt;
+        &lt;DisplayFlightValidationMessages&gt;True&lt;/DisplayFlightValidationMessages&gt;
+        &lt;MessagesEnabled&gt;True&lt;/MessagesEnabled&gt;
+        &lt;CargoScanEnabled&gt;False&lt;/CargoScanEnabled&gt;
+        &lt;BaggageScanEnabled&gt;False&lt;/BaggageScanEnabled&gt;
+        &lt;InternationalMailEnabled&gt;True&lt;/InternationalMailEnabled&gt;
+        &lt;InternationalSimpleMailEnabled&gt;True&lt;/InternationalSimpleMailEnabled&gt;
+        &lt;MailScanEnabled&gt;False&lt;/MailScanEnabled&gt;
+        &lt;MailSimpleScanEnabled&gt;False&lt;/MailSimpleScanEnabled&gt;
+        &lt;DisplayInternationalPostOffices&gt;True&lt;/DisplayInternationalPostOffices&gt;
+        &lt;IntlPromptCardit&gt;True&lt;/IntlPromptCardit&gt;
+        &lt;IntlCartIdPattern&gt;^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$&lt;/IntlCartIdPattern&gt;
+        &lt;DefaultIntlPostOffice&gt;US&lt;/DefaultIntlPostOffice&gt;
+
+       &lt;CityList&gt;
+AMS, ASU, BUE, CDG, FRA, GIG, GRU, JFK, LHR, LIM, LIS, LPB, MAD, MIA, MVD, MXP, RIO, SCL
+       &lt;/CityList&gt;
+
+       &lt;EthernetCityList&gt;
+AMS, ASU, BUE, CDG, FRA, GIG, GRU, JFK, LHR, LIM, LIS, LPB, MAD, MIA, MVD, MXP, RIO, SCL
+       &lt;/EthernetCityList&gt;
+
+
+       &lt;AdjunctCarrierList&gt;&lt;/AdjunctCarrierList&gt;
+
+       &lt;OperationsList&gt;
+           Possession,  Load, Delivery, Transfer, PartialOffload, CompleteOffload, Return
+       &lt;/OperationsList&gt;
+
+       &lt;InternationalOperationsList&gt;
+           Possession,  Load, Delivery, Partial Offload, Complete Offload, Offline Trns. Conveyed, Offline Trns. Received, Online Transfer, Return
+       &lt;/InternationalOperationsList&gt;
+
+       &lt;IntlSimpleOperationsList&gt;
+           Possession,  Delivery, Offline Trns. Received, Return
+       &lt;/IntlSimpleOperationsList&gt;
+
+       &lt;CargoOperationsList&gt;
+           Tender, Load, Remove, Delivery
+       &lt;/CargoOperationsList&gt;
+&lt;/User&gt;
+&lt;User&gt;
+        &lt;UserName&gt;Varig&lt;/UserName&gt;
+        &lt;UserFullName&gt;Varig&lt;/UserFullName&gt;
+        &lt;CarrierCode&gt;RG&lt;/CarrierCode&gt;
+        &lt;FtpHostName&gt;ftp.asiscan.com&lt;/FtpHostName&gt;
+        &lt;FtpPortNumber&gt;21&lt;/FtpPortNumber&gt;
+        &lt;FtpLoginID&gt;varig&lt;/FtpLoginID&gt;
+        &lt;FtpPassword&gt;br@z1l&lt;/FtpPassword&gt;
+        &lt;TransferPointOnScanForm&gt;False&lt;/TransferPointOnScanForm&gt;
+        &lt;TailNumberOnScanForm&gt;False&lt;/TailNumberOnScanForm&gt;
+        &lt;RejectReasonOnScanForm&gt;False&lt;/RejectReasonOnScanForm&gt;
+        &lt;CanChangeLocationOnScanForm&gt;False&lt;/CanChangeLocationOnScanForm&gt;
+        &lt;PasswordRequiredForLocationChangeOnScanForm&gt;True&lt;/PasswordRequiredForLocationChangeOnScanForm&gt;
+        &lt;TreatTransferScansAsLoadScans&gt;True&lt;/TreatTransferScansAsLoadScans&gt;
+        &lt;LoadScansRequireSelectionFromPreset&gt;False&lt;/LoadScansRequireSelectionFromPreset&gt;
+        &lt;PresetsRequireDestinationSpecifications&gt;True&lt;/PresetsRequireDestinationSpecifications&gt;
+        &lt;WarnOnDuplicateScan&gt;True&lt;/WarnOnDuplicateScan&gt;
+        &lt;DisplayFlightValidationMessages&gt;True&lt;/DisplayFlightValidationMessages&gt;
+        &lt;MessagesEnabled&gt;True&lt;/MessagesEnabled&gt;
+        &lt;CargoScanEnabled&gt;False&lt;/CargoScanEnabled&gt;
+        &lt;BaggageScanEnabled&gt;False&lt;/BaggageScanEnabled&gt;
+        &lt;InternationalMailEnabled&gt;True&lt;/InternationalMailEnabled&gt;
+        &lt;InternationalSimpleMailEnabled&gt;True&lt;/InternationalSimpleMailEnabled&gt;
+        &lt;MailScanEnabled&gt;False&lt;/MailScanEnabled&gt;
+        &lt;MailSimpleScanEnabled&gt;False&lt;/MailSimpleScanEnabled&gt;
+        &lt;DisplayInternationalPostOffices&gt;True&lt;/DisplayInternationalPostOffices&gt;
+        &lt;IntlPromptCardit&gt;True&lt;/IntlPromptCardit&gt;
+        &lt;IntlCartIdPattern&gt;^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$&lt;/IntlCartIdPattern&gt;
+        &lt;DefaultIntlPostOffice&gt;US&lt;/DefaultIntlPostOffice&gt;
+
+       &lt;CityList&gt;
+AMS, ASU, BUE, CDG, FRA, GIG, GRU, JFK, LHR, LIM, LIS, LPB, MAD, MIA, MVD, MXP, RIO, SCL
+       &lt;/CityList&gt;
+
+       &lt;EthernetCityList&gt;
+AMS, ASU, BUE, CDG, FRA, GIG, GRU, JFK, LHR, LIM, LIS, LPB, MAD, MIA, MVD, MXP, RIO, SCL
+       &lt;/EthernetCityList&gt;
+
+
+       &lt;AdjunctCarrierList&gt;&lt;/AdjunctCarrierList&gt;
+
+       &lt;OperationsList&gt;
+           Possession,  Load, Delivery, Transfer, PartialOffload, CompleteOffload, Return
+       &lt;/OperationsList&gt;
+
+       &lt;InternationalOperationsList&gt;
+           Possession,  Load, Delivery, Partial Offload, Complete Offload, Offline Trns. Conveyed, Offline Trns. Received, Online Transfer, Return
+       &lt;/InternationalOperationsList&gt;
+
+       &lt;IntlSimpleOperationsList&gt;
+           Possession,  Delivery, Offline Trns. Received, Return
+       &lt;/IntlSimpleOperationsList&gt;
+
+       &lt;CargoOperationsList&gt;
+           Tender, Load, Remove, Delivery
+       &lt;/CargoOperationsList&gt;
+&lt;/User&gt;
+&lt;User&gt;
+        &lt;UserName&gt;Varig&lt;/UserName&gt;
+        &lt;UserFullName&gt;Varig&lt;/UserFullName&gt;
+        &lt;CarrierCode&gt;RG&lt;/CarrierCode&gt;
+        &lt;FtpHostName&gt;ftp.asiscan.com&lt;/FtpHostName&gt;
+        &lt;FtpPortNumber&gt;21&lt;/FtpPortNumber&gt;
+        &lt;FtpLoginID&gt;varig&lt;/FtpLoginID&gt;
+        &lt;FtpPassword&gt;br@z1l&lt;/FtpPassword&gt;
+        &lt;TransferPointOnScanForm&gt;False&lt;/TransferPointOnScanForm&gt;
+        &lt;TailNumberOnScanForm&gt;False&lt;/TailNumberOnScanForm&gt;
+        &lt;RejectReasonOnScanForm&gt;False&lt;/RejectReasonOnScanForm&gt;
+        &lt;CanChangeLocationOnScanForm&gt;False&lt;/CanChangeLocationOnScanForm&gt;
+        &lt;PasswordRequiredForLocationChangeOnScanForm&gt;True&lt;/PasswordRequiredForLocationChangeOnScanForm&gt;
+        &lt;TreatTransferScansAsLoadScans&gt;True&lt;/TreatTransferScansAsLoadScans&gt;
+        &lt;LoadScansRequireSelectionFromPreset&gt;False&lt;/LoadScansRequireSelectionFromPreset&gt;
+        &lt;PresetsRequireDestinationSpecifications&gt;True&lt;/PresetsRequireDestinationSpecifications&gt;
+        &lt;WarnOnDuplicateScan&gt;True&lt;/WarnOnDuplicateScan&gt;
+        &lt;DisplayFlightValidationMessages&gt;True&lt;/DisplayFlightValidationMessages&gt;
+        &lt;MessagesEnabled&gt;True&lt;/MessagesEnabled&gt;
+        &lt;CargoScanEnabled&gt;False&lt;/CargoScanEnabled&gt;
+        &lt;BaggageScanEnabled&gt;False&lt;/BaggageScanEnabled&gt;
+        &lt;InternationalMailEnabled&gt;True&lt;/InternationalMailEnabled&gt;
+        &lt;InternationalSimpleMailEnabled&gt;True&lt;/InternationalSimpleMailEnabled&gt;
+        &lt;MailScanEnabled&gt;False&lt;/MailScanEnabled&gt;
+        &lt;MailSimpleScanEnabled&gt;False&lt;/MailSimpleScanEnabled&gt;
+        &lt;DisplayInternationalPostOffices&gt;True&lt;/DisplayInternationalPostOffices&gt;
+        &lt;IntlPromptCardit&gt;True&lt;/IntlPromptCardit&gt;
+        &lt;IntlCartIdPattern&gt;^[A-Za-z]{3}[0-9]{5}[A-Za-z]{2}$&lt;/IntlCartIdPattern&gt;
+        &lt;DefaultIntlPostOffice&gt;US&lt;/DefaultIntlPostOffice&gt;
+
+       &lt;CityList&gt;
+AMS, ASU, BUE, CDG, FRA, GIG, GRU, JFK, LHR, LIM, LIS, LPB, MAD, MIA, MVD, MXP, RIO, SCL
+       &lt;/CityList&gt;
+
+       &lt;EthernetCityList&gt;
+AMS, ASU, BUE, CDG, FRA, GIG, GRU, JFK, LHR, LIM, LIS, LPB, MAD, MIA, MVD, MXP, RIO, SCL
+       &lt;/EthernetCityList&gt;
+
+
+       &lt;AdjunctCarrierList&gt;&lt;/AdjunctCarrierList&gt;
+
+       &lt;OperationsList&gt;
+           Possession,  Load, Delivery, Transfer, PartialOffload, CompleteOffload, Return
+       &lt;/OperationsList&gt;
+
+       &lt;InternationalOperationsList&gt;
+           Possession,  Load, Delivery, Partial Offload, Complete Offload, Offline Trns. Conveyed, Offline Trns. Received, Online Transfer, Return
+       &lt;/InternationalOperationsList&gt;
+
+       &lt;IntlSimpleOperationsList&gt;
+           Possession,  Delivery, Offline Trns. Received, Return
+       &lt;/IntlSimpleOperationsList&gt;
+
+       &lt;CargoOperationsList&gt;
+           Tender, Load, Remove, Delivery
+       &lt;/CargoOperationsList&gt;
+&lt;/User&gt;
+</value>
+		<comment>Type your comment in here</comment>
+	</data>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Windows.Forms.Design.CFResXResourceReader</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Windows.Forms.Design.CFResXResourceWriter</value>
+	</resheader>
+</root>

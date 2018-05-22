@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{CB4CE8C6-1BDB-4DC7-A4D3-65A1999772F8}") = "ASINetTest", "ASINetTest.vbdproj", "{23300B30-3909-48DC-8F95-8E42D9EC2B4F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{112FAB98-8405-442A-A09B-9B0FF2F82A7B}") = "DotfuscatorASINetTest", "Obfuscated\DotfuscatorASINetTest\DotfuscatorASINetTest.dotfuproj", "{8F50F88B-6B2B-4AA1-80B0-08E4433AC80C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{23300B30-3909-48DC-8F95-8E42D9EC2B4F}.Debug.ActiveCfg = Debug|Pocket PC
+		{23300B30-3909-48DC-8F95-8E42D9EC2B4F}.Debug.Build.0 = Debug|Pocket PC
+		{23300B30-3909-48DC-8F95-8E42D9EC2B4F}.Debug.Deploy.0 = Debug|Pocket PC
+		{23300B30-3909-48DC-8F95-8E42D9EC2B4F}.Release.ActiveCfg = Release|Pocket PC
+		{23300B30-3909-48DC-8F95-8E42D9EC2B4F}.Release.Build.0 = Release|Pocket PC
+		{23300B30-3909-48DC-8F95-8E42D9EC2B4F}.Release.Deploy.0 = Release|Pocket PC
+		{8F50F88B-6B2B-4AA1-80B0-08E4433AC80C}.Debug.ActiveCfg = Debug
+		{8F50F88B-6B2B-4AA1-80B0-08E4433AC80C}.Debug.Build.0 = Debug
+		{8F50F88B-6B2B-4AA1-80B0-08E4433AC80C}.Release.ActiveCfg = Release
+		{8F50F88B-6B2B-4AA1-80B0-08E4433AC80C}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

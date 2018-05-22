@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VisualStudioProject>
+  <Dotfuscator ProductVersion="3.0" SchemaVersion="2.1" ProjectGuid="{8f50f88b-6b2b-4aa1-80b0-08e4433ac80c}">
+    <Build>
+      <Config Name="Debug" ConfigPath="Debug\Dotfuscator.xml" />
+      <Config Name="Release" ConfigPath="Release\Dotfuscator.xml" />
+    </Build>
+    <TriggerAssemblies>
+      <TriggerAssembly Guid="{72c576f1-361c-4d51-b017-70773bbe03d7}" Type="DynamicProjectOutput" ProjectGuid="{23300b30-3909-48dc-8f95-8e42d9ec2b4f}" ProjectUniqueName="ASINetTest.vbdproj" ProjectDisplayName="ASINetTest" FileName="ASINetTest.exe" OutputGroupCanonicalName="Built" OutputGroupDisplayName="Primary output" />
+    </TriggerAssemblies>
+  </Dotfuscator>
+</VisualStudioProject>
