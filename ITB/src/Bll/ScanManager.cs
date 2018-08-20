@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using Asi.Itb.Dal;
+using Asi.Itb.Utilities;
 using Asi.Itb.Bll.Entities;
 using Asi.Itb.Dal.ItbDataSetTableAdapters;
 using System.Collections;
@@ -42,32 +43,39 @@ namespace Asi.Itb.Bll
         /// <summary>
         /// Static initializer, to instantiate adapter only once.
         /// </summary>
-        public static void Init()
+        public static void Init(DebugLogger debugLogger) // MDD Debug
         {
-            _sadpt.Connection = DatabaseManager.Connection;
-            _badpt.Connection = DatabaseManager.Connection;
-            _uadpt.Connection = DatabaseManager.Connection;
+                                                                if (debugLogger != null) { debugLogger.logMessage("Init", "sadpt"); }
+            _sadpt.Connection = DatabaseManager.Connection;     if (debugLogger != null) { debugLogger.logMessage("Init", "badpt"); }
+            _badpt.Connection = DatabaseManager.Connection;     if (debugLogger != null) { debugLogger.logMessage("Init", "uadpt"); }
+            _uadpt.Connection = DatabaseManager.Connection;     if (debugLogger != null) { debugLogger.logMessage("Init", "uaadpt"); }
             _uaadpt.Connection = DatabaseManager.Connection;
 
-            InitCountersFromDb();
+            InitCountersFromDb(debugLogger);
         }
 
         /// <summary>
         /// Initialize three hashtables from database
         /// </summary>
-        private static void InitCountersFromDb()
+        private static void InitCountersFromDb(DebugLogger debugLogger) // MDD Debug
         {
+            if (debugLogger != null) { debugLogger.logMessage("InitCountersFromDb", "allBags"); }
+
             List<Bag> allBags = GetBags(Bag.Status.All);
             foreach (Bag bag in allBags)
             {
                 _allTags.Add(bag.Barcode, null);
             }
 
+            if (debugLogger != null) { debugLogger.logMessage("InitCountersFromDb", "onhandBags"); }
+
             List<Bag> onhandBags = GetBags(Bag.Status.OnHand);
             foreach (Bag bag in onhandBags)
             {
                 _onhandTags.Add(bag.Barcode, null);
             }
+
+            if (debugLogger != null) { debugLogger.logMessage("InitCountersFromDb", "droppedoffBags"); }
 
             List<Bag> droppedoffBags = GetBags(Bag.Status.DroppedOff);
             foreach (Bag bag in droppedoffBags)

@@ -64,3 +64,12 @@ C:\work\ITB\src\UI\obj\Release\Itb.exe
 C:\work\ITB\src\UI\obj\Release\Itb.pdb
 C:\work\ITB\src\UI\bin\Release\Itb.sdf
 C:\work\ITB\src\UI\bin\Release\Itb2.sdf
+C:\work\ITB\src\UI\bin\Release\System.Data.DataSetExtensions.dll
+C:\work\ITB\src\UI\bin\Release\System.Data.dll
+C:\work\ITB\src\UI\bin\Release\System.Data.SqlServerCe.dll
+C:\work\ITB\src\UI\bin\Release\mscorlib.dll
+C:\work\ITB\src\UI\bin\Release\System.dll
+C:\work\ITB\src\UI\bin\Release\System.Drawing.dll
+C:\work\ITB\src\UI\bin\Release\System.Windows.Forms.dll
+C:\work\ITB\src\UI\bin\Release\System.Xml.dll
+C:\work\ITB\src\UI\bin\Release\System.Xml.Linq.dll

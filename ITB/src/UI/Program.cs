@@ -8,6 +8,7 @@ using System.Reflection;
 using Threading = System.Threading;
 using GpsLocation = Microsoft.WindowsMobile.Samples.Location;
 using ProcessManager = Asi.Itb.Utilities.ProcessManager;
+using Asi.Itb.Utilities;
 using Asi.Itb.Bll;
 using Asi.Itb.Bll.Entities;
 
@@ -106,7 +107,13 @@ namespace Asi.Itb.UI
                 }
             }
         }
-       
+
+        public static DebugLogger debugLogger
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -117,28 +124,31 @@ namespace Asi.Itb.UI
             {
                 string executingPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase);
 
-                //string sdfFilePath = Path.Combine(executingPath, "itb.sdf");
+                string logFilePath = Path.Combine(executingPath, "itblog.txt");
 
-                //if (!File.Exists(sdfFilePath))
-                //{
-                //    string sdfBkupFilePath = Path.Combine(executingPath, "InitializationEntities");
+                string dbgFilePath = Path.Combine(executingPath, "ItbDbgLog.txt");
 
-                //    if (Directory.Exists(sdfBkupFilePath))
-                //    {
-                //        string initSdfFilePath = Path.Combine(sdfBkupFilePath, "itb.sdf");
+                if (File.Exists(dbgFilePath))
+                {
+                    File.Delete(dbgFilePath);
+                }
 
-                //        if (File.Exists(initSdfFilePath))
-                //        {
-                //            File.Copy(initSdfFilePath, sdfFilePath);
-                //        }
-                //    }
-                //}
+                debugLogger = new DebugLogger(null);
+
+                debugLogger.logMessage("Main", "Program startup");
+
+                debugLogger.logMessage("Main", "KillDuplicateProcess");
 
                 KillDuplicateProcess();
+
+                debugLogger.logMessage("Main", "StartupTasks");
+
                 StartupTasks();
+
+                debugLogger.logMessage("Main", "InitGprsSignalStrengthRcv");
+
                 InitGprsSignalStrengthRcv();
 
-                string logFilePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase) + "\\itblog.txt";
                 int BatteryDueTime = 60000;
 
                 try
@@ -165,9 +175,16 @@ namespace Asi.Itb.UI
 
                 Trace.WriteLine(string.Format("{0}: Program started.", DateTime.Now));
 
+                debugLogger.logMessage("Main", "InitializeGps");
+
                 InitializeGps();
 
+                debugLogger.logMessage("Main", "InitializeIdleTimeOut");
+
                 InitializeIdleTimeOut();
+
+                debugLogger.logMessage("Main", "SetBatteryWarningPercent");
+
                 SetBatteryWarningPercent();
 
                 mainTimer = new Threading.Timer(new Threading.TimerCallback(Program.DoMaintenance), null, 5000, 5000);
@@ -184,10 +201,20 @@ namespace Asi.Itb.UI
                     Trace.WriteLine(e);
                 }
 
-                Bll.ScanManager.Init();
+                debugLogger.logMessage("Main", "Bll.ScanManager.Init");
+
+                Bll.ScanManager.Init(null /* debugLogger */);
+
+                debugLogger.logMessage("Main", "formStack.new");
 
                 formStack = new FormStack();
+
+                debugLogger.logMessage("Main", "formStack.Push");
+
                 formStack.Push(typeof(LoginForm), true);
+
+                debugLogger.logMessage("Main", "formStack.Run");
+
                 formStack.Run();
 
                 _maintResetEvent.WaitOne(5000, false);

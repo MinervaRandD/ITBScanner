@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="AcceptAllCertificatePolicy.cs" />
     <Compile Include="Cryptography.cs" />
+    <Compile Include="DebugLogger.cs" />
     <Compile Include="ListViewSort\ColHeader.cs">
       <SubType>Component</SubType>
     </Compile>
